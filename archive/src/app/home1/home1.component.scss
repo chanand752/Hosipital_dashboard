@@ -1,0 +1,33 @@
+:host ::ng-deep .p-dropdown {
+    width: 20rem;
+    border-radius: 0.5em;
+    margin-left: 1rem;
+}
+
+:host ::ng-deep .p-rating-icon:not(.p-rating-cancel),
+:host ::ng-deep .p-rating-icon:not(.p-rating-cancel):hover {
+    color: rgb(245, 176, 48) !important;
+}
+
+
+:host ::ng-deep .p-card .p-card-body {
+    padding: 0rem;
+}
+
+:host ::ng-deep .p-card .p-card-content {
+    padding: 0rem;
+}
+
+
+
+:host ::ng-deep .panel1 .p-panel-header {
+    background-color: rgb(46, 145, 184);
+    font-size: x-large;
+    color: white;
+}
+
+
+
+.image{
+    margin-left: 80%;
+}
