@@ -1,0 +1,173 @@
+<div class="grid header-border">
+    <div class="col-1">
+        <img src="assets\doct1.PNG" alt="icon" class="docter-Icon-image-header" />
+    </div>
+    <div class="col-9">
+        <h2 class=" header-heading">
+            Cyman Islands HSA
+            <h4 class="header-heading-2">Quality Dashboard-September 2022</h4>
+        </h2>
+    </div>
+
+    <div class="col-2">
+        <img src="assets/hos cal.jpg" alt="icon" class="docter-Icon-image-2-header" />
+    </div>
+</div>
+<div class="grid card-color" style="padding: 1rem;">
+    <div class="col-8">
+        <div class="grid">
+            <div class="col-4">
+                <div class=" quality-dashboard-child-card-1 ">
+                    <p class="child-par-fontSize-span">18.7% <br><span class="child-card-samll-para-heading">
+                            Readmission Rate</span></p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class=" quality-dashboard-child-card-2">
+                    <p class="child-par-fontSize-span">24.33 <br><span class="child-card-samll-para-heading">
+                            HAI per 1K</span></p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class=" quality-dashboard-child-card-3">
+                    <p class="child-par-fontSize-span">42 min
+                        <br>
+                        <span class="child-card-samll-para-heading">
+                            Wating Time</span>
+                    </p>
+                </div>
+
+            </div>
+            <h3 class="col-12 main-card-heading"> 90 Day Trends</h3>
+            <div class="col-6">
+                <h1 class="quailty-card-heading-90days"> Overall Satisfaction
+                </h1>
+                <div class="card quailty-card-content-color-90days">
+
+                    <p-chart type="line" [data]="basicData.lineChartDataForOverAllStaticfaction"
+                        [options]="basicOptions"></p-chart>
+                </div>
+            </div>
+            <div class="col-6">
+                <h1 class="quailty-card-heading-90days"> Re-Admission Rates
+                </h1>
+                <div class="card quailty-card-content-color-90days">
+
+                    <p-chart type="line" [data]="basicData.ReadmissionRatesLineChart" [options]="basicOptions">
+                    </p-chart>
+                </div>
+            </div>
+            <div class="col-6">
+                <h1 class="quailty-card-heading-90days"> Timelines
+                </h1>
+                <div class="card quailty-card-content-color-90days">
+
+                    <p-chart type="line" [data]="basicData.ReadmissionRatesLineChart" [options]="basicOptions">
+                    </p-chart>
+                </div>
+            </div>
+            <div class="col-6">
+                <h1 class="quailty-card-heading-90days"> Incidents
+                </h1>
+                <div class="card quailty-card-content-color-90days">
+
+                    <p-chart type="line" [data]="basicData.ReadmissionRatesLineChart" [options]="basicOptions">
+                    </p-chart>
+                </div>
+            </div>
+            <div class="col-5">
+                <h1 class="quailty-card-heading-90days"> Incidents
+                </h1>
+                <div class="card quailty-card-content-color-90days">
+
+                    <p-chart type="bar" [data]="basicData.incidentsBarChart" [options]="incidentsOptions"></p-chart>
+                </div>
+            </div>
+            <div class="col-7">
+                <h1 class="quality-card-heading"> Re-Admission Rates By Diagnosis
+                </h1>
+                <div class="card quality-card-content-color">
+                    <div class="grid">
+                        <div class="col-5">Preumonia</div>
+                        <div class="col-2">15.7</div>
+                        <div class="col-4">COP</div>
+                        <div class="col-1">20.9</div>
+                    </div>
+                    <div class="grid">
+                        <div class="col-5">Mood Disorders</div>
+                        <div class="col-2">14.8</div>
+                        <div class="col-4">Chest Pain</div>
+                        <div class="col-1">10.2</div>
+                    </div>
+                    <div class="grid">
+                        <div class="col-5">Congestive Heart Failure</div>
+                        <div class="col-2">24.7</div>
+                        <div class="col-4">Skin Infection</div>
+                        <div class="col-1">11.2</div>
+                    </div>
+                    <div class="grid">
+                        <div class="col-5">Cardiac Dysrthymia</div>
+                        <div class="col-2">14.8</div>
+                        <div class="col-4">Previous C-Section</div>
+                        <div class="col-1">10.5</div>
+                    </div>
+                    <div class="grid">
+                        <div class="col-5">Septicema</div>
+                        <div class="col-2">21.0</div>
+                        <div class="col-4">Asthma</div>
+                        <div class="col-1">11.9</div>
+                    </div>
+                    <div class="grid">
+                        <div class="col-5">Coronary Artherosclerosis</div>
+                        <div class="col-2">13.5</div>
+                        <div class="col-4">Urinary Tract Infection</div>
+                        <div class="col-1">16.2</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="col-12">
+            <h1 class="quailty-card-heading-90days"> Overall Patient Satisfaction
+            </h1>
+            <div class=" quailty-card-content-color-90days">
+                
+                <p-chart type="doughnut" [data]="basicData.overAllPatientStasifaction" [options]="chartOptions" width="170" height="260" style="padding:10px ;"></p-chart>
+            </div>
+        </div>
+        <div class="col-12">
+            <h1 class="quailty-card-heading-90days">Physician Patient Satisfaction
+            </h1>
+            
+            <div class="card quailty-card-content-color-90days">
+                <p-chart type="doughnut" [data]="basicData.physicianPatientStasifaction" [options]="chartOptions" width="170" height="260"></p-chart>
+            </div>
+        </div>
+        <div class="col-12">
+            <h1 class="quailty-card-heading-90days"> Top 3 Factors
+            </h1>
+            <div class="card quailty-card-content-color-90days">
+
+                <h5 class="row-4 ">81% <span class="row-8 col-offset-1">Doctor and Patient agree on treatment</span>
+                </h5>
+                <h5 class="row-4">71% <span class="row-8 col-offset-1">Treatment was well expalined</span></h5>
+                <h5 class="row-4">73% <span class="row-8 col-offset-1">Staff was generally avilbile</span></h5>
+            </div>
+        </div>
+        <div class="col-12">
+            <h1 class="quailty-card-heading-90days"> Bottom 3 Factors
+            </h1>
+            <div class="card quailty-card-content-color-90days">
+
+                <h5 class="row-4 ">69% <span class="row-8 col-offset-1">Timelines of visits and treatment</span></h5>
+                <h5 class="row-4 ">78% <span class="row-8 col-offset-1">Recivied expected followup</span></h5>
+                <h5 class="row-4 ">44% <span class="row-8 col-offset-1">Take-home instructions effective</span></h5>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

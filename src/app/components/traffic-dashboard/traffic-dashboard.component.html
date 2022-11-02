@@ -1,0 +1,154 @@
+<div class="grid header-border">
+    <div class="col-1">
+        <img src="assets\doct1.PNG" alt="icon" class="docter-Icon-image-header" />
+    </div>
+    <div class="col-9">
+        <h2 class=" header-heading">
+            Cyman Islands HSA
+            <h4 class="header-heading-2">traffic Dashboard-September 2022</h4>
+        </h2>
+    </div>
+
+    <div class="col-2">
+        <img src="assets/hos cal.jpg" alt="icon" class="docter-Icon-image-2-header" />
+    </div>
+</div>
+
+<div class="grid card-color" style="padding: 1rem;">
+    <div class="col-12 md:col-6 lg:col-12">
+        <div class="grid flex justify-content-between">
+            <div class="col-4 md:col-4 lg:col-2">
+                <div class=" traffic-dashboard-child-card-1 ">
+                   
+                    <p class="child-par-fontSize-span">1278<span class="child-card-samll-para-heading">
+                            Total Patients</span></p>
+                        </div>
+              
+            </div>
+            <div class="col-4 md:col-4 lg:col-2">
+                <div class=" traffic-dashboard-child-card-2 ">
+                 
+                    <p class="child-par-fontSize-span">37% <br><span class="child-card-samll-para-heading">
+                            Admissions</span></p>
+                        </div>
+              
+            </div>
+            <div class="col-4 md:col-4 lg:col-2">
+                <div class=" traffic-dashboard-child-card-3 ">
+
+                    <p class="child-par-fontSize-span">42 min <br><span class="child-card-samll-para-heading">
+                            Wating time(min)</span></p>
+                </div>
+            </div>
+            <div class="col-4 md:col-4 lg:col-2">
+                <div class=" traffic-dashboard-child-card-4 ">
+
+                    <p class="child-par-fontSize-span">1.2 Days <br><span class="child-card-samll-para-heading">
+                            Average LOS</span></p>
+                </div>
+            </div>
+            <div class="col-4 md:col-4 lg:col-2">
+                <div class=" traffic-dashboard-child-card-5 ">
+
+                    <p class="child-par-fontSize-span">$3.5 k <br><span class="child-card-samll-para-heading">
+                            Average Treatment Cost</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col-8">
+                <div class="grid">
+                    <div class="col-6">
+                        <h1 class="traffic-card-heading-90days"> Patient vs Admission
+                        </h1>
+                        <div class="card traffic-card-content-color-90days">
+
+                            <p-chart type="bar" [data]="basicData.patient_vs_admisionsChart" [options]="basicOptions"></p-chart>
+                          
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <h1 class="traffic-card-heading-90days"> Daily Traffic Pattern
+                        </h1>
+                        <div class="card traffic-card-content-color-90days">
+
+                            <p-chart type="bar" [data]="basicData.daillyTrfiicPattern" [options]="basicOptions">
+                            </p-chart>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="col-5">
+                        <h1 class="traffic-card-heading-90days"> Top Inbound Referrals
+                        </h1>
+                        <div class="card traffic-card-content-color-90days">
+                            <div class="grid">
+                                <div class="col-4 col-offset-4"><i class="pi pi-user"
+                                        style="font-size: 2rem; color: rgb(12, 197, 197);"></i></div>
+                                <div class="col-4"><i class="pi pi-dollar"
+                                        style="font-size: 2rem; color: rgb(12, 197, 197);"></i></div>
+                            </div>
+                            <div class="grid">
+                                <div class="col-4">St.Geroge Clinc</div>
+                                <div class="col-4">270</div>
+                                <div class="col-4">37.5k</div>
+                            </div>
+                            <div class="grid">
+                                <div class="col-4">Rapid Care</div>
+                                <div class="col-4">217</div>
+                                <div class="col-4">44.5k</div>
+                            </div>
+                            <div class="grid">
+                                <div class="col-4">Town Clinc</div>
+                                <div class="col-4">146</div>
+                                <div class="col-4">21k</div>
+                            </div>
+                            <div class="grid">
+                                <div class="col-4">Dr.Adrew Chin</div>
+                                <div class="col-4">67</div>
+                                <div class="col-4">12.5k</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <h1 class="traffic-card-heading-90days"> Localization
+                        </h1>
+                        <div class="card traffic-card-content-color-90days">
+
+                            <!-- <p-chart type="line" [data]="basicData.lineChartDataForOverAllStaticfaction"
+                            [options]="basicOptions"></p-chart> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-4">
+
+                <div class="col-12">
+                    <h1 class="traffic-card-heading-90days"> Divisions
+                    </h1>
+                    <div class="card traffic-card-content-color-90days">
+                        <div class="grid">
+                            <div class="col-4 col-offset-4"><i class="pi pi-user"
+                                    style="font-size: 2rem; color: rgb(12, 197, 197);"></i></div>
+                            <div class="col-4"><i class="pi pi-clock"
+                                    style="font-size: 2rem; color: rgb(12, 197, 197);"></i></div>
+                        </div>
+                        <div class="grid">
+                            <div class="col-8">
+                                <p-chart type="bar" [data]="basicData.divisionsChartData"
+                                    [options]="divisionsChartOptions"></p-chart>
+                            </div>
+
+                            <div class="col-4"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

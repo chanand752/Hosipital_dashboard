@@ -1,0 +1,110 @@
+.traffic-dashboard-child-card-1 {
+    background-color: #0698c8;
+    border-radius: 5px;
+    padding-top: 1rem;
+    padding-right: 10rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    // justify-content:flex-start ;
+    
+}
+
+.traffic-dashboard-child-card-2 {
+    background-color: #ce6cdf;
+    border-radius: 5px;
+    padding-top: 1rem;
+    padding-right: 8rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    // justify-content:flex-start;
+}
+
+.traffic-dashboard-child-card-3 {
+    background-color: #f49c81;
+    border-radius: 5px;
+    padding-top: 1rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    // justify-content:flex-start ;
+}
+
+.traffic-dashboard-child-card-4 {
+    background-color: #e55858;
+    border-radius: 5px;
+    padding-top: 1rem;
+    padding-right: 0rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    // justify-content:flex-start ;
+}
+.traffic-dashboard-child-card-5 {
+    background-color: #386a55;
+    border-radius: 5px;
+    padding-top: 1rem;
+    padding-right: 0rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    // justify-content:flex-start ;
+}
+
+
+.child-par-fontSize {
+    font-size: 1.5rem;
+    justify-content:flex-start ;
+}
+
+.child-par-fontSize-span {
+    font-size: 3rem;
+    justify-content:flex-start ;
+}
+
+.child-card-samll-para-heading {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start ;
+}
+
+.traffic-card-heading-90days {
+    color: #ffffff;
+    background-color: rgb(124, 226, 225);
+    margin: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
+    text-align: center;
+    padding: 5px;
+    // color: #f38332;
+}
+
+.traffic-card-content-color-90days {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-bottom: 1rem;
+}

@@ -1,0 +1,158 @@
+
+
+.ar-card-heading {
+    color: #ffffff;
+    background-color: rgb(124, 226, 225);
+    margin: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
+    text-align: center;
+    padding: 5px;
+    // color: #f38332;
+}
+
+.ar-card-content-color {
+    background-color: rgb(255, 255, 255);
+    color: #0e0e0e;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-bottom: 1rem;
+}
+
+.net-collection-rate-card {
+    // width: 27rem;
+    // height: 5rem;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+.net-collection-card-heading {
+    // font-family: 'Roboto';
+    font-weight: bold;
+    margin-bottom: 1rem !important;
+    display: flex;
+    flex-direction: row;
+    padding-right: 1rem;
+}
+
+.net-collection-card-inner {
+    height: 5px;
+    width: 25rem;
+    padding: 1.5rem;
+    background-color: rgb(7 126 7 / 59%);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius:2rem ;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius:2rem ;
+    // border-end-end-radius: 5rem;
+}
+
+.ar-dashboard-child-card-1 {
+    background-color: #37afd8;
+    border-radius: 5px;
+    padding: 2rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    
+}
+
+.ar-dashboard-child-card-2 {
+    background-color: #48a3e0;
+    border-radius: 5px;
+    padding: 2rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+}
+
+.providers-card-heading {
+    color: #ffffff;
+    background-color: rgb(124, 226, 225);
+    margin: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
+    text-align: center;
+    padding: 5px;
+    // color: #fafafa;
+}
+
+.providers-card-content-color {
+    background-color: rgb(255, 255, 255);
+    color: #0e0e0e;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-bottom: 1rem;
+   
+}
+:host {
+    ::ng-deep {
+ .providers {
+    width: 27rem !important;
+    height: 15rem !important;
+ }
+}
+}
+.claim-card-heading {
+    color: #ffffff;
+    background-color: rgb(12, 72, 169);
+    margin: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.calim-card-content-color {
+    background-color: rgb(2, 42, 102);
+    color: #ffffff;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-bottom: 1rem;
+}
+
+.child-par-fontSize {
+    font-size: 1.5rem;
+}
+
+.child-par-fontSize-span {
+    font-size: 3rem;
+}
+
+.child-card-samll-para-heading {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.claimDanial-subheadingBox {
+    width: 100%;
+    border-radius: 5px;
+    height: 2.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: rgb(20, 96, 209);
+    color: #e0e0e0;
+    font-size: 15px;
+}
+
+.claimDanial_pargraph {
+    color: #e0e0e0;
+    font-size: 15px;
+}
+

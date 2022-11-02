@@ -1,0 +1,106 @@
+<div class="grid header-border">
+    <div class="col-1">
+        <img src="assets\doct1.PNG" alt="icon" class="docter-Icon-image-header" />
+    </div>
+    <div class="col-9">
+        <h2 class=" header-heading">
+            Cyman Islands HSA
+            <h4 class="header-heading-2">AR Dashboard-September 2022</h4>
+        </h2>
+    </div>
+
+    <div class="col-2">
+        <img src="assets/hos cal.jpg" alt="icon" class="docter-Icon-image-2-header" />
+    </div>
+</div>
+
+<div class="grid card-color">
+    <div style="padding: 1rem;" class="col-4">
+        <div>
+            <h1 class="ar-card-heading"> AR Aging (Millions)
+            </h1>
+            <div class="card ar-card-content-color">
+
+                <h5>Vertical</h5>
+                <p-chart type="bar" [data]="products.barChartVertical" [options]="basicOptions"></p-chart>
+            </div>
+        </div>
+        <div class="row-4 net-collection-rate-card">
+            <h5 class="net-collection-card-heading">Net Collection Rate</h5>
+            <p class="net-collection-card-inner"></p>
+        </div>
+        <div>
+            <h1 class="ar-card-heading"> Billed vs Collected (Millions)
+            </h1>
+            <div class="card ar-card-content-color">
+
+                <h5>Horizontal</h5>
+                <p-chart type="bar" [data]="products.barChatDataHorizental" [options]="horizontalOptions"></p-chart>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-4" style="padding: 1rem;">
+        <div class="ar-dashboard-child-card-1 row-4 ">
+            <h5 class="net-collection-card-heading">Days</h5>
+            <p class="child-par-fontSize">in AR <br><span class="child-par-fontSize-span">68</span></p>
+            <p class="child-par-fontSize">To Bill<br> <span class="child-par-fontSize-span">14</span></p>
+        </div>
+        <div class="row-4 ar-dashboard-child-card-2">
+            <h5 class="net-collection-card-heading">Leading</h5>
+            <p class="child-par-fontSize-span">5% <br><span class="child-card-samll-para-heading">Point of service
+                    collections</span></p>
+            <p class="child-par-fontSize-span">36% <br><span class="child-card-samll-para-heading">Pre Registration
+                    Rates</span></p>
+        </div>
+        <div class="row-4 ar-dashboard-child-card-1">
+            <h5 class="net-collection-card-heading">Lagging</h5>
+            <p class="child-par-fontSize-span">8% <br><span class="child-card-samll-para-heading">HIM
+                    Charts Deliquency Rate
+                </span></p>
+            <p class="child-par-fontSize-span">354 <br><span class="child-card-samll-para-heading">Coding Backlogs
+                    (+12%)
+                </span></p>
+        </div>
+        <div class="row-4 ar-dashboard-child-card-2">
+            <h5 class="net-collection-card-heading">Tragets</h5>
+            <p class="child-par-fontSize-span">$1.2 m <br><span class="child-card-samll-para-heading">Cash Collections
+                </span></p>
+            <p class="child-par-fontSize-span">$134 k <br><span class="child-card-samll-para-heading">Cash Collections
+                </span></p>
+        </div>
+    </div>
+
+    <div style="padding: 1rem;" class="col-4">
+        <div>
+            <h1 class="providers-card-heading">Providers
+            </h1>
+            <div class="card providers-card-content-color">
+                <p-chart class="providers" type="pie" [data]="products.pieChartData" [options]="pieChartOptions"
+                    width="150" height="250">
+                </p-chart>
+            </div>
+        </div>
+        <div>
+            <h1 class="claim-card-heading"> Claim Denials
+            </h1>
+            <div class="card calim-card-content-color">
+                <p-chart type="bar" [data]="products.claimChartData" [options]="claimDanialChartOptions"></p-chart>
+                <h3 class="claimDanial-subheadingBox">Top Reasons</h3>
+
+                <div class="grid claimDanial_pargraph">
+                    <div class="col-7">Deductible(388)</div>
+                    <div class="col-5">Coding(123)</div>
+                </div>
+               
+                    <div class="grid claimDanial_pargraph">
+                        <div class="col-7">Not Covered(215)</div>
+                        <div class="col-5">Incompatibility(19)</div>
+            
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

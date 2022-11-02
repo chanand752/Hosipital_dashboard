@@ -1,0 +1,111 @@
+
+
+.quality-dashboard-child-card-1 {
+    background-color: #0698c8;
+    border-radius: 5px;
+    padding-top: 1rem;
+    padding-right: 7rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    // justify-content:flex-start ;
+    
+}
+
+.quality-dashboard-child-card-2 {
+    background-color: #f4b86b;
+    border-radius: 5px;
+    padding-top: 1rem;
+    padding-right: 7rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    // justify-content:flex-start;
+}
+
+.quality-dashboard-child-card-3 {
+    background-color: #6bcaa4;
+    border-radius: 5px;
+    padding-top: 1rem;
+    padding-right: 0rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    // justify-content:flex-start ;
+}
+
+.child-par-fontSize {
+    font-size: 1.5rem;
+    justify-content:flex-start ;
+}
+
+.child-par-fontSize-span {
+    font-size: 3rem;
+    justify-content:flex-start ;
+}
+
+.child-card-samll-para-heading {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start ;
+}
+
+.main-card-heading {
+    color: rgb(14, 135, 196) ;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
+
+.quailty-card-heading-90days {
+    color: #ffffff;
+    background-color: rgb(124, 226, 225);
+    margin: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
+    text-align: center;
+    padding: 5px;
+    // color: #f38332;
+}
+
+.quailty-card-content-color-90days {
+    background-color: rgb(255, 255, 255);
+    color: #0e0e0e;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-bottom: 1rem;
+}
+.quality-card-heading {
+    color: #ffffff;
+    background-color: rgb(12, 72, 169);
+    margin: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
+    text-align: center;
+    padding: 5px;
+}
+
+
+.quality-card-content-color {
+    background-color: rgb(2, 42, 102);
+    color: #ffffff;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-bottom: 1rem;
+}
