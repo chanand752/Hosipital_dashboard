@@ -115,6 +115,11 @@ import { PhysicianCardComponent } from './components/physician-card/physician-ca
 import { ArDashBoardComponent } from './components/ar-dash-board/ar-dash-board.component';
 import { QuailtyDashboardComponent } from './components/quailty-dashboard/quailty-dashboard.component';
 import { TrafficDashboardComponent } from './components/traffic-dashboard/traffic-dashboard.component';
+import { HomePage1Component } from './components/home-page1/home-page1.component';
+import { HomePage2Component } from './components/home-page2/home-page2.component';
+import { UtiliztaionDashboardComponent } from './components/utiliztaion-dashboard/utiliztaion-dashboard.component';
+import { TimeDashboardComponent } from './components/time-dashboard/time-dashboard.component';
+import { FinanceDashboardComponent } from './components/finance-dashboard/finance-dashboard.component';
 
 FullCalendarModule.registerPlugins([
     dayGridPlugin,
@@ -226,6 +231,11 @@ FullCalendarModule.registerPlugins([
         ArDashBoardComponent,
         QuailtyDashboardComponent,
         TrafficDashboardComponent,
+        HomePage1Component,
+        HomePage2Component,
+        UtiliztaionDashboardComponent,
+        TimeDashboardComponent,
+        FinanceDashboardComponent,
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},

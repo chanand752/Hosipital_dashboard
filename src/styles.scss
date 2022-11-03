@@ -10,9 +10,18 @@
 .docter-Icon-image-header {
     width: 5vw;
 }
+
 .docter-Icon-image-2-header {
-    width: 10vw;
+    width: 4vw;
+    margin-left: 0px;
+    padding-left: 0px;
 }
+.docter-Icon-image-3-header {
+    width: 4vw;
+    margin-left: 0px;
+    padding-left: 10px;
+}
+
 .header-heading {
     color: #07b4e4;
     padding-top: 10px;
@@ -28,4 +37,10 @@
     border: none;
     border-top: 10px solid #0bd0f7;
   
+}
+
+.sty{
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(38, 133, 156);
+    
 }

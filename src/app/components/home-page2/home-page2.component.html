@@ -1,0 +1,191 @@
+<div class="layout-footer p-1" style="background-color:rgb(31, 144, 172)">
+    <div class="grid">
+        <div class="col-8">
+            <a href="/" class="logo-container">
+                <img src="assets/home2/Cayman.jpg" width="15%" />
+            </a>
+        </div>
+        <div class="col-4 footer-icons">
+            <a>
+                <i class="pi pi-user" style="font-size: 1em;color:white"></i>
+            </a>
+            <a>
+                <i class="pi pi-cog" style="font-size: 1em;color:white"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="card" style="background-color:rgb(181, 225, 236)">
+    <div class="grid">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <!-- <div class="layout-footer p-1" style="background-color:rgb(92, 192, 206);border-radius: 0.5em;">
+                <div class="grid">
+                    <div class="col-10">
+                        <h4 style="color:white;margin-left: 1rem;">Business Intelligence App Store</h4>
+                    </div>
+                    <div class="col-2 footer-icons">
+                         <img src="assets/home1/img.jpg" alt="" width="20%"> 
+                    </div>
+                </div>
+            </div> -->
+            <div>
+                <p-panel [style]="{'max-width':'100rem','margin-top':'0%','background-color':'rgb(236, 244, 252)'}"
+                    styleClass="shadow-2" class="panel1" header="Business Intelligence App Store">
+                    
+                    <p-dropdown placeholder=" Category:  Hospitals" optionLabel="name"></p-dropdown>
+                    <br><br>
+
+                    <div style="display:flex ;flex-wrap: wrap;">
+                        <div class="col-12 lg:col-1"></div>
+
+                        <div class="col-12 md:col-4 lg:col-2">
+                        <p-card [style]="{'display':'flex','max-width':'14rem'}">
+                            <div class="p-grid  p-fluid">
+                                <div><img src="assets/home2/traffic dashboard.jpg" alt="" width="100%"></div>
+                                <div style="text-align:center">Traffic Dashboard <br><br>
+                                    <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false"></p-rating>
+                                </div>
+                                <br>
+                            </div>
+
+                        </p-card>
+                    </div>
+
+                    <div class="col-12 md:col-4 lg:col-2">
+                        <p-card [style]="{'display':'flex','max-width':'14rem'}">
+                            <div class="p-grid  p-fluid">
+                                <div><img src="assets/home2/cardiology traffic.jpg" alt="" width="100%"></div>
+                                <div style="text-align:center">Cardiology Traffic <br><br>
+                                    <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false"></p-rating>
+                                </div>
+                                <br>
+                            </div>
+
+                        </p-card>
+                    </div>
+
+                    <div class="col-12 md:col-4 lg:col-2">
+                        <p-card [style]="{'display':'flex','max-width':'14rem'}">
+                            <div class="p-grid  p-fluid">
+                                <div><img src="assets/home2/time dashboard.jpg" alt="" width="100%"></div>
+                                <div style="text-align:center">Time Dashboard <br><br>
+                                    <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false"></p-rating>
+                                </div>
+                                <br>
+                            </div>
+
+                        </p-card>
+                    </div>
+
+                    <div class="col-12 md:col-4 lg:col-2">
+                        <p-card [style]="{'display':'flex','max-width':'14rem'}">
+                            <div class="p-grid  p-fluid">
+                                <div><img src="assets/home2/or times.jpg" alt="" width="100%"></div>
+                                <div style="text-align:center">OR Times <br><br>
+                                    <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false"></p-rating>
+                                </div>
+                                <br>
+                            </div>
+
+                        </p-card>
+                    </div>
+
+
+                    <div class="col-12 md:col-4 lg:col-2">
+                        <p-card [style]="{'display':'flex','max-width':'14rem'}">
+                            <div class="p-grid  p-fluid">
+                                <div><img src="assets/home2/quality dashboard.jpg" alt="" width="100%"></div>
+                                <div style="text-align:center">Quality Dashboard <br><br>
+                                    <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false"></p-rating>
+                                </div>
+                                <br>
+                            </div>
+
+                        </p-card>
+                    </div>
+
+                    <div class="col-12 lg:col-1"></div>
+
+                    </div>
+                    <br>
+                    <div style="display:flex ;flex-wrap: wrap;">
+                        <div class="col-12 lg:col-1"></div>
+
+                        <div class="col-12 md:col-4 lg:col-2">
+                        <p-card [style]="{'display':'flex','max-width':'14rem'}">
+                            <div class="p-grid  p-fluid">
+                                <div><img src="assets/home2/physician assesment.jpg" alt="" width="100%"></div>
+                                <div style="text-align:center">Physician Assesment <br><br>
+                                    <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false"></p-rating>
+                                </div>
+                                <br>
+                            </div>
+
+                        </p-card>
+                    </div>
+
+                    <div class="col-12 md:col-4 lg:col-2">
+                        <p-card [style]="{'display':'flex','max-width':'14rem'}">
+                            <div class="p-grid  p-fluid">
+                                <div><img src="assets/home2/patient satisfaction.jpg" alt="" width="100%"></div>
+                                <div style="text-align:center">Patient Satisfaction <br><br>
+                                    <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false"></p-rating>
+                                </div>
+                                <br>
+                            </div>
+
+                        </p-card>
+
+                    </div>
+
+
+                    <div class="col-12 md:col-4 lg:col-2">
+                        <p-card [style]="{'display':'flex','max-width':'14rem'}">
+                            <div class="p-grid  p-fluid">
+                                <div><img src="assets/home2/utilization dashboard.jpg" alt="" width="100%"></div>
+                                <div style="text-align:center">Utilization Dashboard <br><br>
+                                    <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false"></p-rating>
+                                </div>
+                                <br>
+                            </div>
+
+                        </p-card>
+                    </div>
+
+                    <div class="col-12 md:col-4 lg:col-2">
+                        <p-card [style]="{'display':'flex','max-width':'14rem'}">
+                            <div class="p-grid  p-fluid">
+                                <div><img src="assets/home2/financial dashboard.jpg" alt="" width="100%"></div>
+                                <div style="text-align:center">Financial Dashboard <br><br>
+                                    <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false"></p-rating>
+                                </div>
+                                <br>
+                            </div>
+
+                        </p-card>
+                    </div>
+
+                    <div class="col-12 md:col-4 lg:col-2">
+
+                        <p-card [style]="{'display':'flex','max-width':'14rem'}">
+                            <div class="p-grid  p-fluid">
+                                <div><img src="assets/home2/cost manager.jpg" alt="" width="100%"></div>
+                                <div style="text-align:center">Cost manager <br><br>
+                                    <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false"></p-rating>
+                                </div>
+                                <br>
+                            </div>
+
+                        </p-card>
+                    </div>
+                    <div class="col-12 lg:col-1"></div>
+
+                    </div>
+                </p-panel>
+            </div>
+        </div>
+    </div>
+
+</div>

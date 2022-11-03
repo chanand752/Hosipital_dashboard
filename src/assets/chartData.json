@@ -286,7 +286,60 @@
                 ]
             }
         ]
+    },
+    "PatientsDataVetical": {
+        "labels": [
+            "Monday",
+            "Tuesday",
+            "Wendnsday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+        ],
+        "datasets": [
+            {
+                "label": "Patient Data",
+                "backgroundColor": "#42A5F5",
+                "fill":false,
+                "data": [
+                    150,
+                    110,
+                    120,
+                    130,
+                    210,
+                    90,
+                    60
+                ]
+            }
+        ]
+    },
+    "TimeSpentChart": {
+        "labels": [
+            "Monday",
+            "Tuesday",
+            "Wendnsday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+        ],
+        "datasets": [
+            {
+                "label": "TimeData",
+                "backgroundColor": "#42A5F5",
+                "fill":false,
+                "data": [
+                    24,
+                    16,
+                    13,
+                    13,
+                    25,
+                    35,
+                    39
+                ]
+            }
+        ]
     }
-
 
 }

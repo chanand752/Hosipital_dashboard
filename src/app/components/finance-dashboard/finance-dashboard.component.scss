@@ -1,0 +1,18 @@
+.card {
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+  :host ::ng-deep .panel1 .p-panel-header {
+    background-color: rgb(103, 193, 216);
+    font-size: large;
+    color: white;
+    text-align: center;
+}
+
+
+.p1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h3.thick {
+  font-weight: bold;
+}

@@ -1,0 +1,26 @@
+:host ::ng-deep .panel1 .p-panel-header {
+    background-color: rgb(103, 193, 216);
+    font-size: large;
+    color: white;
+    // text-align: center;
+}
+
+:host ::ng-deep .panelcontent .p-panel-content{
+    background-color: aqua;
+    
+}
+
+.ui-card .p-card{
+    background-color: lightblue !important;
+  }
+
+  .rounded-circle {
+    background-color: rgb(13, 201, 201);
+    border-radius: 5rem;
+    text-align: center;
+    color: #ffffff;
+    width: 7rem;
+    height: 7rem;
+    padding: 2rem;
+    font-size:x-large;
+  }

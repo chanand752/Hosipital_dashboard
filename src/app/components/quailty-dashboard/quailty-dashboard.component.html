@@ -1,6 +1,6 @@
 <div class="grid header-border">
     <div class="col-1">
-        <img src="assets\doct1.PNG" alt="icon" class="docter-Icon-image-header" />
+        <img src="assets\doctor.png" alt="icon" class="docter-Icon-image-header" />
     </div>
     <div class="col-9">
         <h2 class=" header-heading">
@@ -10,9 +10,37 @@
     </div>
 
     <div class="col-2">
-        <img src="assets/hos cal.jpg" alt="icon" class="docter-Icon-image-2-header" />
+        <img src="assets/time/hospital.png" alt="" class="docter-Icon-image-2-header" />
+
+
+        <img src="assets/time/calendar.png" alt="icon" class="docter-Icon-image-3-header" />
+
     </div>
 </div>
+
+<!-- <div class="layout-footer p-2">
+    <div class="grid">
+        <div class="col-1">
+            <a href="/" class="logo-container">
+                <img src="assets\doctor.png" alt="icon" class="docter-Icon-image-header" />
+            </a>
+        </div>
+        <div class="col-7" style="margin-left:-4rem">
+            <div class="sty" style="font-size:x-large"><b>Cayman Islands HSA</b></div>
+            <div><b>Quality Dashboard-September 2022</b></div>
+        </div>
+        <div class="col-4 footer-icons" style="margin-left:3rem">
+
+            <img src="assets/time/hospital.png" alt="">
+            &nbsp;&nbsp;
+
+            <img src="assets/time/calendar.png" alt="">
+
+        </div>
+    </div>
+</div> -->
+
+
 <div class="grid card-color" style="padding: 1rem;">
     <div class="col-8">
         <div class="grid">
@@ -133,16 +161,18 @@
             <h1 class="quailty-card-heading-90days"> Overall Patient Satisfaction
             </h1>
             <div class=" quailty-card-content-color-90days">
-                
-                <p-chart type="doughnut" [data]="basicData.overAllPatientStasifaction" [options]="chartOptions" width="170" height="260" style="padding:10px ;"></p-chart>
+
+                <p-chart type="doughnut" [data]="basicData.overAllPatientStasifaction" [options]="chartOptions"
+                    width="170" height="260" style="padding:10px ;"></p-chart>
             </div>
         </div>
         <div class="col-12">
             <h1 class="quailty-card-heading-90days">Physician Patient Satisfaction
             </h1>
-            
+
             <div class="card quailty-card-content-color-90days">
-                <p-chart type="doughnut" [data]="basicData.physicianPatientStasifaction" [options]="chartOptions" width="170" height="260"></p-chart>
+                <p-chart type="doughnut" [data]="basicData.physicianPatientStasifaction" [options]="chartOptions"
+                    width="170" height="260"></p-chart>
             </div>
         </div>
         <div class="col-12">
