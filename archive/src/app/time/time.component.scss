@@ -3,3 +3,18 @@
     color: rgb(38, 133, 156);
     
 }
+
+:host ::ng-deep .panel1 .p-panel-header {
+    background-color: rgb(103, 193, 216);
+    font-size: large;
+    color: white;
+    // text-align: center;
+}
+
+:host ::ng-deep .panel2 .p-panel-header {
+    background-color: rgb(31, 147, 182);
+    font-size: large;
+    color: white;
+    // text-align: center;
+}
+

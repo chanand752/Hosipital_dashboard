@@ -7,35 +7,38 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UtilizationComponent implements OnInit {
 
-  constructor() { } 
+  constructor() { }
 
   patientData: any;
-  patientOptions: any;
+  patientOptions: any
   timeData: any;
   timeOptions: any;
 
   ngOnInit(): void {
+    this.patientOptions ={
+      legend:{display:false}
+    }
     this.patientData = {
       labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
       datasets: [
-          {
-              label:'bar chat',
-              backgroundColor: '#3451a1',
-              data: [180, 130, 140, 145, 210, 95, 65]
-          },
-      ]
-  };
-
-  this.timeData = {
-    labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-    datasets: [
         {
-            label:'bar chat',
-            backgroundColor: '#3451a1',
-            data: [24, 18, 15, 16, 26, 35, 42]
+          // legend:{display: false},
+          backgroundColor: '#3451a1',
+          data: [180, 130, 140, 145, 210, 95, 65]
         },
-    ]
-};
+      ]
+    };
+
+    this.timeData = {
+      labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+      datasets: [
+        {
+          // legend:{display: false},
+          backgroundColor: '#3451a1',
+          data: [24, 18, 15, 16, 26, 35, 42]
+        },
+      ]
+    };
   }
 
 
