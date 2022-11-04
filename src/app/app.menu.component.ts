@@ -17,7 +17,7 @@ export class AppMenuComponent implements OnInit {
         this.model = [
             {
                 items: [
-                    {label: 'Home', icon: 'pi pi-fw pi-home', routerLink: ['/uikit/formlayout']},
+                    // {label: 'Home', icon: 'pi pi-fw pi-home', routerLink: ['/uikit/formlayout']},
                     {label: 'Physician Card', icon: 'pi pi-fw pi-user', routerLink: ['/Physician-card']},
                     {label:'Finance Dashboard',icon: 'pi pi-fw pi-user', routerLink: ['/FinanceDashboard']},
                     {label: 'Home Page-1', icon: 'pi pi-fw pi-home', routerLink: ['/Home-page-1']},
@@ -27,6 +27,7 @@ export class AppMenuComponent implements OnInit {
                     {label: 'AR Dash Card', icon: 'pi pi-fw pi-user', routerLink: ['/ARDashBoard-card']},
                     {label: 'Quality Dash Board', icon: 'pi pi-fw pi-user', routerLink: ['/Quality-DashBoard']},
                     {label: 'Traffic Dash Board', icon: 'pi pi-fw pi-user', routerLink: ['/Traffic-DashBoard']},
+                    {label: 'Google Maps', icon: 'pi pi-fw pi-user', routerLink: ['/googleMaps']},
                     {label: 'Login', icon: 'pi pi-fw pi-check-square', routerLink: ['/login']},
 
                 ]

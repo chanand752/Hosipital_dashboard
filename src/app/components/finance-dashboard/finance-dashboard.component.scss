@@ -1,6 +1,6 @@
 .card {
     transition: 0.3s;
-    border-radius: 10px;
+    border-radius: 0px 0px 5px 5px;
   }
   :host ::ng-deep .panel1 .p-panel-header {
     background-color: rgb(103, 193, 216);
@@ -10,9 +10,31 @@
 }
 
 
-.p1 {
+.p1 .p{
   font-family: Arial, Helvetica, sans-serif;
 }
 h3.thick {
   font-weight: bold;
+}
+
+
+.heading {
+  color: #ffffff;
+  background-color: rgb(3, 22, 61);
+  margin: 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 1.5rem;
+  border: none;
+  text-align: center;
+  padding: 10px;
+}
+
+.card-content-color {
+  background-color: rgb(4, 44, 105);
+  color: #ffffff;
+  border: none;
+  border-bottom-left-radius: 0px;
+  line-height: 1.7rem;
+  border-bottom-right-radius: 0px;
 }

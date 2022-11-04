@@ -2,14 +2,14 @@
     background-color: #0698c8;
     border-radius: 5px;
     padding-top: 1rem;
-    padding-right: 10rem;
+    padding-right: 3rem;
     padding-bottom: 1rem;
-    padding-left: 1rem;
+    padding-left: 3rem;
     color: #ffffff;
     margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
-    // justify-content:flex-start ;
+    //  justify-content:center ;
     
 }
 
@@ -17,9 +17,9 @@
     background-color: #ce6cdf;
     border-radius: 5px;
     padding-top: 1rem;
-    padding-right: 8rem;
+    padding-right: 3rem;
     padding-bottom: 1rem;
-    padding-left: 1rem;
+    padding-left: 3rem;
     color: #ffffff;
     margin-bottom: 1rem;
     display: flex;
@@ -33,7 +33,7 @@
     padding-top: 1rem;
     padding-right: 3rem;
     padding-bottom: 1rem;
-    padding-left: 1rem;
+    padding-left: 3rem;
     color: #ffffff;
     margin-bottom: 1rem;
     display: flex;
@@ -45,9 +45,9 @@
     background-color: #e55858;
     border-radius: 5px;
     padding-top: 1rem;
-    padding-right: 0rem;
+    padding-right: 3rem;
     padding-bottom: 1rem;
-    padding-left: 1rem;
+    padding-left: 3rem;
     color: #ffffff;
     margin-bottom: 1rem;
     display: flex;
@@ -58,7 +58,7 @@
     background-color: #386a55;
     border-radius: 5px;
     padding-top: 1rem;
-    padding-right: 0rem;
+    padding-right: 3rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
     color: #ffffff;
@@ -75,15 +75,16 @@
 }
 
 .child-par-fontSize-span {
-    font-size: 3rem;
-    justify-content:flex-start ;
+    font-size: 2rem;
+    justify-content:center ;
+    text-align: center;
 }
 
 .child-card-samll-para-heading {
     font-size: 1rem;
     display: flex;
     flex-direction: row;
-    justify-content:flex-start ;
+    justify-content:center ;
 }
 
 .traffic-card-heading-90days {
@@ -107,4 +108,68 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding-bottom: 1rem;
+}
+
+.color-box {
+    background-color: #08b2eb;
+    color: #ffffff;
+    border: none;
+    // padding: 5px;
+    height: 2rem;
+}
+
+.box-1 {
+width: 52%;
+}
+.box-2 {
+width: 33%;
+}
+.box-3 {
+width: 14%;
+}
+
+.box-4 {
+    width: 49%;
+}
+
+.box-5 {
+        width: 29%;
+}
+
+.box-6 {
+    width: 21%;
+}
+
+.box-7 {
+    width: 37%;
+}
+
+.box-8 {
+    width: 27%;
+}
+
+
+.box-9 {
+    width: 48%;
+}
+
+
+.box-10 {
+    width: 36%;
+}
+
+.box-11 {
+    width: 41%;
+}
+
+
+
+.margin-alignment {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.time-alignment {
+    font-size: 1.0rem;
+    text-align: center;
 }

@@ -165,7 +165,7 @@ a {
   right: 0;
   z-index: 997;
   padding: 8px 25px;
-  background-color: #2196F3;
+  background-color: #212121;
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -528,13 +528,15 @@ a {
 }
 .layout-wrapper .layout-menu-container .layout-menu-logo a {
   display: block;
-  text-align: left;
+  text-align: center;
   height: 60px;
-  padding-left: 12px;
+  padding-left: 10px;
+  background-color: #495057;
 }
 .layout-wrapper .layout-menu-container .layout-menu-logo a img {
-  margin-top: 15px;
-  height: 30px;
+  margin-top: 2px;
+  height: 4rem;
+  width: 10rem;
 }
 .layout-wrapper .layout-menu-container .layout-profile.layout-profile-active .layout-profile-icon {
   -webkit-transform: rotate(-180deg);

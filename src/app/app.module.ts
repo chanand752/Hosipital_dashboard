@@ -5,7 +5,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 import {AppRoutingModule} from './app-routing.module';
-
+import {GMapModule} from 'primeng/gmap';
 // PrimeNG Components for demos
 import {AccordionModule} from 'primeng/accordion';
 import {AutoCompleteModule} from 'primeng/autocomplete';
@@ -120,6 +120,8 @@ import { HomePage2Component } from './components/home-page2/home-page2.component
 import { UtiliztaionDashboardComponent } from './components/utiliztaion-dashboard/utiliztaion-dashboard.component';
 import { TimeDashboardComponent } from './components/time-dashboard/time-dashboard.component';
 import { FinanceDashboardComponent } from './components/finance-dashboard/finance-dashboard.component';
+import { GooglemapsComponent } from './components/googlemaps/googlemaps.component';
+import { MessageService } from 'primeng/api';
 
 FullCalendarModule.registerPlugins([
     dayGridPlugin,
@@ -214,6 +216,7 @@ FullCalendarModule.registerPlugins([
         TreeModule,
         TreeTableModule,
         VirtualScrollerModule,
+        GMapModule
     ],
     declarations: [
         AppComponent,
@@ -236,10 +239,12 @@ FullCalendarModule.registerPlugins([
         UtiliztaionDashboardComponent,
         TimeDashboardComponent,
         FinanceDashboardComponent,
+        GooglemapsComponent,
+        
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},
-         MenuService, BreadcrumbService
+         MenuService, BreadcrumbService,MessageService
     ],
     bootstrap: [AppComponent]
 })

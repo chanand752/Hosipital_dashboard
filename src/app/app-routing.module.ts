@@ -14,6 +14,7 @@ import { HomePage2Component } from './components/home-page2/home-page2.component
 import { UtiliztaionDashboardComponent } from './components/utiliztaion-dashboard/utiliztaion-dashboard.component';
 import { TimeDashboardComponent } from './components/time-dashboard/time-dashboard.component';
 import { FinanceDashboardComponent } from './components/finance-dashboard/finance-dashboard.component';
+import { GooglemapsComponent } from './components/googlemaps/googlemaps.component';
 
 @NgModule({
     imports: [
@@ -29,7 +30,8 @@ import { FinanceDashboardComponent } from './components/finance-dashboard/financ
                     {path:'UtilizationDashboard', component:UtiliztaionDashboardComponent},
                     {path:'ARDashBoard-card', component:ArDashBoardComponent},
                     {path:'Quality-DashBoard', component:QuailtyDashboardComponent},
-                    {path:'Traffic-DashBoard', component:TrafficDashboardComponent}
+                    {path:'Traffic-DashBoard', component:TrafficDashboardComponent},
+                    {path:'googleMaps',component:GooglemapsComponent}
                 ]
             },
             {path: 'error', component: AppErrorComponent},

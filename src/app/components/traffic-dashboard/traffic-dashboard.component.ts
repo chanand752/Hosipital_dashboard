@@ -11,7 +11,8 @@ export class TrafficDashboardComponent implements OnInit {
   basicData: any;
   basicOptions: any;
   divisionsChartOptions:any;
-
+  options: any;
+  overlays: any[];
 
   constructor(private http: HttpClient) { 
 
@@ -96,6 +97,11 @@ export class TrafficDashboardComponent implements OnInit {
       console.log(data);
       this.basicData = data;
     })
+
+    this.options = {
+            center: {lat: 36.890257, lng: 30.707417},
+            zoom: 12
+        };
   }
 
 }

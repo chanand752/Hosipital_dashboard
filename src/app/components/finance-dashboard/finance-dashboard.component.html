@@ -1,258 +1,188 @@
-<div class="grid header-border">
-    <div class="col-1">
-        <img src="assets\doctor.png" alt="icon" class="docter-Icon-image-header" />
-    </div>
-    <div class="col-9">
-        <h2 class=" header-heading">
-            Cyman Islands HSA
-            <h4 class="header-heading-2">Quality Dashboard-September 2022</h4>
-        </h2>
-    </div>
-    <div class="col-2">
-        <img src="assets/time/hospital.png" alt="" class="docter-Icon-image-2-header" />
+<div class="layout-footer p-2">
+    <div class="grid">
+        <div class="col-1">
+            <a href="/" class="logo-container">
+                <img src="assets/doctor.png" width="40%"  />
+            </a>
+        </div>
+        <div class="col-7" style="margin-left:-4rem">
+            <div class="sty" style="font-size:x-large"><b>Cayman Islands HSA</b></div>
+            <div><b>Finance Dashboard-September 2022</b></div>
+        </div>
+        <div class="col-4 footer-icons" style="margin-left:3rem">
 
+            <img src="assets/time/hospital.png" alt="">
+            &nbsp;&nbsp;
 
-        <img src="assets/time/calendar.png" alt="icon" class="docter-Icon-image-3-header" />
+            <img src="assets/time/calendar.png" alt="">
 
+        </div>
     </div>
 </div>
 
 
 <div class="p1 card-color" style="padding: 1rem;" >
-    <div class="grid justify-content-between" font-bold>
-        <div *ngFor="let data of cardData" class="col-12 md:col-2 lg:col-2" style="color:white">
-            <div class="card" [style.background-color]="data?.revenueColour">
-                <div class="grid">
+    <div class="p1">
+        <div class="grid justify-content-between" font-bold>
+            <div *ngFor="let data of cardData" class="col-12 md:col-2 lg:col-2" style="color:white">
+                <div class="card " [style.background-color]="data?.revenueColour">
+                    <div class="grid">
+                        <div>
+                            <h2 style="text-align:start;padding:2px 0px 0px 0px">{{data?.revenueName}}</h2>
+                            <h5 style="text-align:start;">{{data?.revenueValue}}</h5>
+                        </div>
+                        <div class="col-4 md:col-2 lg:col-1" style="margin:auto">
+                            <i class={{data?.revenueIcon}} style="font-size: 2em;"
+                                [style.color]="data?.revenueIconcolour"></i>
+                            <span>{{data?.revenuePercentage}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin-left:20px">
+            <h3 style="color:rgb(103, 193, 216);">Revenue</h3>
+        </div>
+        <div class="grid justify-content-between">
+            <div class="col-12 sm:col-12 md:col-6 lg:col-4" style="padding-left: 1rem;padding-right: 2vh; ">
+                <p-panel header="Revenue by Age"
+                    [style]="{'max-width':'100rem','margin-top':'0%','background-color':'rgb(236, 244, 252)'}"
+                    styleClass="shadow-2" class="panel1">
+    
                     <div>
-                        <h2 style="text-align:start;padding:2px 0px 0px 0px">{{data?.revenueName}}</h2>
-                        <h5 style="text-align:start;">{{data?.revenueValue}}</h5>
+                        <p-chart type="pie" [data]="data" [options]="chartOptions" width="250" height="150"></p-chart>
                     </div>
-                    <div class="col-4 md:col-2 lg:col-1" style="margin:auto">
-                        <i class={{data?.revenueIcon}} style="font-size: 2em;"
-                            [style.color]="data?.revenueIconcolour"></i>
-                        <span>{{data?.revenuePercentage}}</span>
+                </p-panel>
+            </div>
+            
+            <div class="col-12 md:col-6 lg:col-4 ">          
+                <h1 class="heading">Top Revenue Departments</h1>
+                <div class=" card card-content-color" >
+                    <div class="grid">
+                        <div class="col-3 md:col-2 lg:col-1" style="width:100px">
+                            <div *ngFor="let dept of revenueDepartmentList1">
+                                <span>{{dept}}</span>
+                            </div>
+                        </div>
+                        <div class="col-3 md:col-2 lg:col-1" style="width:50px">
+                            <div *ngFor="let rup of rupees">
+                                <span>{{rup}}</span>
+                            </div>
+                        </div>
+                        <div class="col-3 md:col-2 lg:col-1" style="width:100px">
+                            <div *ngFor="let dep of revenueDepartmentList2">
+                                <span>{{dep}}</span>
+                            </div>
+                        </div>
+                        <div class="col-3 md:col-2 lg:col-1" style="width:50px">
+                            <div *ngFor="let rupe of rupees1">
+                                <span>{{rupe}}</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div style="margin-left:20px">
-        <h3 style="color:rgb(103, 193, 216);">Revenue</h3>
-    </div>
-    <div class="grid justify-content-between">
-        <div class="col-12 sm:col-12 md:col-6 lg:col-4" style="padding-left: 1rem;padding-right: 2vh; ">
-            <p-panel header="Revenue by Age"
-                [style]="{'max-width':'100rem','margin-top':'0%','background-color':'rgb(236, 244, 252)'}"
-                styleClass="shadow-2" class="panel1">
-
+            <div class="col-12 md:col-4 lg:col-4">
                 <div>
-                    <p-chart type="pie" [data]="data" [options]="chartOptions" width="250" height="150"></p-chart>
+                    <p-card [style]="{'background':'#26a5c5', color: 'white','height':'10rem'}">
+                        <div class="grid">
+                            <div>
+                                <h2 style="margin-bottom: 0px;" >$87,530k</h2>
+                                <p style="margin-bottom: 0px; ">Revenue by Doctor</p>
+                                <p style="text-align:start; margin-bottom: 0px;">High:$123k(Cardiology)</p>
+                                <p style="text-align:start; margin-bottom: 0px;">Low:$68k(Urology)</p>
+    
+                            </div>
+                            <div class="col-4 md:col-2 lg:col-1" style="margin:auto">
+                                <i class="pi pi-arrow-up" style="font-size: 2em;color:#1aff1a"></i>
+                                <span>10%</span>
+                            </div>
+                        </div>
+                    </p-card>
                 </div>
-            </p-panel>
-        </div>
-        <div class="col-12 md:col-6 lg:col-4 ">
-            <p-card header="Top Revenue Departments"
-                [style]="{'background':'#002266', color: 'white','height':'16rem'}">
-                <div class="grid">
-                    <div class="col-3 md:col-2 lg:col-1" style="width:100px">
-                        <div *ngFor="let dept of revenueDepartmentList1">
-                            <span>{{dept}}</span>
-                        </div>
-                    </div>
-                    <div class="col-3 md:col-2 lg:col-1" style="width:50px">
-                        <div *ngFor="let rup of rupees">
-                            <span>{{rup}}</span>
-                        </div>
-                    </div>
-                    <div class="col-3 md:col-2 lg:col-1" style="width:100px">
-                        <div *ngFor="let dep of revenueDepartmentList2">
-                            <span>{{dep}}</span>
-                        </div>
-                    </div>
-                    <div class="col-3 md:col-2 lg:col-1" style="width:50px">
-                        <div *ngFor="let rupe of rupees1">
-                            <span>{{rupe}}</span>
-                        </div>
-                    </div>
-                </div>
-            </p-card>
-        </div>
-        <div class="col-12 md:col-4 lg:col-4">
-            <div>
-                <p-card [style]="{'background':'#47d1d1', color: 'white','height':'10rem'}">
-                    <div class="grid">
-                        <div>
-                            <h4>$87,530k</h4>
-                            <h4>Revenue by Doctor</h4>
-                            <h5 style="text-align:start;">High:$123k(Cardiology)</h5>
-                            <h5 style="text-align:start;">Low:$68k(Urology)</h5>
-
-                        </div>
-                        <div class="col-4 md:col-2 lg:col-1" style="margin:auto">
-                            <i class="pi pi-arrow-up" style="font-size:2rem"></i>
-                            <span>10%</span>
-                        </div>
-                    </div>
-                </p-card>
-            </div>
-            <br>
-            <div>
-                <p-card [style]="{'background':'#D3D3D3','height':'5rem'}">
-                    <div class="grid">
-                        <div>
-                            <p>Revenue Lekage</p>
-                            <h2>Revenue by Doctor</h2>
-                        </div>
-                    </div>
-                </p-card>
-            </div>
-        </div>
-    </div>
-    <!-- <div style="margin-left:20px">
-        <h3>Expenses</h3>
-    </div>
-    <div class="grid">
-        <div class="col-12 sm:col-12 md:col-6 lg:col-4" style="padding-left: 1rem;padding-right: 2vh; ">
-
-            <p-panel [style]="{'max-width':'100rem','margin-top':'0%','background-color':'rgb(236, 244, 252)'}"
-                styleClass="shadow-2" class="panel1">
-                <ng-template pTemplate="header">
-                    Expenses by Age
-                </ng-template>
+                <br>
                 <div>
-                    <p-chart type="pie" [data]="data" [options]="chartOptions" width="250" height="150"></p-chart>
+                    <p-card [style]="{'background':'#E8E8E8','height':'5rem'}">
+                        <div class="grid">
+                          <div>
+                                <p style="margin-bottom: 0px;">Revenue Lekage</p>
+                                <p style="margin-bottom: 0px;">Revenue by Doctor</p>
+                            </div>
+                        </div>
+                    </p-card>
                 </div>
-            </p-panel>
-        </div>
-        <div class="col-12 md:col-6 lg:col-4 ">
-            <p-card [style]="{'background':'#002266', color: 'white'}">
-                <span style="align-items:center;margin-left:105px">Top Revenue Departments</span>
-                <div class="grid">
-                    <div class="col-3 md:col-2 lg:col-1" style="width:100px">
-                        <div *ngFor="let dept of revenueDepartmentList1">
-                            <span>{{dept}}</span>
-                        </div>
-                    </div>
-                    <div class="col-3 md:col-2 lg:col-1" style="width:50px">
-                        <div *ngFor="let rup of rupees">
-                            <span>{{rup}}</span>
-                        </div>
-                    </div>
-                    <div class="col-3 md:col-2 lg:col-1" style="width:100px">
-                        <div *ngFor="let dep of revenueDepartmentList2">
-                            <span>{{dep}}</span>
-                        </div>
-                    </div>
-                    <div class="col-3 md:col-2 lg:col-1" style="width:50px">
-                        <div *ngFor="let rupe of rupees1">
-                            <span>{{rupe}}</span>
-                        </div>
-
-                    </div>
-                </div>
-            </p-card>
-        </div>
-        <div class="col-5 md:col-6 lg:col-4 cardsize1">
-            <div>
-                <p-card [style]="{'background':'#47d1d1', color: 'white'}">
-                    <div class="grid">
-                        <div>
-                            <h2>$87,530k</h2>
-                            <h3>Revenue by Doctor</h3>
-                            <h5 style="text-align:start;">High:$123k(Cardiology)</h5>
-                            <h5 style="text-align:start;">Low:$68k(Urology)</h5>
-
-                        </div>
-                        <div class="col-4 md:col-2 lg:col-1" style="margin:auto">
-                            <i class="pi pi-arrow-up" style="font-size:2rem"></i>
-                            <span>10%</span>
-                        </div>
-                    </div>
-                </p-card>
-            </div>
-            <br>
-            <div>
-                <p-card [style]="{'background':'#D3D3D3'}">
-                    <div class="grid">
-                        <div>
-                            <p>Revenue Lekage</p>
-                            <h2>Revenue by Doctor</h2>
-                        </div>
-                    </div>
-                </p-card>
             </div>
         </div>
-    </div> -->
-    <div style="margin-left:20px">
-        <h3 style="color:rgb(103, 193, 216);">Expenses</h3>
-    </div>
-    <div class="grid justify-content-between">
-        <div class="col-12 sm:col-12 md:col-6 lg:col-4" style="padding-left: 1rem;padding-right: 2vh; ">
-            <p-panel header="Expenses by Age"
-                [style]="{'max-width':'100rem','margin-top':'0%','background-color':'rgb(236, 244, 252)'}"
-                styleClass="shadow-2" class="panel1">
-
+        <div style="margin-left:20px">
+            <h3 style="color:rgb(103, 193, 216);">Expense</h3>
+        </div>
+        <div class="grid justify-content-between">
+            <div class="col-12 sm:col-12 md:col-6 lg:col-4" style="padding-left: 1rem;padding-right: 2vh; ">
+                <p-panel header="Expense by Age"
+                    [style]="{'max-width':'100rem','margin-top':'0%','background-color':'rgb(236, 244, 252)'}"
+                    styleClass="shadow-2" class="panel1">
+    
+                    <div>
+                        <p-chart type="pie" [data]="data" [options]="chartOptions" width="250" height="150"></p-chart>
+                    </div>
+                </p-panel>
+            </div>
+            
+            <div class="col-12 md:col-6 lg:col-4 ">          
+                <h1 class="heading">Top Expense Departments</h1>
+                <div class=" card card-content-color" >
+                    <div class="grid">
+                        <div class="col-3 md:col-2 lg:col-1" style="width:100px">
+                            <div *ngFor="let dept of revenueDepartmentList1">
+                                <span>{{dept}}</span>
+                            </div>
+                        </div>
+                        <div class="col-3 md:col-2 lg:col-1" style="width:50px">
+                            <div *ngFor="let rup of rupees">
+                                <span>{{rup}}</span>
+                            </div>
+                        </div>
+                        <div class="col-3 md:col-2 lg:col-1" style="width:100px">
+                            <div *ngFor="let dep of revenueDepartmentList2">
+                                <span>{{dep}}</span>
+                            </div>
+                        </div>
+                        <div class="col-3 md:col-2 lg:col-1" style="width:50px">
+                            <div *ngFor="let rupe of rupees1">
+                                <span>{{rupe}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 md:col-4 lg:col-4">
                 <div>
-                    <p-chart type="pie" [data]="data" [options]="chartOptions" width="250" height="150"></p-chart>
+                    <p-card [style]="{'background':'#26a5c5', color: 'white','height':'10rem'}">
+                        <div class="grid">
+                            <div>
+                                <h2 >$42,730k</h2>
+                                <p style="margin-bottom: 0px; ">Expense by Doctor</p>
+                                <p style="text-align:start; margin-bottom: 0px;">High:$75k(Neurology)</p>
+                                <p style="text-align:start; margin-bottom: 0px;">Low:$38k(Pediatrics)</p>
+                            </div>
+                            <div class="col-4 md:col-2 lg:col-1" style="margin:auto">
+                                <i class="pi pi-arrow-down" style="font-size: 2em;color:#1aff1a"></i>
+                                <span>2%</span>
+                            </div>
+                        </div>
+                    </p-card>
                 </div>
-            </p-panel>
-        </div>
-        <div class="col-12 md:col-6 lg:col-4 ">
-            <p-card header="Top Revenue Departments"
-                [style]="{'background':'#002266', color: 'white','height':'16rem'}">
-                <div class="grid">
-                    <div class="col-3 md:col-2 lg:col-1" style="width:100px">
-                        <div *ngFor="let dept of revenueDepartmentList1">
-                            <span>{{dept}}</span>
+                <br>
+                <div>
+                    <p-card [style]="{'background':'#E8E8E8','height':'5rem'}">
+                        <div class="grid">
+                          <div>
+                                <p style="margin-bottom: 0px;">Revenue Lekage</p>
+                                <p style="margin-bottom: 0px;">Revenue by Doctor</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-3 md:col-2 lg:col-1" style="width:50px">
-                        <div *ngFor="let rup of rupees">
-                            <span>{{rup}}</span>
-                        </div>
-                    </div>
-                    <div class="col-3 md:col-2 lg:col-1" style="width:100px">
-                        <div *ngFor="let dep of revenueDepartmentList2">
-                            <span>{{dep}}</span>
-                        </div>
-                    </div>
-                    <div class="col-3 md:col-2 lg:col-1" style="width:50px">
-                        <div *ngFor="let rupe of rupees1">
-                            <span>{{rupe}}</span>
-                        </div>
-
-                    </div>
+                    </p-card>
                 </div>
-            </p-card>
-        </div>
-        <div class="col-12 md:col-4 lg:col-4">
-            <div>
-                <p-card [style]="{'background':'#47d1d1', color: 'white','height':'10rem'}">
-                    <div class="grid">
-                        <div>
-                            <h4>$87,530k</h4>
-                            <h4>Revenue by Doctor</h4>
-                            <h5 style="text-align:start;">High:$123k(Cardiology)</h5>
-                            <h5 style="text-align:start;">Low:$68k(Urology)</h5>
-
-                        </div>
-                        <div class="col-4 md:col-2 lg:col-1" style="margin:auto">
-                            <i class="pi pi-arrow-up" style="font-size:2rem"></i>
-                            <span>10%</span>
-                        </div>
-                    </div>
-                </p-card>
-            </div>
-            <br>
-            <div>
-                <p-card [style]="{'background':'#D3D3D3','height':'5rem'}">
-                    <div class="grid">
-                        <div>
-                            <p>Revenue Lekage</p>
-                            <h2>Revenue by Doctor</h2>
-                        </div>
-                    </div>
-                </p-card>
             </div>
         </div>
     </div>

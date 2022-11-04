@@ -1,18 +1,22 @@
-<div class="grid header-border">
-    <div class="col-1">
-        <img src="assets\doctor.png" alt="icon" class="docter-Icon-image-header" />
-    </div>
-    <div class="col-9">
-        <h2 class=" header-heading">
-            Cyman Islands HSA
-            <h4 class="header-heading-2">traffic Dashboard-September 2022</h4>
-        </h2>
-    </div>
+<div class="layout-footer p-2">
+    <div class="grid">
+        <div class="col-1">
+            <a href="/" class="logo-container">
+                <img src="assets/doctor.png" width="40%"  />
+            </a>
+        </div>
+        <div class="col-7" style="margin-left:-4rem">
+            <div class="sty" style="font-size:x-large"><b>Cayman Islands HSA</b></div>
+            <div><b>Quailty Dashboard-September 2022</b></div>
+        </div>
+        <div class="col-4 footer-icons" style="margin-left:3rem">
 
-    <div class="col-2">
-        <img src="assets/time/hospital.png" alt="" class="docter-Icon-image-2-header" />
-        <img src="assets/time/calendar.png" alt="icon" class="docter-Icon-image-3-header" />
+            <img src="assets/time/hospital.png" alt="">
+            &nbsp;&nbsp;
 
+            <img src="assets/time/calendar.png" alt="">
+
+        </div>
     </div>
 </div>
 
@@ -115,10 +119,9 @@
                     <div class="col-7">
                         <h1 class="traffic-card-heading-90days"> Localization
                         </h1>
-                        <div class="card traffic-card-content-color-90days">
-
-                            <!-- <p-chart type="line" [data]="basicData.lineChartDataForOverAllStaticfaction"
-                            [options]="basicOptions"></p-chart> -->
+                        <div class="card">
+                            <app-googlemaps></app-googlemaps>
+                            <!-- <p-gmap [options]="options" [style]="{'width':'50%','height':'180px'}" ></p-gmap> -->
                         </div>
                     </div>
                 </div>
@@ -129,20 +132,125 @@
                 <div class="col-12">
                     <h1 class="traffic-card-heading-90days"> Divisions
                     </h1>
-                    <div class="card traffic-card-content-color-90days">
+                    <div class="card traffic-card-content-color-90days ">
+
                         <div class="grid">
-                            <div class="col-4 col-offset-4"><i class="pi pi-user"
+                            <div class="col-4 col-offset-4"  style="padding-left: 1rem;"><i class="pi pi-user"
                                     style="font-size: 2rem; color: rgb(12, 197, 197);"></i></div>
-                            <div class="col-4"><i class="pi pi-clock"
+                            <div class="col-4" style="padding-left: 3.5rem;"><i class="pi pi-clock"
                                     style="font-size: 2rem; color: rgb(12, 197, 197);"></i></div>
                         </div>
                         <div class="grid">
                             <div class="col-8">
-                                <p-chart type="bar" [data]="basicData.divisionsChartData"
-                                    [options]="divisionsChartOptions"></p-chart>
+                                <div class="grid margin-alignment">
+                                    <div class="col-5 ">
+                                        Cardiology
+                                    </div>
+                                    <div class="col-7 color-box box-1">
+                                        52
+                                    </div>
+                                </div>
+                                <div class="grid margin-alignment ">
+                                    <div class="col-5 ">
+                                        Orthopedics
+                                    </div>
+                                    <div class="col-7 color-box box-2">
+                                        33
+                                    </div>
+                                </div>
+                                <div class="grid margin-alignment">
+                                    <div class="col-5 ">
+                                        Gynecology
+                                    </div>
+                                    <div class="col-7 color-box box-3">
+                                        14
+                                    </div>
+                                </div>
+                                <div class="grid margin-alignment">
+                                    <div class="col-5 ">
+                                        Neurology
+                                    </div>
+                                    <div class="col-7 color-box box-4">
+                                        49
+                                    </div>
+                                </div>
+
+                                <div class="grid margin-alignment">
+                                    <div class="col-5 ">
+                                        Surgery
+                                    </div>
+                                    <div class="col-7 color-box box-5">
+                                        29
+                                    </div>
+                                </div>
+
+                                <div class="grid margin-alignment">
+                                    <div class="col-5 ">
+                                        Emergency
+                                    </div>
+                                    <div class="col-7 color-box box-6">
+                                        21
+                                    </div>
+                                </div>
+
+                                <div class="grid margin-alignment">
+                                    <div class="col-5 ">
+                                        Dermatology
+                                    </div>
+                                    <div class="col-7 color-box box-7">
+                                        37
+                                    </div>
+                                </div>
+
+                                <div class="grid margin-alignment">
+                                    <div class="col-5 ">
+                                        Opthtamology
+                                    </div>
+                                    <div class="col-7 color-box box-8">
+                                        27
+                                    </div>
+                                </div>
+                                <div class="grid margin-alignment">
+                                    <div class="col-5 ">
+                                        Pediatrics
+                                    </div>
+                                    <div class="col-7 color-box box-9">
+                                        48
+                                    </div>
+                                </div>
+                                <div class="grid margin-alignment">
+                                    <div class="col-5 ">
+                                        Hematology
+                                    </div>
+                                    <div class="col-7 color-box box-10">
+                                        36
+                                    </div>
+                                </div>
+                                <div class="grid margin-alignment">
+                                    <div class="col-5 ">
+                                        Urology
+                                    </div>
+                                    <div class="col-7 color-box box-11">
+                                        41
+                                    </div>
+                                </div>
+
+                                
                             </div>
 
-                            <div class="col-4"></div>
+                            <div class="col-4">
+                                <h5 class="time-alignment">21</h5>
+                                <h5 class="time-alignment">67</h5>
+                                <h5 class="time-alignment">44</h5>
+                                <h5 class="time-alignment">49</h5>
+                                <h5 class="time-alignment">23</h5>
+                                <h5 class="time-alignment">88</h5>
+                                <h5 class="time-alignment">34</h5>
+                                <h5 class="time-alignment">45</h5>
+                                <h5 class="time-alignment">55</h5>
+                                <h5 class="time-alignment">25</h5>
+                                <h5 class="time-alignment">63</h5>
+                            </div>
                         </div>
 
                     </div>
