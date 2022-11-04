@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./time-dashboard.component.scss']
 })
 export class TimeDashboardComponent implements OnInit {
-
+  selectedValues: string[] = [];
   constructor() { }
 
   ngOnInit(): void {
