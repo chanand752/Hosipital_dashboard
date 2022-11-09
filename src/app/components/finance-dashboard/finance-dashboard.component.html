@@ -24,14 +24,14 @@
 <div class="p1 card-color" style="padding: 1rem;" >
     <div class="p1">
         <div class="grid justify-content-between" font-bold>
-            <div *ngFor="let data of cardData" class="col-12 md:col-2 lg:col-2" style="color:white">
+            <div *ngFor="let data of cardData" class="col-12 md:col-4 lg:col-2" style="color:white">
                 <div class="card " [style.background-color]="data?.revenueColour">
                     <div class="grid">
                         <div>
                             <h2 style="text-align:start;padding:2px 0px 0px 0px">{{data?.revenueName}}</h2>
                             <h5 style="text-align:start;">{{data?.revenueValue}}</h5>
                         </div>
-                        <div class="col-4 md:col-2 lg:col-1" style="margin:auto">
+                        <div class="col-4 md:col-4 lg:col-1" style="margin:auto">
                             <i class={{data?.revenueIcon}} style="font-size: 2em;"
                                 [style.color]="data?.revenueIconcolour"></i>
                             <span>{{data?.revenuePercentage}}</span>
@@ -82,7 +82,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 md:col-4 lg:col-4">
+            <div class="col-12 md:col-6 lg:col-4">
                 <div>
                     <p-card [style]="{'background':'#26a5c5', color: 'white','height':'10rem'}">
                         <div class="grid">
@@ -155,7 +155,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 md:col-4 lg:col-4">
+            <div class="col-12 md:col-6 lg:col-4">
                 <div>
                     <p-card [style]="{'background':'#26a5c5', color: 'white','height':'10rem'}">
                         <div class="grid">
