@@ -2,14 +2,14 @@
     <div class="grid">
         <div class="col-1">
             <a href="/" class="logo-container">
-                <img src="assets/doctor.png" width="40%" />
+                <img src="assets/doctor.png" width="80%" />
             </a>
         </div>
-        <div class="col-7" style="margin-left:-4rem">
+        <div class="col-7" >
             <div class="sty" style="font-size:x-large"><b>Cayman Islands HSA</b></div>
             <div><b>AR Dashboard-September 2022</b></div>
         </div>
-        <div class="col-4 footer-icons" style="margin-left:3rem">
+        <div class="col-4 footer-icons">
 
             <img src="assets/time/hospital.png" alt="">
             &nbsp;&nbsp;
@@ -21,7 +21,7 @@
 </div>
 
 <div class="grid card-color">
-    <div style="padding: 1rem;" class="col-4">
+    <div style="padding: 1rem;" class="col-12 md:col-6 lg:col-4">
         <div>
             <h1 class="ar-card-heading"> AR Aging (Millions)
             </h1>
@@ -31,7 +31,7 @@
                 <p-chart type="bar" [data]="products.barChartVertical" [options]="basicOptions"></p-chart>
             </div>
         </div>
-        <div class="row-4 net-collection-rate-card">
+        <div class="row-12 md:row-6  lg:row-4 net-collection-rate-card">
             <h5 class="net-collection-card-heading">Net Collection Rate</h5>
             <p class="net-collection-card-inner"></p>
         </div>
@@ -47,7 +47,7 @@
         </div>
     </div>
 
-    <div class="col-4" style="padding: 1rem;">
+    <div class="col-12 md:col-6  lg:col-4 " style="padding: 1rem;">
         <div class="ar-dashboard-child-card-1">
             <div class="grid">
                 <div class="col-4">
@@ -88,7 +88,7 @@
                 <div class="col-4">
                     <div class="grid">
                         <div class="col-12">
-                            <img src="assets/time/targetgreenback.jpg" alt="" width="40%"> <br>
+                            <img src="assets/time/gear.png" alt="" width="50%"> <br>
                         </div>
                         <div class="col-12 net-collection-card-heading">
                             Leading
@@ -124,7 +124,7 @@
                 <div class="col-4">
                     <div class="grid">
                         <div class="col-12">
-                            <img src="assets/time/targetgreenback.jpg" alt="" width="40%"> <br>
+                            <img src="assets/time/gear.png" alt="" width="50%"> <br>
                         </div>
                         <div class="col-12 net-collection-card-heading">
                             Lagging
@@ -156,7 +156,7 @@
                 </div>
             </div>
         </div>
-        <div class="row-4 ar-dashboard-child-card-2">
+        <div class="row-4 ar-dashboard-child-card-currency">
             <div class="grid">
                 <div class="col-4 ">
                     <div class="grid ">
@@ -171,7 +171,7 @@
                 <div class="col-4 ">
                     <div class="grid">
                         <div class="col-12">
-                           <span class="currency-allignment "> $1.2 m </span><br>
+                            <span class="currency-allignment "> $1.2 m </span><br>
                             <p> Cash Collections </p>
                         </div>
                         <div class="col-12">
@@ -183,26 +183,20 @@
                 <div class=" col-4">
                     <div class="grid">
                         <div class="col-12">
-                            up button <br>
+                            <i class="pi pi-plus up-button" style="font-size: 1.5rem"></i> <br>
                             <p>over 6.1% </p>
                         </div>
                         <div class="col-12 ">
-                            Down button <br>
+                            <i class="pi pi-minus down-button " style="font-size: 1.5rem"></i> <br>
                             <p>under 3.4%</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- <h5 class="net-collection-card-heading">Tragets</h5>
-            <p class="child-par-fontSize-span">$1.2 m <br><span class="child-card-samll-para-heading">Cash Collections
-                </span></p>
-            <p class="child-par-fontSize-span">$134 k <br><span class="child-card-samll-para-heading">Cash Collections
-                </span></p> -->
         </div>
     </div>
 
-    <div style="padding: 1rem;" class="col-4">
+    <div style="padding: 1rem;" class="col-12 md:col-12  lg:col-4 ">
         <div>
             <h1 class="providers-card-heading">Providers
             </h1>

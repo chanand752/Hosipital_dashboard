@@ -1,5 +1,5 @@
 .traffic-dashboard-child-card-1 {
-    background-color: #0698c8;
+    background-color: #0793c1ed;
     border-radius: 5px;
     padding-top: 1rem;
     padding-right: 3rem;
@@ -14,7 +14,7 @@
 }
 
 .traffic-dashboard-child-card-2 {
-    background-color: #ce6cdf;
+    background-color: #7b68ee94;
     border-radius: 5px;
     padding-top: 1rem;
     padding-right: 3rem;
@@ -28,7 +28,7 @@
 }
 
 .traffic-dashboard-child-card-3 {
-    background-color: #f49c81;
+    background-color: #fa8072db;
     border-radius: 5px;
     padding-top: 1rem;
     padding-right: 3rem;
@@ -42,7 +42,7 @@
 }
 
 .traffic-dashboard-child-card-4 {
-    background-color: #e55858;
+    background-color: #efc577;
     border-radius: 5px;
     padding-top: 1rem;
     padding-right: 3rem;
@@ -55,7 +55,7 @@
     // justify-content:flex-start ;
 }
 .traffic-dashboard-child-card-5 {
-    background-color: #386a55;
+    background-color: #52ac33b5;
     border-radius: 5px;
     padding-top: 1rem;
     padding-right: 3rem;
@@ -172,4 +172,19 @@ width: 14%;
 .time-alignment {
     font-size: 1.0rem;
     text-align: center;
+}
+
+
+.map-card {
+    border-radius: 3px;
+    background: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 0px;
+    border: 1px solid #EEEEEE;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
 }

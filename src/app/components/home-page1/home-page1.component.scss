@@ -26,8 +26,14 @@
     color: white;
 }
 
+:host ::ng-deep .panel1 .p-panel-content {
+    background-color: rgb(226, 239, 243);
+}
+
 
 
 .image{
-    margin-left: 80%;
+    
+    width: 32px;
+    float: right;
 }

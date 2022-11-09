@@ -1,17 +1,47 @@
 <div class="layout-footer p-1">
     <div class="grid">
-        <div class="col-8">
-            <a href="/" class="logo-container">
-                <img src="assets/utilization/util.jpg" width="8%" />
-            </a>
-            <a href="/" class="logo-container">
-                <img src="assets/utilization/Cayman.jpg" width="20%" />
-            </a>
+        <!-- <div class="col-1"></div> -->
+        <div class="col-11">
+            <div class="grid" style="margin-left:-2px;">
+                <div class="col-12">
+                    <div class="grid">
+                        <!-- <div class="col-1"> -->
+                            <img src="assets/utilization/documents.png" width="50px" style="height:3rem;margin-left:2vh;margin-top:14px">
+
+                        <!-- </div> -->
+                        <div class="col-11" style="margin-left:-40px; margin-top:6px">
+                            <div class="cayman">
+                                <div class="sty" style="font-size:x-large"><b>Cayman Islands HSA</b></div>
+                                <div><b>Utilization Dashboard - September 2022</b></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- <div class="col-1">
+                    <img src="assets/utilization/documents.png" width="50px" style="height:3rem">
+                </div>
+                <div class="col-10" style="margin-left:-50px">
+                    <div class="cayman">
+                        <div class="sty" style="font-size:x-large"><b>Cayman Islands HSA</b></div>
+                        <div><b>Utilization Dashboard - September 2022</b></div>
+                    </div>
+                </div> -->
+            </div>
         </div>
-        <div class="col-4 footer-icons">
-            <a href="/" class="logo-container">
-                <img src="assets/utilization/hos cal.jpg" width="100%" />
-            </a>
+        <div class="col-1 footer-icons">
+            <div class="grid icon">
+                <div class="col-6" style="margin-left:-4px">
+                    <img src="assets/utilization/hospital.png" alt="" style=" height:3rem">
+
+                </div>
+                <div class="col-6" style="margin-left:-18px">
+                    <img src="assets/utilization/calendar.png" alt="" style="height:3rem">
+
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -19,244 +49,252 @@
 
 <div style="border-top: 4px solid rgb(60, 141, 161);">
     <div class="card" style="background-color:rgb(217, 235, 243);">
-        <div class="grid">
-            <div style="display:flex ;flex-wrap: wrap">
-                <div class="grid ">
-                    <div class="col-12 sm:col-12 md:col-10 lg:col-4">
-                        <div class="p-3 border-round-sm font-bold text-white">
+        <!-- <div class="grid"> -->
+        <!-- <div style="display:flex ;flex-wrap: wrap"> -->
+        <div class="grid ">
+            <div class="col-12 sm:col-12 md:col-10 lg:col-4">
+                <div class="p-3 border-round-sm font-bold text-white">
+                    <p-panel [style]="{'max-width':'100rem','margin-top':'0%','background-color':'rgb(236, 244, 252)'}"
+                        styleClass="shadow-2" class="panel1" header="Schedule Utilization">
+
+                        <div class="grid" style="padding-left: 1vh;padding-right: 1vh; ">
+                            <div class="col-12 sm:col-12 md:col-6 lg:col-6">
+                                <p-card
+                                    [style]="{'background-color':'rgb(37, 62, 107)','color':'white','border-radius':'1vh'}">
+                                    <div class="grid">
+                                        <div class="col-12">
+                                            <div class="grid">
+                                                <div class="col-8" style="margin-top: -1rem;">
+                                                    <div style="font-size:3rem">82%</div>
+                                                    <div style="font-size:2vh">Overall</div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div><i class="pi pi-arrow-up"
+                                                            style="font-size: 3rem; color: red;font-weight:bolder;margin-top:-1vh"></i>
+                                                    </div>
+                                                    <div style="margin-top: 1vh;margin-left:1vh">2%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div style="margin-left:1vh">High : 88% (Neurology)</div>
+                                            <div style="margin-top: 1vh; margin-left: 1vh;">
+                                                Low : 79% (Pediatrics)
+                                            </div>
+                                            <!-- <h6>High : 88% (Neurology)</h6>
+                                                        <h6>Low  : 79% (Pediatrics)</h6> -->
+                                        </div>
+                                    </div>
+                                </p-card>
+                            </div>
+                            <div class="col-12 sm-col-12 md:col-6 lg:col-6">
+                                <p-card
+                                    [style]="{'background-color':'rgb(38, 133, 156)','color':'white','border-radius':'1vh'}">
+                                    <div class="grid">
+                                        <div class="col-12">
+                                            <div class="grid">
+                                                <div class="col-8" style="margin-top: -1rem;">
+                                                    <div style="font-size:3rem">4%</div>
+                                                    <div style="font-size:2vh">No Shows</div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div><i class="pi pi-arrow-down"
+                                                            style="font-size: 3rem; color: greenyellow;font-weight:bolder;margin-top:-1vh"></i>
+                                                    </div>
+                                                    <div style="margin-top: 1vh;margin-left:1vh">2%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div style="margin-left: 1vh;">High : 7% (Cardiology)</div>
+                                            <div style="margin-top: 1vh; margin-left: 1vh;">
+                                                Low : 1% (Dermatology)
+                                            </div>
+                                            <!-- <h6>High : 88% (Neurology)</h6>
+                                                        <h6>Low  : 79% (Pediatrics)</h6> -->
+                                        </div>
+                                    </div>
+                                </p-card>
+                            </div>
+                        </div>
+                        <div class="grid" style="padding-left: 1vh; padding-right: 1vh;">
+                            <div class="col-12 sm-col-12 md:col-6 lg:col-6">
+                                <p-card
+                                    [style]="{'background-color':'rgb(38, 133, 156)','color':'white','border-radius':'1vh'}">
+                                    <div class="grid">
+                                        <div class="col-12">
+                                            <div class="grid">
+                                                <div class="col-8" style="margin-top: -1rem;">
+                                                    <div style="font-size:3rem">11%</div>
+                                                    <div style="font-size:2vh">Cancels</div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div><i class="pi pi-arrow-down"
+                                                            style="font-size: 3rem; color: greenyellow;font-weight:bolder;margin-top:-1vh"></i>
+                                                    </div>
+                                                    <div style="margin-top: 1vh;margin-left:1vh">6%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div style="margin-left: 2px;">High : 18% (Hematology)</div>
+                                            <div style="margin-top: 1vh; margin-left: 2px;">
+                                                Low : 2% (Neurology)
+                                            </div>
+                                            <!-- <h6>High : 88% (Neurology)</h6>
+                                                        <h6>Low  : 79% (Pediatrics)</h6> -->
+                                        </div>
+                                    </div>
+                                </p-card>
+                            </div>
+                            <div class="col-12 sm-col-12 md:col-6 lg:col-6">
+                                <p-card
+                                    [style]="{'background-color':'rgb(37, 62, 107)','color':'white','border-radius':'1vh'}">
+                                    <div class="grid">
+                                        <div class="col-12">
+                                            <div class="grid">
+                                                <div class="col-8" style="margin-top: -1rem;">
+                                                    <div style="font-size:3rem">3%</div>
+                                                    <div style="font-size:2vh">Bumps</div>
+                                                </div>
+                                                <div class="col-4">
+
+                                                    <div><i class="pi pi-arrow-up"
+                                                            style="font-size: 3rem; color: red;font-weight:bolder;margin-top:-1vh"></i>
+                                                    </div>
+                                                    <div style="margin-top: 1vh;margin-left:1vh">3%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div style="margin-left: -2px;">High : 9% (Pediatrics)</div>
+                                            <div style="margin-top: 1vh; margin-left: -2px;">
+                                                Low : 0% (Opthamology)
+                                            </div>
+                                            <!-- <h6>High : 88% (Neurology)</h6>
+                                                        <h6>Low  : 79% (Pediatrics)</h6> -->
+                                        </div>
+                                    </div>
+                                </p-card>
+                            </div>
+                        </div>
+                    </p-panel>
+                </div>
+
+
+            </div>
+            <div class="col-12 sm:col-12 md:col-12 lg:col-8">
+                <div class="grid">
+                    <div class="col-12">
+                        <div class="text-center p-3 border-round-sm font-bold text-white">
                             <p-panel
                                 [style]="{'max-width':'100rem','margin-top':'0%','background-color':'rgb(236, 244, 252)'}"
-                                styleClass="shadow-2" class="panel1" header="Schedule Utilization">
+                                styleClass="shadow-2" class="panel1">
+                                <ng-template pTemplate="header">
+                                    <img src="assets/utilization/beds.jpg" alt="" width="7%" style="margin-left:-1rem; height:3vh">
+                                    Beds
+                                </ng-template>
+                                <div class="grid" style="margin-left:4rem">
+                                    <!-- <div class="col-12 sm:col-1 md:col-1 lg:col-1"></div> -->
+                                    <div class="col-12 sm:col-6 md:col-6 lg:col-3">
+                                        <div class="rounded-circle"
+                                            style="background-color:rgb(38, 133, 156);font-size:xx-large;">
+                                            75%
+                                            <p style="font-size:medium">Overall</p>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-12 sm:col-1 md:col-1 lg:col-1"></div> -->
 
-                                <div class="grid" style="padding-left: 1vh;padding-right: 1vh; ">
-                                    <div class="col-12 sm:col-12 md:col-6 lg:col-6">
-                                        <p-card
-                                            [style]="{'background-color':'rgb(37, 62, 107)','color':'white','border-radius':'1vh'}">
-                                            <div class="grid">
-                                                <div class="col-12">
-                                                    <div class="grid">
-                                                        <div class="col-8" style="margin-top: -1rem;">
-                                                            <div style="font-size:3rem">82%</div>
-                                                            <div style="font-size:2vh">Overall</div>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <div><i class="pi pi-arrow-up"
-                                                                    style="font-size: 2rem; color: red;"></i></div>
-                                                            <div style="margin-top: 1vh;">2%</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div style="margin-left:1vh">High : 88% (Neurology)</div>
-                                                    <div style="margin-top: 1vh; margin-left: 1vh;">
-                                                        Low : 79% (Pediatrics)
-                                                    </div>
-                                                    <!-- <h6>High : 88% (Neurology)</h6>
-                                                        <h6>Low  : 79% (Pediatrics)</h6> -->
-                                                </div>
-                                            </div>
-                                        </p-card>
+                                    <div class="col-12 sm:col-6 md:col-6 lg:col-3">
+                                        <div class="rounded-circle"
+                                            style="background-color:rgb(168, 167, 236);font-size:xx-large;">
+                                            3.1d
+                                            <p style="font-size:medium">LOS</p>
+                                        </div>
                                     </div>
-                                    <div class="col-12 sm-col-12 md:col-6 lg:col-6">
-                                        <p-card
-                                            [style]="{'background-color':'rgb(38, 133, 156)','color':'white','border-radius':'1vh'}">
-                                            <div class="grid">
-                                                <div class="col-12">
-                                                    <div class="grid">
-                                                        <div class="col-8" style="margin-top: -1rem;">
-                                                            <div style="font-size:3rem">4%</div>
-                                                            <div style="font-size:2vh">No Shows</div>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <div><i class="pi pi-arrow-down"
-                                                                    style="font-size: 2rem; color: greenyellow;"></i>
-                                                            </div>
-                                                            <div style="margin-top: 1vh;">2%</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div style="margin-left: 1vh;">High : 7% (Cardiology)</div>
-                                                    <div style="margin-top: 1vh; margin-left: 1vh;">
-                                                        Low : 1% (Dermatology)
-                                                    </div>
-                                                    <!-- <h6>High : 88% (Neurology)</h6>
-                                                        <h6>Low  : 79% (Pediatrics)</h6> -->
-                                                </div>
-                                            </div>
-                                        </p-card>
-                                    </div>
-                                </div>
-                                <div class="grid" style="padding-left: 1vh; padding-right: 1vh;">
-                                    <div class="col-12 sm-col-12 md:col-6 lg:col-6">
-                                        <p-card
-                                            [style]="{'background-color':'rgb(38, 133, 156)','color':'white','border-radius':'1vh'}">
-                                            <div class="grid">
-                                                <div class="col-12">
-                                                    <div class="grid">
-                                                        <div class="col-8" style="margin-top: -1rem;">
-                                                            <div style="font-size:3rem">11%</div>
-                                                            <div style="font-size:2vh">Cancels</div>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <div><i class="pi pi-arrow-down"
-                                                                    style="font-size: 2rem; color: greenyellow;"></i>
-                                                            </div>
-                                                            <div style="margin-top: 1vh;">6%</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div style="margin-left: 4px;">High : 18% (Hematology)</div>
-                                                    <div style="margin-top: 1vh; margin-left: 5px;">
-                                                        Low : 2% (Neurology)
-                                                    </div>
-                                                    <!-- <h6>High : 88% (Neurology)</h6>
-                                                        <h6>Low  : 79% (Pediatrics)</h6> -->
-                                                </div>
-                                            </div>
-                                        </p-card>
-                                    </div>
-                                    <div class="col-12 sm-col-12 md:col-6 lg:col-6">
-                                        <p-card
-                                            [style]="{'background-color':'rgb(37, 62, 107)','color':'white','border-radius':'1vh'}">
-                                            <div class="grid">
-                                                <div class="col-12">
-                                                    <div class="grid">
-                                                        <div class="col-8" style="margin-top: -1rem;">
-                                                            <div style="font-size:3rem">3%</div>
-                                                            <div style="font-size:2vh">Bumps</div>
-                                                        </div>
-                                                        <div class="col-4">
+                                    <!-- <div class="col-12 sm:col-1 md:col-1 lg:col-1"></div> -->
 
-                                                            <div><i class="pi pi-arrow-up"
-                                                                    style="font-size: 2rem; color: red;"></i></div>
-                                                            <div style="margin-top: 1vh;">3%</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div style="margin-left: 2px;">High : 9% (Pediatrics)</div>
-                                                    <div style="text-align: center; margin-top: 1vh; margin-left: 1px;">
-                                                        Low : 0% (Opthamology)
-                                                    </div>
-                                                    <!-- <h6>High : 88% (Neurology)</h6>
-                                                        <h6>Low  : 79% (Pediatrics)</h6> -->
-                                                </div>
-                                            </div>
-                                        </p-card>
+                                    <div class="col-12 sm:col-6 md:col-6 lg:col-3">
+                                        <div class="rounded-circle"
+                                            style="background-color:rgb(38, 133, 156);font-size:xx-large;">
+                                            52m
+                                            <p style="font-size:medium">Waiting</p>
+                                        </div>
                                     </div>
+                                    <!-- <div class="col-12 sm:col-1 md:col-1 lg:col-1"></div> -->
+
+                                    <div class="col-12 sm:col-6 md:col-3 lg:col-3">
+                                        <div class="rounded-circle"
+                                            style="background-color:rgb(168, 167, 236);font-size:xx-large;">
+                                            1.3h
+                                            <p style="font-size:medium">Turnover</p>
+                                        </div>
+                                    </div>
+
+
                                 </div>
                             </p-panel>
                         </div>
-
-
                     </div>
-                    <div class="col-12 sm:col-12 md:col-12 lg:col-8">
-                        <div class="grid">
-                            <div class="col-12">
-                                <div class="text-center p-3 border-round-sm font-bold text-white">
-                                    <p-panel
-                                        [style]="{'max-width':'100rem','margin-top':'0%','background-color':'rgb(236, 244, 252)'}"
-                                        styleClass="shadow-2" class="panel1">
-                                        <ng-template pTemplate="header">
-                                            <img src="assets/utilization/beds.jpg" alt="" width="5%"
-                                                style="margin-left:-1rem">
-                                            Beds
-                                        </ng-template>
-                                        <div class="grid" style="margin-left:-3rem">
-                                            <div class="col-12 sm:col-0 md:col-0 lg:col-1"></div>
-                                            <div class="col-12 sm:col-6 md:col-3 lg:col-2">
-                                                <div class="rounded-circle" style="background-color:rgb(38, 133, 156)">
-                                                    75%
-                                                    <p style="font-size:small">Overall</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 sm:col-0 md:col-0 lg:col-1"></div>
+                    <div class="col-12" style="padding-top:5.5vh">
+                        <div class="text-center p-3 border-round-sm font-bold text-white">
+                            <p-panel
+                                [style]="{'max-width':'100rem','margin-top':'-5vh','background-color':'rgb(236, 244, 252)'}"
+                                styleClass="shadow-2" class="panel1">
+                                <ng-template pTemplate="header">
+                                    <img class="image" src="assets/utilization/operating.jpg" alt="" width="7%"
+                                        style="margin-left:-1rem; height:3vh">
+                                    Operating Room
+                                </ng-template>
+                                <div class="grid" style="margin-left:4rem">
+                                    <!-- <div class="col-12 sm:col-0 md:col-0 lg:col-1"></div> -->
 
-                                            <div class="col-12 sm:col-6 md:col-3 lg:col-2">
-                                                <div class="rounded-circle" style="background-color:rgb(168, 167, 236)">
-                                                    3.1d
-                                                    <p style="font-size:small">LOS</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 sm:col-0 md:col-0 lg:col-1"></div>
-
-                                            <div class="col-12 sm:col-6 md:col-3 lg:col-2">
-                                                <div class="rounded-circle" style="background-color:rgb(38, 133, 156)">
-                                                    52m
-                                                    <p style="font-size:small">Waiting</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 sm:col-0 md:col-0 lg:col-1"></div>
-
-                                            <div class="col-12 sm:col-6 md:col-3 lg:col-2">
-                                                <div class="rounded-circle" style="background-color:rgb(168, 167, 236)">
-                                                    1.3h
-                                                    <p style="font-size:small">Turnover</p>
-                                                </div>
-                                            </div>
-
-
+                                    <div class="col-12 sm:col-6 md:col-6 lg:col-3">
+                                        <div class="rounded-circle"
+                                            style="background-color:rgb(168, 167, 236);font-size:xx-large;">
+                                            59%
+                                            <p style="font-size:medium">Overall</p>
                                         </div>
-                                    </p-panel>
-                                </div>
-                            </div>
-                            <div class="col-12" style="padding-top:3vh">
-                                <div class="text-center p-3 border-round-sm font-bold text-white">
-                                    <p-panel
-                                        [style]="{'max-width':'100rem','margin-top':'0%','background-color':'rgb(236, 244, 252)'}"
-                                        styleClass="shadow-2" class="panel1">
-                                        <ng-template pTemplate="header">
-                                            <img class="image" src="assets/utilization/operating.jpg" alt="" width="4%"
-                                                style="margin-left:-1rem">
-                                            Operating Room
-                                        </ng-template>
-                                        <div class="grid" style="margin-left:-3rem">
-                                            <div class="col-12 sm:col-0 md:col-0 lg:col-1"></div>
+                                    </div>
+                                    <!-- <div class="col-12 sm:col-0 md:col-0 lg:col-1"></div> -->
 
-                                            <div class="col-12 sm:col-6 md:col-3 lg:col-2">
-                                                <div class="rounded-circle" style="background-color:rgb(168, 167, 236)">
-                                                    59%
-                                                    <p style="font-size:small">Overall</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 sm:col-0 md:col-0 lg:col-1"></div>
-
-                                            <div class="col-12 sm:col-6 md:col-3 lg:col-2">
-                                                <div class="rounded-circle" style="background-color:rgb(38, 133, 156)">
-                                                    73%
-                                                    <p style="font-size:small">Blocks</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 sm:col-0 md:col-0 lg:col-1"></div>
-
-                                            <div class="col-12 sm:col-6 md:col-3 lg:col-2">
-                                                <div class="rounded-circle" style="background-color:rgb(168, 167, 236)">
-                                                    37
-                                                    <p style="font-size:small">Cancels</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 sm:col-0 md:col-0 lg:col-1"></div>
-
-                                            <div class="col-12 sm:col-6 md:col-3 lg:col-2">
-                                                <div class="rounded-circle" style="background-color:rgb(38, 133, 156)">
-                                                    1.8h
-                                                    <p style="font-size:small">Turnover</p>
-                                                </div>
-                                            </div>
-
-
-
+                                    <div class="col-12 sm:col-6 md:col-6 lg:col-3">
+                                        <div class="rounded-circle"
+                                            style="background-color:rgb(38, 133, 156);font-size:xx-large;">
+                                            73%
+                                            <p style="font-size:medium">Blocks</p>
                                         </div>
-                                    </p-panel>
+                                    </div>
+                                    <!-- <div class="col-12 sm:col-0 md:col-0 lg:col-1"></div> -->
+
+                                    <div class="col-12 sm:col-6 md:col-6 lg:col-3">
+                                        <div class="rounded-circle"
+                                            style="background-color:rgb(168, 167, 236);font-size:xx-large;">
+                                            37
+                                            <p style="font-size:medium">Cancels</p>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-12 sm:col-0 md:col-0 lg:col-1"></div> -->
+
+                                    <div class="col-12 sm:col-6 md:col-6 lg:col-3">
+                                        <div class="rounded-circle"
+                                            style="background-color:rgb(38, 133, 156);font-size:xx-large;">
+                                            1.8h
+                                            <p style="font-size:medium">Turnover</p>
+                                        </div>
+                                    </div>
+
+
+
                                 </div>
-                            </div>
+                            </p-panel>
                         </div>
                     </div>
-
                 </div>
             </div>
+
+            <!-- </div> -->
+            <!-- </div> -->
         </div>
         <div>
             <h2 style="margin-left:5px;color:rgb(38, 133, 156)"><b>Patients Visit Profile</b></h2>
@@ -271,7 +309,7 @@
                             Patients
                         </ng-template>
                         <div>
-                            <p-chart type="bar" [data]="patientData.PatientsDataVetical" [options]="patientOptions"></p-chart>
+                            <p-chart type="bar" [data]="patientData" [options]="patientOptions"></p-chart>
                         </div>
                     </p-panel>
                 </div>
@@ -282,7 +320,7 @@
                             Time Spent (min)
                         </ng-template>
                         <div>
-                            <p-chart type="bar" [data]="patientData.TimeSpentChart" [options]="patientOptions"></p-chart>
+                            <p-chart type="bar" [data]="timeData" [options]="timeOptions"></p-chart>
                         </div>
                     </p-panel>
                 </div>

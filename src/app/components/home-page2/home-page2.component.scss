@@ -27,3 +27,6 @@ padding: 0rem;
     color: white;
 }
 
+:host ::ng-deep .panel1 .p-panel-content {
+    background-color: rgb(226, 239, 243);
+}

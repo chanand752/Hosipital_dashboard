@@ -34,18 +34,68 @@
 
 
 .image {
-    border-radius: 18rem;
+    border-radius: 20rem;
     width: 20rem;
     height: 20rem;
+    padding: 5px;
 }
 
 .input-tag {
     width: 130%;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
+    padding-top: 10px;
+    font-family: 'Roboto';
+  
+   
+}
+
+.doctor-image-heading {
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+    padding-left: 25px;
+}
+
+.doctor-image-sub-heading {
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+    padding-left: 25px;
+}
+
+.doctor-image-sub-heading-1{
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    padding-left: 25px;
 }
 
 
 
 
+// css Meadia quires 
+.body {
+    padding-top: 2rem;
+    padding-left: 3.5rem;
+    padding-bottom: 3.5rem;
+    padding-right: 3.5rem;
+}
+
+@media screen and (max-width: 992px) {
+    .body {
+      padding-left: 8rem ;
+      padding-right: 3rem;
+    }
+  }
+  
 

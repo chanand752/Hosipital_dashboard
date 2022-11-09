@@ -1,26 +1,69 @@
 :host ::ng-deep .panel1 .p-panel-header {
-    background-color: rgb(103, 193, 216);
-    font-size: large;
-    color: white;
-    // text-align: center;
+  background-color: rgb(103, 193, 216);
+  font-size: large;
+  color: white;
+  // text-align: center;
 }
 
 :host ::ng-deep .panelcontent .p-panel-content{
-    background-color: aqua;
-    
+  background-color: aqua;
+  
 }
 
 .ui-card .p-card{
-    background-color: lightblue !important;
-  }
+  background-color: lightblue !important;
+}
 
-  .rounded-circle {
-    background-color: rgb(13, 201, 201);
-    border-radius: 5rem;
-    text-align: center;
-    color: #ffffff;
-    width: 7rem;
-    height: 7rem;
-    padding: 2rem;
-    font-size:x-large;
-  }
+.rounded-circle {
+  background-color: rgb(13, 201, 201);
+  border-radius: 5rem;
+  text-align: center;
+  color: #ffffff;
+  width: 8rem;
+  height: 8rem;
+  padding: 2rem;
+  font-size:x-large;
+}
+
+.sty{
+  font-family:'Times New Roman', Times, serif;
+  color: rgb(38, 133, 156);
+  
+}
+
+
+@media screen ,(max-width: 425px) {
+.icon {
+    margin-left: -35px;
+}
+
+
+}
+
+
+@media screen ,(max-width: 768px){
+.icon {
+    margin-left: -55px;
+}
+
+}
+@media screen ,(max-width: 768px){
+.cayman{
+margin-left:3rem
+}
+
+}
+
+
+@media screen ,(max-width: 425){
+.icon {
+    margin-left: -85px;
+}
+
+}
+@media screen ,(max-width: 425){
+.cayman{
+margin-left:4rem
+}
+
+}

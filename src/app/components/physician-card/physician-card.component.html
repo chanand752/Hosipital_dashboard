@@ -1,34 +1,15 @@
-<!-- <div class="grid header-border">
-    <div class="col-1">
-        <img src="assets\doctor.png" alt="icon" class="docter-Icon-image-header" />
-    </div>
-    <div class="col-9">
-        <h2 class=" header-heading">
-            Cyman Islands HSA
-            <h4 class="header-heading-2">Physician Card-September 2022</h4>
-        </h2>
-    </div>
-
-    <div class="col-2">
-        <img src="assets/time/hospital.png" alt="" class="docter-Icon-image-2-header" />
-
-
-        <img src="assets/time/calendar.png" alt="icon" class="docter-Icon-image-3-header" />
-
-    </div>
-</div> -->
 <div class="layout-footer p-2">
     <div class="grid">
-        <div class="col-1">
+        <div class="col-1 md:col-1 lg:col-1">
             <a href="/" class="logo-container">
-                <img src="assets/doctor.png" width="40%"  />
+                <img src="assets/doctor.png" width="80%"  />
             </a>
         </div>
-        <div class="col-7" style="margin-left:-4rem">
+        <div class="col-7 md:col-7 lg:col-7">
             <div class="sty" style="font-size:x-large"><b>Cayman Islands HSA</b></div>
             <div><b>Physician Card-September 2022</b></div>
         </div>
-        <div class="col-4 footer-icons" style="margin-left:3rem">
+        <div class="col-4 md:col-4 lg:col-4 footer-icons">
 
             <img src="assets/time/hospital.png" alt="">
             &nbsp;&nbsp;
@@ -40,25 +21,31 @@
 </div>
 
 <div class="grid card-color">
-    <div style="padding: 2rem;" class="col-12 md:col-6 lg:col-4">
+    <div  class="col-12 md:col-12  lg:col-4 body">
+        <div class="grid">
+        <div class="col-12"> 
         <img class="image "
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4hhchozR9QbvQFVMfBR9r1haJXsO54SKvyw&usqp=CAU"
             alt="imag" />
-        <div style="padding-left: 1rem;">
-            <h1>Dr.Barbar Corgan</h1>
-            <h3>Family Practice</h3>
-            <h5>West Bay Health Center</h5>
-            <h5>Joined: 2019</h5>
-            <span class="p-input-icon-left">
+        </div>
+            <div class="grid"> 
+            <div class="col-12"> 
+            <h1 class="doctor-image-heading ">Dr.Barbar Corgan</h1>
+            <p class="doctor-image-sub-heading">Family Practice</p>
+            <p class="doctor-image-sub-heading">West Bay Health Center</p>
+            <p class="doctor-image-sub-heading-1">Joined: 2019</p>
+            <span class="p-input-icon-left ">
                 <i class="pi pi-search"></i>
                 <input type="text" pInputText placeholder="Find a Physician or Department" [(ngModel)]="value3"
-                    class="input-tag" />
+                class="input-tag" />
             </span>
+        </div>
+        </div>
         </div>
     </div>
 
-    <div class="grid col-12 md:col-6 lg:col-8" style="padding: 2rem;">
-        <div class="col-12 md:col-6  lg:col-4 ">
+    <div class="grid col-12 md:col-12 lg:col-8" style="padding: 2rem;">
+        <div class="col-12 md:col-4  lg:col-4 ">
             <h1 class="heading"><i class="pi pi-users icon" style="font-size: 1.5rem"></i>
                 <span>Traffic</span>
             </h1>
@@ -85,7 +72,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 md:col-6  lg:col-4 ">
+        <div class="col-12 md:col-4  lg:col-4 ">
             <h1 class="heading"><i class="pi pi-clock icon" style="font-size: 1.5rem"></i> <span>Time</span>
             </h1>
             <div class="card card-content-color">
@@ -112,7 +99,7 @@
 
             </div>
         </div>
-        <div class="col-12 md:col-6  lg:col-4">
+        <div class="col-12 md:col-4  lg:col-4">
             <h1 class="heading"><i class="pi pi-star-fill icon" style="font-size: 1.5rem"></i>
                 <span>Quality</span>
             </h1>
@@ -140,7 +127,7 @@
 
             </div>
         </div>
-        <div class="col-12 md:col-6  lg:col-4">
+        <div class="col-12 md:col-4  lg:col-4">
             <h1 class="heading"><i class="pi pi-compass icon" style="font-size: 1.5rem"></i>
                 <span>Utilization</span>
             </h1>
@@ -169,7 +156,7 @@
 
             </div>
         </div>
-        <div class="col-12 md:col-6 lg:col-4">
+        <div class="col-12 md:col-4 lg:col-4">
             <h1 class="heading"><i class="pi pi-sitemap icon" style="font-size: 1.5rem"></i>
                 <span>Financial</span>
             </h1>
