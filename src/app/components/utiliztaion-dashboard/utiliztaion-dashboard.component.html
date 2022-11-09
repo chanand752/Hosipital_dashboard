@@ -19,15 +19,7 @@
                 </div>
 
 
-                <!-- <div class="col-1">
-                    <img src="assets/utilization/documents.png" width="50px" style="height:3rem">
-                </div>
-                <div class="col-10" style="margin-left:-50px">
-                    <div class="cayman">
-                        <div class="sty" style="font-size:x-large"><b>Cayman Islands HSA</b></div>
-                        <div><b>Utilization Dashboard - September 2022</b></div>
-                    </div>
-                </div> -->
+               
             </div>
         </div>
         <div class="col-1 footer-icons">
@@ -49,8 +41,7 @@
 
 <div style="border-top: 4px solid rgb(60, 141, 161);">
     <div class="card" style="background-color:rgb(217, 235, 243);">
-        <!-- <div class="grid"> -->
-        <!-- <div style="display:flex ;flex-wrap: wrap"> -->
+       
         <div class="grid ">
             <div class="col-12 sm:col-12 md:col-10 lg:col-4">
                 <div class="p-3 border-round-sm font-bold text-white">
@@ -81,8 +72,7 @@
                                             <div style="margin-top: 1vh; margin-left: 1vh;">
                                                 Low : 79% (Pediatrics)
                                             </div>
-                                            <!-- <h6>High : 88% (Neurology)</h6>
-                                                        <h6>Low  : 79% (Pediatrics)</h6> -->
+                                       
                                         </div>
                                     </div>
                                 </p-card>
@@ -110,8 +100,7 @@
                                             <div style="margin-top: 1vh; margin-left: 1vh;">
                                                 Low : 1% (Dermatology)
                                             </div>
-                                            <!-- <h6>High : 88% (Neurology)</h6>
-                                                        <h6>Low  : 79% (Pediatrics)</h6> -->
+                                           
                                         </div>
                                     </div>
                                 </p-card>
@@ -141,8 +130,7 @@
                                             <div style="margin-top: 1vh; margin-left: 2px;">
                                                 Low : 2% (Neurology)
                                             </div>
-                                            <!-- <h6>High : 88% (Neurology)</h6>
-                                                        <h6>Low  : 79% (Pediatrics)</h6> -->
+                                         
                                         </div>
                                     </div>
                                 </p-card>
@@ -171,8 +159,7 @@
                                             <div style="margin-top: 1vh; margin-left: -2px;">
                                                 Low : 0% (Opthamology)
                                             </div>
-                                            <!-- <h6>High : 88% (Neurology)</h6>
-                                                        <h6>Low  : 79% (Pediatrics)</h6> -->
+                                      
                                         </div>
                                     </div>
                                 </p-card>
@@ -195,7 +182,7 @@
                                     Beds
                                 </ng-template>
                                 <div class="grid" style="margin-left:4rem">
-                                    <!-- <div class="col-12 sm:col-1 md:col-1 lg:col-1"></div> -->
+                              
                                     <div class="col-12 sm:col-6 md:col-6 lg:col-3">
                                         <div class="rounded-circle"
                                             style="background-color:rgb(38, 133, 156);font-size:xx-large;">
@@ -203,7 +190,7 @@
                                             <p style="font-size:medium">Overall</p>
                                         </div>
                                     </div>
-                                    <!-- <div class="col-12 sm:col-1 md:col-1 lg:col-1"></div> -->
+                                
 
                                     <div class="col-12 sm:col-6 md:col-6 lg:col-3">
                                         <div class="rounded-circle"
@@ -309,7 +296,7 @@
                             Patients
                         </ng-template>
                         <div>
-                            <p-chart type="bar" [data]="patientData" [options]="patientOptions"></p-chart>
+                            <p-chart type="bar" [data]="patientData.PatientsDataVetical" [options]="patientOptions"></p-chart>
                         </div>
                     </p-panel>
                 </div>
@@ -320,7 +307,7 @@
                             Time Spent (min)
                         </ng-template>
                         <div>
-                            <p-chart type="bar" [data]="timeData" [options]="timeOptions"></p-chart>
+                            <p-chart type="bar" [data]="patientData.TimeSpentChart" [options]="patientOptions"></p-chart>
                         </div>
                     </p-panel>
                 </div>
@@ -376,3 +363,12 @@
         </div>
     </div>
 </div>
+
+
+
+
+
+
+
+<!-- <p-chart type="bar" [data]="patientData.PatientsDataVetical" [options]="patientOptions"></p-chart> -->
+<!-- <p-chart type="bar" [data]="patientData.TimeSpentChart" [options]="patientOptions"></p-chart> -->
