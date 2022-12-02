@@ -24,7 +24,7 @@ import { GooglemapsComponent } from './components/googlemaps/googlemaps.componen
                 children: [
                     {path:'Physician-card', component:PhysicianCardComponent},
                     {path:'FinanceDashboard', component:FinanceDashboardComponent},
-                    {path:'Home-page-1', component:HomePage1Component},
+                    {path:'', component:HomePage1Component},
                     {path:'Home-page-2', component:HomePage2Component},
                     {path:'TimeDashboard', component:TimeDashboardComponent},
                     {path:'UtilizationDashboard', component:UtiliztaionDashboardComponent},

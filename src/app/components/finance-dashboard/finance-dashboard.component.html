@@ -1,24 +1,193 @@
 <div class="layout-footer p-2">
     <div class="grid">
-        <div class="col-1">
+        <div class="col-1" style="width:6%;">
             <a href="/" class="logo-container">
-                <img src="assets/doctor.png" width="80%" />
+                <img src="assets/compunder.png" width="55px" style="height:3rem;margin-left:1vh;" />
             </a>
         </div>
-        <div class="col-7">
+        <div class="col-7" style="padding-top: 0.8rem;">
             <div class="sty" style="font-size:x-large"><b>Cayman Islands HSA</b></div>
-            <div><b>Finance Dashboard-September 2022</b></div>
+            <div><b>Finance Dashboard - September 2022</b></div>
         </div>
-        <div class="col-4 footer-icons">
+        <!-- <div class="col-1">
+            <a href="/" class="logo-container">
+                <img src="assets/doctor-newpng.png" width="55px" style="height:3rem;margin-left:1vh;"/>
+            </a>
+        </div>
+        <div class="col-7" style="padding-top: 0.8rem;">
+            <div class="sty" style="font-size:x-large"><b>Cayman Islands HSA</b></div>
+            <div><b>Finance Dashboard - September 2022</b></div>
+        </div> -->
+        <div class="col-4 footer-icons" style="padding-top: 0.8rem;">
 
-            <img src="assets/time/hospital.png" alt="">
+            <img src="assets/time/hospital.png" alt="" width="50px" style="height:3rem;margin-left:1vh;margin-top:5px">
             &nbsp;&nbsp;
 
-            <img src="assets/time/calendar.png" alt="">
+            <img src="assets/time/calendar.png" alt="" width="50px" style="height:3rem;margin-left:1vh;margin-top:5px">
 
         </div>
     </div>
 </div>
+
+
+<!-- //////// date 12/02/2022 code finace dash board ///////////////// -->
+
+<!-- <div class="grid card-color" style="padding: 1rem;">
+    <div class="col-12 md:col-12 lg:col-12">
+        <div class="grid flex justify-content-between">
+            <div *ngFor="let data of cardData" class="col-12 md:col-6 lg:col-2" style="color:white;">
+                <div class="card " [style.background-color]="data?.revenueColour">
+                    <div class="grid">
+                            <span class="col-7" style="text-align:start;font-size: 30px; font-weight: bold;">{{data?.revenueName}}</span> 
+                     
+                            <i class={{data?.revenueIcon}} style="font-size: 3em; font-weight: bolder;"
+                                [style.color]="data?.revenueIconcolour"></i>
+                     
+                            <span class="col-7" style="text-align:start;"><b>{{data?.revenueValue}}</b></span>
+                      
+                            <p class="col-5" style="padding-left: 8px;font-size:bold"><b>{{data?.revenuePercentage}}</b></p>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid">
+            <h3 class="col-12 main-card-heading">Revenue</h3>
+            <div class="col-12 md:col-12 lg:col-12">
+                <div class="grid">
+                    <div class="col-12 md:col-12 lg:col-4">
+                        <h1 class="quailty-card-heading-90days"> Revenue by Age
+                        </h1>
+                        <div class="card quailty-card-content-color-90days">
+                            <p-chart type="pie" [data]="data" [options]="chartOptions" width="250" height="180">
+                            </p-chart>
+                        </div>
+                    </div>
+                    <div class="col-12 md:col-6 sm:col-6 lg:col-4">
+                        <h1 class="quality-card-heading"> Top Revenue Departments
+                        </h1>
+                        <div class="card_rev quality-card-content-color">
+                            <div class="grid">
+                                <div class="col-3 md:col-2 sm:col-3 lg:col-1 dept_align mob_font">
+                                    <div *ngFor="let dept of revenueDepartmentList1">
+                                        <span><b>{{dept}}</b></span>
+                                    </div>
+                                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <div class="col-3 md:col-2 sm:col-3 lg:col-1 mob_font" style="width:50px">
+                                    <div *ngFor="let rup of rupees">
+                                        <span><b>{{rup}}</b></span>
+                                    </div>
+                                </div>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                                <div class="col-3 md:col-2 sm:col-3 lg:col-1 dept_align mob_font">
+                                    <div *ngFor="let dep of revenueDepartmentList2">
+                                        <span><b>{{dep}}</b></span>
+                                    </div>
+                                </div>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                <div class="col-3 md:col-2 sm:col-3 lg:col-1 mob_font" style="width:50px">
+                                    <div *ngFor="let rupe of rupees1">
+                                        <span><b>{{rupe}}</b></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 md:col-6 lg:col-4">
+                        <p-card [style]="{'background':'#26a5c5', color: 'white','height':'9rem'}">
+                            <div class="grid">
+                                <div>
+                                    <h2 style="margin-bottom: 0px;">$87,530k</h2>
+                                    <p style="margin-bottom: 0px; "><b>Revenue by Doctor</b></p>
+                                    <p style="text-align:start; margin-bottom: 0px;">High: &nbsp;&nbsp;
+                                        $123k(Cardiology)</p>
+                                    <p style="text-align:start; margin-bottom: 0px;">Low: &nbsp;&nbsp;
+                                      $68k(Urology)</p>
+                                </div>
+                                <div class="col-4 md:col-2 lg:col-1" style="margin:auto">
+                                    <i class="pi pi-arrow-up" style="font-size: 3em;color:#1aff1a;font-weight: bolder;"></i>
+                                    <span>10%</span>
+                                </div>
+                            </div>
+                        </p-card>
+                        &nbsp;&nbsp;
+                        <div class="col-12 revange-leakege-card" style="padding-top:1rem ;">
+                            <p style="font-size: 15px;"><b>Revenue Lekage</b></p>
+                            <p style="font-size: 28px;font-weight: bold;">$123,349</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="col-12 main-card-heading">Expenses</h3>
+            <div class="col-12 md:col-12 lg:col-12">
+                <div class="grid">
+                    <div class="col-12 md:col-12 lg:col-4">
+                        <h1 class="quailty-card-heading-90days"> Expenses by Age
+                        </h1>
+                        <div class="card quailty-card-content-color-90days">
+
+                            <p-chart type="pie" [data]="data1" [options]="chartOptions" width="250" height="180">
+                            </p-chart>
+                        </div>
+                    </div>  
+                    <div class="col-12 md:col-6 sm:col-6 lg:col-4">
+                        <h1 class="quality-card-heading"> Top Expenses Departments
+                        </h1>
+                        <div class="card_rev quality-card-content-color">
+                            <div class="grid">
+                                <div class="col-3 md:col-2 sm:col-3 lg:col-1 dept_align mob_font">
+                                    <div *ngFor="let dept of expenseDepartmentList">
+                                        <span><b>{{dept}}</b></span>
+                                    </div>
+                                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <div class="col-3 md:col-2 sm:col-3 lg:col-1 mob_font" style="width:50px">
+                                    <div *ngFor="let rup of rupees">
+                                        <span><b>{{rup}}</b></span>
+                                    </div>
+                                </div>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                                <div class="col-3 md:col-2 sm:col-3 lg:col-1 dept_align mob_font">
+                                    <div *ngFor="let dep of expenseDepartmentList2">
+                                        <span><b>{{dep}}</b></span>
+                                    </div>
+                                </div>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                <div class="col-3 md:col-2 sm:col-3 lg:col-1 mob_font" style="width:50px">
+                                    <div *ngFor="let rupe of rupees1">
+                                        <span><b>{{rupe}}</b></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 <div class="col-12 md:col-6 lg:col-4">
+                        <p-card [style]="{'background':'#26a5c5', color: 'white','height':'9rem'}">
+                            <div class="grid">
+                                <div>
+                                    <h2 style="margin-bottom: 0px;">$42,730k</h2>
+                                    <p style="margin-bottom: 0px;"><b>Expense by Doctor</b></p>
+                                    <p style="text-align:start; margin-bottom: 0px;">High: &nbsp;&nbsp;
+                                        $75k(Neurology)</p>
+                                    <p style="text-align:start; margin-bottom: 0px;">Low: &nbsp;&nbsp;
+                                        $38k(Pediatrics)</p>
+                                </div>
+                                <div class="col-4 md:col-2 lg:col-1" style="margin:auto">
+                                    <i class="pi pi-arrow-down" style="font-size: 3em;color:#1aff1a;font-weight: bolder;"></i>
+                                    <span>2%</span>
+                                </div>
+                            </div>
+                        </p-card>
+                        &nbsp;&nbsp;
+                        <div class="col-12 revange-leakege-card" style="padding-top:1rem ;">
+                            <p style="font-size: 15px;"><b>Overtime Costs</b></p>
+                            <p style="font-size: 28px;font-weight: bold;">$1,230,349</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
 
 
 <!--////////////////////// Finance dashbord code //////////////////////////////////////////////////////-->
@@ -26,14 +195,14 @@
 <div class="grid card-color" style="padding: 1rem;">
     <div class="col-12 md:col-12 lg:col-12">
         <div class="grid flex justify-content-between">
-            <div *ngFor="let data of cardData" class="col-12 md:col-6 lg:col-2" style="color:white">
+            <div *ngFor="let data of cardData" class="col-12 md:col-6 lg:col-2 " style="color:white;">
                 <div class="card " [style.background-color]="data?.revenueColour">
                     <div class="grid">
                         <div class="col-7">
-                            <p style="text-align:start;padding:2px 0px 0px 0px">{{data?.revenueName}}</p>
+                            <p style="text-align:start;font-size: 25px; font-weight: bold;">{{data?.revenueName}}</p>
                         </div>
                         <div class="col-5">
-                            <i class={{data?.revenueIcon}} style="font-size: 2em;"
+                            <i class={{data?.revenueIcon}} style="font-size: 3rem; "
                                 [style.color]="data?.revenueIconcolour"></i>
 
                         </div>
@@ -41,47 +210,47 @@
                             <p style="text-align:start;">{{data?.revenueValue}}</p>
                         </div>
                         <div class="col-5">
-                            <p>{{data?.revenuePercentage}}</p>
+                            <p style="padding-left: 8px;font-size:bold">{{data?.revenuePercentage}}</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="grid">
-            <h3 class="col-12 main-card-heading">Revenve</h3>
+            <h3 class="col-12 main-card-heading">Revenue</h3>
             <div class="col-12 md:col-12 lg:col-12">
                 <div class="grid">
-                    <div class="col-12 md:col-4 lg:col-4">
+                    <div class="col-12 md:col-12 lg:col-4">
                         <h1 class="quailty-card-heading-90days"> Revenue by Age
                         </h1>
                         <div class="card quailty-card-content-color-90days">
 
-                            <p-chart type="pie" [data]="data" [options]="chartOptions" width="250" height="150">
+                            <p-chart type="pie" [data]="data" [options]="chartOptions" width="250" height="175">
                             </p-chart>
 
                         </div>
                     </div>
-                    <div class="col-12 md:col-4 lg:col-4">
-                        <h1 class="quality-card-heading"> Top Revenve Departments
+                    <div class="col-12 md:col-6 lg:col-4">
+                        <h1 class="quality-card-heading"> Top Revenue Departments
                         </h1>
                         <div class="card quality-card-content-color">
                             <div class="grid">
-                                <div class="col-3 md:col-2 lg:col-1" style="width:100px">
+                                <div class="col-3 md:col-4 lg:col-4" >
                                     <div *ngFor="let dept of revenueDepartmentList1">
                                         <span>{{dept}}</span>
                                     </div>
                                 </div>
-                                <div class="col-3 md:col-2 lg:col-1" style="width:50px">
+                                <div class="col-3 md:col-2 lg:col-2" >
                                     <div *ngFor="let rup of rupees">
                                         <span>{{rup}}</span>
                                     </div>
                                 </div>
-                                <div class="col-3 md:col-2 lg:col-1" style="width:100px">
+                                <div class="col-3 md:col-4 lg:col-4" >
                                     <div *ngFor="let dep of revenueDepartmentList2">
                                         <span>{{dep}}</span>
                                     </div>
                                 </div>
-                                <div class="col-3 md:col-2 lg:col-1" style="width:50px">
+                                <div class="col-3 md:col-2 lg:col-2" >
                                     <div *ngFor="let rupe of rupees1">
                                         <span>{{rupe}}</span>
                                     </div>
@@ -89,29 +258,30 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 md:col-4 lg:col-4">
+                    <div class="col-12 md:col-6 lg:col-4">
                         <div class="grid">
                             <div class="col-12">
-                                <p-card [style]="{'background':'#26a5c5', color: 'white','height':'10rem'}">
-                                    <div class="grid">
-                                        <div>
+                                <p-card [style]="{'background':'#26a5c5', color: 'white','height':'10rem', 'border-radius':'10px' }">
+                                    <div class="grid fontCard" >
+                                        <div class="col-4 md:col-7 lg:col-7" style="padding-bottom: 0px; padding-left: 22px; padding-right: 0px;">
                                             <h2 style="margin-bottom: 0px;">$87,530k</h2>
-                                            <p style="margin-bottom: 0px; ">Revenue by Doctor</p>
-                                            <p style="text-align:start; margin-bottom: 0px;">High:$123k(Cardiology)</p>
-                                            <p style="text-align:start; margin-bottom: 0px;">Low:$68k(Urology)</p>
+                                            <p style="margin-bottom: 0px; font-size: 1rem; font-weight: 550;">Revenue by Doctor</p>
+                                            <p style="text-align:start; margin-bottom: 0px; margin-top: 5px;">High: <span style="padding-left: 0.5rem;">$123k(Cardiology) </span></p>
+                                            <p style="text-align:start; margin-bottom: 0px; margin-top: 5px;">Low : <span style="padding-left: 0.5rem;">  $68k(Urology)</span> </p>
 
                                         </div>
-                                        <div class="col-4 md:col-2 lg:col-1" style="margin:auto">
-                                            <i class="pi pi-arrow-up" style="font-size: 2em;color:#1aff1a"></i>
-                                            <span>10%</span>
+                                        <div class="col-4 md:col-5 lg:col-5" style="margin: 0px;padding-left: 7rem; padding-top: 1rem; width: 1.6667%;">
+                                            <i class="pi pi-arrow-up" style="font-size: 3.5em;color:#74f674; font-weight: bold;"></i>
+                                            <span style="padding-left: 1rem;">10%</span>
                                         </div>
                                     </div>
                                 </p-card>
+                                <div class="col-12 revange-leakege-card" style="padding-top:1.5rem; margin-top: 1.3rem; border-radius: 10px;">
+                                    <p style="font-size: 15px;" class="para">Revenue Lekage</p>
+                                    <p style="font-size: 28px;font-weight: 550; color: rgb(62, 61, 61);">$123,349</p>
+                                </div>
                             </div>
-                            <div class="col-12" style="padding-top:1rem ;">
-                                <p style="margin-bottom: 0px;">Revenue Lekage</p>
-                                <p style="margin-bottom: 0px;">$123,349</p>
-                            </div>
+                            
                         </div>
 
                     </div>
@@ -119,40 +289,40 @@
                 </div>
 
             </div>
-            <h3 class="col-12 main-card-heading">Expense</h3>
+            <h3 class="col-12 main-card-heading">Expenses</h3>
             <div class="col-12 md:col-12 lg:col-12">
                 <div class="grid">
-                    <div class="col-12 md:col-4 lg:col-4">
+                    <div class="col-12 md:col-12 lg:col-4">
                         <h1 class="quailty-card-heading-90days"> Expense by Age
                         </h1>
                         <div class="card quailty-card-content-color-90days">
 
-                            <p-chart type="pie" [data]="data" [options]="chartOptions" width="250" height="150">
+                            <p-chart type="pie" [data]="data1" [options]="chartOptions" width="250" height="175">
                             </p-chart>
 
                         </div>
                     </div>
-                    <div class="col-12 md:col-4 lg:col-4">
-                        <h1 class="quality-card-heading"> Top Revenve Departments
+                    <div class="col-12 md:col-6 lg:col-4">
+                        <h1 class="quality-card-heading"> Top Expense Departments
                         </h1>
                         <div class="card quality-card-content-color">
                             <div class="grid">
-                                <div class="col-3 md:col-2 lg:col-1" style="width:100px">
+                                <div class="col-3 md:col-4 lg:col-4" >
                                     <div *ngFor="let dept of revenueDepartmentList1">
                                         <span>{{dept}}</span>
                                     </div>
                                 </div>
-                                <div class="col-3 md:col-2 lg:col-1" style="width:50px">
+                                <div class="col-3 md:col-4 lg:col-2" >
                                     <div *ngFor="let rup of rupees">
                                         <span>{{rup}}</span>
                                     </div>
                                 </div>
-                                <div class="col-3 md:col-2 lg:col-1" style="width:100px">
+                                <div class="col-3 md:col-4 lg:col-4" >
                                     <div *ngFor="let dep of revenueDepartmentList2">
                                         <span>{{dep}}</span>
                                     </div>
                                 </div>
-                                <div class="col-3 md:col-2 lg:col-1" style="width:50px">
+                                <div class="col-3 md:col-2 lg:col-2" >
                                     <div *ngFor="let rupe of rupees1">
                                         <span>{{rupe}}</span>
                                     </div>
@@ -160,28 +330,29 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 md:col-4 lg:col-4">
+                    <div class="col-12 md:col-6 lg:col-4">
                         <div class="grid">
                             <div class="col-12">
-                                <p-card [style]="{'background':'#26a5c5', color: 'white','height':'10rem'}">
-                                    <div class="grid">
-                                        <div>
-                                            <h2>$42,730k</h2>
-                                            <p style="margin-bottom: 0px; ">Expense by Doctor</p>
-                                            <p style="text-align:start; margin-bottom: 0px;">High:$75k(Neurology)</p>
-                                            <p style="text-align:start; margin-bottom: 0px;">Low:$38k(Pediatrics)</p>
+                                <p-card [style]="{'background':'#26a5c5', color: 'white','height':'10rem','border-radius':'10px'}">
+                                    <div class="grid fontCard">
+                                        <div class="col-4 md:col-7 lg:col-7" style="padding-bottom: 0px; padding-left: 22px; padding-right: 0px;">
+                                            <h2 style="margin-bottom: 0px">$42,730k</h2>
+                                            <p style="margin-bottom: 0px; font-size: 1rem; font-weight: 550; ">Expense by Doctor</p>
+                                            <p style="text-align:start; margin-bottom: 0px; margin-top: 5px;">High:  <span style="padding-left: 0.5rem;">$75k(Neurology)</span></p>
+                                            <p style="text-align:start; margin-bottom: 0px; margin-top: 5px;">Low :  <span style="padding-left: 0.5rem;">$38k(Pediatrics)</span></p>
                                         </div>
-                                        <div class="col-4 md:col-2 lg:col-1" style="margin:auto">
-                                            <i class="pi pi-arrow-down" style="font-size: 2em;color:#1aff1a"></i>
-                                            <span>2%</span>
+                                        <div class="col-4 md:col-5 lg:col-5" style="margin: 0px;padding-left: 7rem; padding-top: 1rem; width: 1.6667%;">
+                                            <i class="pi pi-arrow-down" style="font-size: 3.5em;color:#74f674; font-weight: bold;"></i>
+                                            <span style="padding-left: 1rem;">2%</span>
                                         </div>
                                     </div>
                                 </p-card>
+                                <div class="col-12 revange-leakege-card" style="padding-top:1.5rem; margin-top: 1.3rem; border-radius: 10px;">
+                                    <p style="font-size: 15px;" class="para">Overtime Costs</p>
+                                    <p style="font-size: 28px;font-weight: 550;color: rgb(62, 61, 61); ">$1,230,349</p>
+                                </div>
                             </div>
-                            <div class="col-12" style="padding-top:1rem ;">
-                                <p style="margin-bottom: 0px;">Overtime Costs</p>
-                                <p style="margin-bottom: 0px;">$1,230,349</p>
-                            </div>
+                            
                         </div>
 
                     </div>

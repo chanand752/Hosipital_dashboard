@@ -9,6 +9,8 @@ import { HttpClient } from '@angular/common/http';
 export class ArDashBoardComponent implements OnInit {
     //Bar Chart Varibles
 
+    value: number = 80;
+
     basicData: any;
     basicOptions: any;
     horizontalOptions: any;
@@ -42,29 +44,20 @@ export class ArDashBoardComponent implements OnInit {
             plugins: {
                 legend: {
                     position: 'none',
-                },
-               
+                    labels: {
+                        color: '#495057'
+                    }
+                }
             },
-        //      scales: {
-        //         xAxes: [{
-        //             gridLines: {
-        //                 display: false
-        //             }
-        // }],
-        //         yAxes: [{
-        //             gridLines: {
-        //                 display: false
-        //             }
-        // }]
-        //     }
+      
             scales: {
                 x: {
                     ticks: {
-                        color: '#ebedef'
+                        color: 'black'
                     },
                     grid: {
                         color: 'rgba(255,255,255,0.2)',
-                        display:false
+                        display:true
                     }
                 },
                 y: {

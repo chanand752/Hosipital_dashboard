@@ -1,15 +1,17 @@
 
 
 .ar-card-heading {
-    color: #ffffff;
-    background-color: rgb(124, 226, 225);
+    color: #fffffffa;
+    background-color: #37afd8ba;
     margin: 0px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    font-size: 1.2rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1.1rem;
     border: none;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: "Gill Sans", sans-serif;
     // color: #f38332;
 }
 
@@ -20,6 +22,7 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding-bottom: 1rem;
+    font-family: "Gill Sans", sans-serif;
 }
 
 .net-collection-rate-card {
@@ -38,6 +41,17 @@
 
 }
 
+.net-collection-card-heading-1 {
+    // font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 15px;
+  padding-top: 0px;
+  padding-bottom: 0.5rem;
+  padding-left: 0.7rem;
+  padding-right: 0.5rem;
+
+}
+
 .net-collection-card-inner {
     height: 5px;
     max-width: 25rem;
@@ -50,52 +64,74 @@
     // border-end-end-radius: 5rem;
 }
 
+::ng-deep .p-progressbar {
+    border: 0 none;
+    height: 2.5rem;
+    background-color: rgb(219 41 41 / 51%);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius:2rem ;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius:2rem ;
+    
+}
+
+::ng-deep .p-progressbar .p-progressbar-value {
+    border: 0 none;
+    margin: 0;
+    background: rgb(39 229 39 / 52%);
+}
+
 .ar-dashboard-child-card-1 {
-    background-color: #37afd8;
-    border-radius: 5px;
-    padding: 2rem;
+    background-color: #3388a5e3;
+    border-radius: 10px;
+    padding: 1.5rem;
     color: #ffffff;
     margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
     justify-content:space-between ;
+    font-family: "Gill Sans", sans-serif;
     
 }
 
 .ar-dashboard-child-card-2 {
-    background-color: #48a3e0;
-    border-radius: 5px;
-    padding: 2rem;
+    background-color: #3983b5;
+    border-radius: 10px;
+    padding: 1.5rem;
     color: #ffffff;
-    margin-bottom: 1rem;
+    margin-bottom: 0.9rem;
     display: flex;
     flex-direction: row;
     justify-content:space-between ;
+    font-family: "Gill Sans", sans-serif;
 }
 .ar-dashboard-child-card-currency {
-    background-color: #48a3e0;
-    border-radius: 5px;
-    padding-top: 2rem;
-    padding-left: 2rem;
+    background-color: #3983b5;
+    border-radius: 10px;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
     padding-right: 1.5rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
     color: #ffffff;
     // margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
     justify-content:space-between ;
+    font-family: "Gill Sans", sans-serif;
 }
 
 .providers-card-heading {
     color: #ffffff;
-    background-color: rgb(124, 226, 225);
+    background-color: #37afd8ba;
     margin: 0px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    font-size: 1.2rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1.1rem;
     border: none;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: "Gill Sans", sans-serif;
     // color: #fafafa;
 }
 
@@ -106,48 +142,70 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding-bottom: 1rem;
+    font-family: "Gill Sans", sans-serif;
    
 }
-:host {
-    ::ng-deep {
- .providers {
-    width: 27rem !important;
-    height: 15rem !important;
- }
-}
-}
+
 .claim-card-heading {
     color: #ffffff;
-    background-color: rgb(12, 72, 169);
+    background-color: rgb(6 29 62);
     margin: 0px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    font-size: 1.2rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1.1rem;
     border: none;
     text-align: center;
-    padding: 5px;
+    font-weight: bold;
+    padding: 10px;
+    font-family: "Gill Sans", sans-serif;
 }
 
 .calim-card-content-color {
-    background-color: rgb(2, 42, 102);
+    background-color: #023964f2;
     color: #ffffff;
     border: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+
     padding-bottom: 1rem;
+    font-family: "Gill Sans", sans-serif;
 }
 
 .child-par-fontSize {
     font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "Gill Sans", sans-serif;
 }
 
 .child-par-fontSize-span {
     font-size: 3.5rem;
-    padding-top: 0px;
+    font-weight: 550;
+    font-family: "Gill Sans", sans-serif;
+    padding-bottom: 0px;
+    
+}
+
+.child-par-fontSize-days {
+    font-size: 1.2rem;
+    font-family: "Gill Sans", sans-serif;
+    padding-bottom: 0px;
+}
+
+.child-par-fontSize-span-days {
+    font-size: 3.5rem;
+    font-weight: 550;
+    padding: 0px;
+    font-family: "Gill Sans", sans-serif;
+    
 }
 
 .child-card-samll-para-heading {
     font-size: 1rem;
+    font-family: "Gill Sans", sans-serif;
     // display: flex;
     // flex-direction: row;
 }
@@ -158,35 +216,63 @@
     height: 2.5rem;
     padding: 0.5rem;
     text-align: center;
-    background-color: rgb(20, 96, 209);
+    background-color: #3788d85e;
     color: #e0e0e0;
     font-size: 15px;
+    font-family: "Gill Sans", sans-serif;
 }
 
 .claimDanial_pargraph {
     color: #e0e0e0;
-    font-size: 15px;
+    font-size: 0.9rem;
+    font-weight: 550;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.card-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 
 .currency-allignment {
     font-size: 2rem;
     font-weight: bold;
+    font-family: "Gill Sans", sans-serif;
 }
 
 .up-button {
     border-radius: 5rem;
     background-color: rgb(9, 183, 231);
     padding: 0.5rem;
+    
     margin-left: 10px;
     
 }
 
 .down-button {
     border-radius: 5rem;
-    background-color: rgb(204, 20, 3);
+    background-color: rgb(226, 93, 81);
     padding: 0.5rem;
     margin-left: 10px;
     
 }
 
+.vertical {
+    border-left: 3px solid rgb(14, 14, 14);
+    height: 6.5vh;
+    position:absolute;
+    left: 37.3%;;
+  }
+
+  .percentage {
+    padding-left: 10rem;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  .percentage-1 {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(9 221 64);
+  }

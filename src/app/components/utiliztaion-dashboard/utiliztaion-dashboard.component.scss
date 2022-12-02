@@ -25,12 +25,14 @@
   font-size:x-large;
 }
 
-.sty{
-  font-family:'Times New Roman', Times, serif;
-  color: rgb(38, 133, 156);
+// .sty{
+//   font-family:'Times New Roman', Times, serif;
+//   color: rgb(38, 133, 156);
   
+// }
+:host ::ng-deep .custom-panel .panel1 .p-panel-header{
+  padding-left: 100px !important;
 }
-
 
 @media screen ,(max-width: 425px) {
 .icon {

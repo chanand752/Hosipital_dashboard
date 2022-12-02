@@ -1,5 +1,5 @@
 :host ::ng-deep .p-dropdown {
-    width: 20rem;
+    width: 230px;
     border-radius: 0.5em;
     margin-left: 1rem;
 }
@@ -35,5 +35,54 @@
 .image{
     
     width: 32px;
-    float: right;
+    float: left;
 }
+
+.plus-icon {
+    height: 17px;
+    margin-top: 9px;
+    margin-left: 2px;
+    margin-right: 8px;
+    margin-bottom: 0px;
+}
+
+.header-part-heading {
+    font-family: "Lucida Console";
+    // font-family: "Gill Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 650;
+    margin: 0px;
+}
+
+.sub-heading {
+    font-family: "Lucida Console";
+    font-size: 0.5rem;
+    margin-left: 5.7vh;
+    color: #ffffff;
+    font-style: italic;
+}
+
+.container {
+    // background: gray;
+    width: 100%;
+    height: auto; /* height given for illustration */
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+  }
+
+  .card-icon-heading {
+    font-family:"Gill Sans", sans-serif ;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+
+
+  .header-user-icon{
+    margin-right: -11px;
+    width: 2rem;
+    height: 22px;
+  }
+

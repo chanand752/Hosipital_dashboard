@@ -6,7 +6,8 @@
                 <div class="col-12">
                     <div class="grid">
                         <!-- <div class="col-1"> -->
-                            <img src="assets/utilization/documents.png" width="50px" style="height:3rem;margin-left:2vh;margin-top:14px">
+                        <img src="assets/utilization/documents.png" width="50px"
+                            style="height:3rem;margin-left:2vh;margin-top:14px">
 
                         <!-- </div> -->
                         <div class="col-11" style="margin-left:-40px; margin-top:6px">
@@ -19,7 +20,7 @@
                 </div>
 
 
-               
+
             </div>
         </div>
         <div class="col-1 footer-icons">
@@ -41,7 +42,7 @@
 
 <div style="border-top: 4px solid rgb(60, 141, 161);">
     <div class="card" style="background-color:rgb(217, 235, 243);">
-       
+
         <div class="grid ">
             <div class="col-12 sm:col-12 md:col-12 lg:col-4">
                 <div class="p-3 border-round-sm font-bold text-white">
@@ -72,7 +73,7 @@
                                             <div style="margin-top: 1vh; margin-left: 1vh;">
                                                 Low : 79% (Pediatrics)
                                             </div>
-                                       
+
                                         </div>
                                     </div>
                                 </p-card>
@@ -100,7 +101,7 @@
                                             <div style="margin-top: 1vh; margin-left: 1vh;">
                                                 Low : 1% (Dermatology)
                                             </div>
-                                           
+
                                         </div>
                                     </div>
                                 </p-card>
@@ -130,7 +131,7 @@
                                             <div style="margin-top: 1vh; margin-left: 2px;">
                                                 Low : 2% (Neurology)
                                             </div>
-                                         
+
                                         </div>
                                     </div>
                                 </p-card>
@@ -159,7 +160,7 @@
                                             <div style="margin-top: 1vh; margin-left: -2px;">
                                                 Low : 0% (Opthamology)
                                             </div>
-                                      
+
                                         </div>
                                     </div>
                                 </p-card>
@@ -178,11 +179,12 @@
                                 [style]="{'max-width':'100rem','margin-top':'0%','background-color':'rgb(236, 244, 252)'}"
                                 styleClass="shadow-2" class="panel1">
                                 <ng-template pTemplate="header">
-                                    <img src="assets/utilization/beds.jpg" alt="" width="7%" style="margin-left:-1rem; height:3vh">
+                                    <img src="assets/utilization/beds.jpg" alt="" width="7%"
+                                        style="margin-left:-1rem; height:3vh">
                                     Beds
                                 </ng-template>
                                 <div class="grid" style="margin-left:4rem">
-                              
+
                                     <div class="col-12 sm:col-6 md:col-6 lg:col-3">
                                         <div class="rounded-circle"
                                             style="background-color:rgb(38, 133, 156);font-size:xx-large;">
@@ -190,7 +192,7 @@
                                             <p style="font-size:medium">Overall</p>
                                         </div>
                                     </div>
-                                
+
 
                                     <div class="col-12 sm:col-6 md:col-6 lg:col-3">
                                         <div class="rounded-circle"
@@ -291,12 +293,15 @@
                 <div class="col-12 sm:col-12 md:col-6 lg:col-4" style="padding-left: 1rem;padding-right: 2vh; ">
 
                     <p-panel [style]="{'max-width':'100rem','margin-top':'0%','background-color':'rgb(236, 244, 252)'}"
-                        styleClass="shadow-2" class="panel1">
-                        <ng-template pTemplate="header">
+                        styleClass="shadow-2" class="panel1 custom-panel">
+                       
+                        <ng-template pTemplate="header" >
                             Patients
                         </ng-template>
+                
                         <div>
-                            <p-chart type="bar" [data]="patientData.PatientsDataVetical" [options]="patientOptions"></p-chart>
+                            <p-chart type="bar" [data]="patientData.PatientsDataVetical" [options]="patientOptions">
+                            </p-chart>
                         </div>
                     </p-panel>
                 </div>
@@ -307,7 +312,8 @@
                             Time Spent (min)
                         </ng-template>
                         <div>
-                            <p-chart type="bar" [data]="patientData.TimeSpentChart" [options]="patientOptions"></p-chart>
+                            <p-chart type="bar" [data]="patientData.TimeSpentChart" [options]="patientOptions">
+                            </p-chart>
                         </div>
                     </p-panel>
                 </div>

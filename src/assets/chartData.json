@@ -8,14 +8,14 @@
         ],
         "datasets": [
             {
-                "label": "My First dataset",
-                "backgroundColor": "#42A5F5",
-                "fill":false,
+                "label": "",
+                "backgroundColor": "#1c80cf",
+                "fill":true,
                 "data": [
-                    30,
-                    60,
+                    120,
                     90,
-                    120
+                    60,
+                    30
                 ]
             }
         ]
@@ -27,13 +27,11 @@
         ],
         "datasets": [
             {
-                "label": "My First dataset",
-                "backgroundColor": "#42A5F5",
+                "label": "",
+                "backgroundColor": "#1c80cf",
                 "data": [
-                    30,
-                    60,
-                    90,
-                    120
+                    20,
+                    14
                 ]
             }
         ]
@@ -77,7 +75,7 @@
         ],
         "datasets": [
             {
-                "label": "My First dataset",
+                "label": "",
                 "backgroundColor": "#f38332",
                 "color": "red",
                 "data": [
@@ -100,7 +98,7 @@
         ],
         "datasets": [
             {
-                "label": "'First Dataset'",
+                "label": "",
                 "data": [
                     86,
                     88,
@@ -121,11 +119,53 @@
         ],
         "datasets": [
             {
-                "label": "'First Dataset'",
+                "label": "",
                 "data": [
                     4,
                     5,
                     4
+                    
+                ],
+                "fill": false,
+                "borderColor": "#42A5F5",
+                "tension": 0
+            }
+        ]
+    },
+    "TimeLinesLineChart": {
+        "labels": [
+            "July",
+            "Augest",
+            "September"
+        ],
+        "datasets": [
+            {
+                "label": "",
+                "data": [
+                    64,
+                    63,
+                    57
+                    
+                ],
+                "fill": false,
+                "borderColor": "#42A5F5",
+                "tension": 0
+            }
+        ]
+    },
+    "IncidentsLineChart": {
+        "labels": [
+            "July",
+            "Augest",
+            "September"
+        ],
+        "datasets": [
+            {
+                "label": "",
+                "data": [
+                    45,
+                    30,
+                    53
                     
                 ],
                 "fill": false,
@@ -143,7 +183,7 @@
         ],
         "datasets": [
             {
-                "label": "My First dataset",
+                "label": "",
                 "backgroundColor": " rgb(14, 135, 196) ",
                 "data": [
                     12,
@@ -200,55 +240,58 @@
     
     "patient_vs_admisionsChart": {
         "labels": [
-            "0",
             "1",
             "2",
-            "3"
+            "3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","20","21","22","23","24","25","26","27","28","29","30"
         ],
         "datasets": [
             {
-                "label": "My First dataset",
-                "backgroundColor": "#42A5F5",
-                "fill":false,
-                "data": [
-                    0,
-                    2,
-                    3,
-                    4
+                "label": "Patients",
+                "backgroundColor": "#36369c",
+                "data": [100,90,45,78,83,95,58,
+                        82,46,82,100,93,42,75,84,95,58,82,55,82,
+                        100,90,43,75,84,94,57,81,50,81    
                 ]
             },
             {
-                "label": "My Second dataset",
-                "backgroundColor": "#FFA726",
-                "data": [28, 48, 40, 19, 86, 27, 90]
+                "label": "Admissions",
+                "backgroundColor": "#f2a082",
+                "fill":false,
+                "data": [
+                    20,20,10,15,22,30,25,23,35,22,32,34,18,21,23,
+                    32,24,35,23,25,37,36,15,35,39,39,24,32,15,15
+                   
+                ]
             }
         ]
         
     },
       
+
+   
+
     "daillyTrfiicPattern": {
         "labels": [
-            "0",
             "1",
             "2",
-            "3"
+            "3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","20","21","22","23","24"
         ],
         "datasets": [
             {
-                "label": "My First dataset",
-                "backgroundColor": "#42A5F5",
+                "label": "",
+                "backgroundColor": "#36369c",
                 "fill":false,
                 "data": [
-                    0,
-                    2,
-                    3,
-                    4
+                   6,8,9,6.5,4,10,13,17,25,28,31,31.5,24.5,24,35.5,38,43,45,42,37,27,12,7,7
                 ]
             }
         
         ]
         
     },
+
+
+    
     "divisionsChartData": {
         "labels": [
             "Cardiology",
@@ -265,7 +308,7 @@
         ],
         "datasets": [
             {
-                "label": "My First dataset",
+                "label": "",
                 "backgroundColor": "#42A5F5",
                 "color": "white",
                 "data": [

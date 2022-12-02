@@ -3,26 +3,38 @@
 
 .heading {
     color: #ffffff;
-    background-color: rgb(12, 72, 169);
+    background-color: rgb(6 29 62);
     margin: 0px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    font-size: 1.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1.4rem;
     border: none;
+    font-weight: 540;
+    font-family: "Gill Sans", sans-serif;
 }
 
 .card-content-color {
-    background-color: rgb(2, 42, 102);
-    color: #ffffff;
+    background-color: #023964f2;
+    color: #fffcfc;
     border: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding-bottom: 1rem;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: 510;
+    font-size: 1.2rem;
 }
+
+
+
+
 
 
  .icon{
     padding: 1rem;
+    color: rgb(4, 78, 124);
  }
 
 // .image-card {
@@ -37,21 +49,23 @@
     border-radius: 20rem;
     width: 20rem;
     height: 20rem;
-    padding: 5px;
+    // padding: 5px;
 }
 
 .input-tag {
     width: 130%;
-    border: none;
+    border: 1px solid;
     border-radius: 20px;
     padding-top: 10px;
-    font-family: 'Roboto';
-  
+    font-family: "Gill Sans", sans-serif;
+    font-style: italic;
+     font-weight: 500;
+     font-size: 1.1rem;
    
 }
 
 .doctor-image-heading {
-    font-family: 'Roboto';
+  font-family: "Gill Sans", sans-serif;
     font-size: 30px;
     font-weight: bold;
     text-align: center;
@@ -60,7 +74,7 @@
 }
 
 .doctor-image-sub-heading {
-    font-family: 'Roboto';
+  font-family: "Gill Sans", sans-serif;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -69,7 +83,7 @@
 }
 
 .doctor-image-sub-heading-1{
-    font-family: 'Roboto';
+  font-family: "Gill Sans", sans-serif;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -86,16 +100,76 @@
 // css Meadia quires 
 .body {
     padding-top: 2rem;
-    padding-left: 3.5rem;
+    padding-left: 1.5rem;
     padding-bottom: 3.5rem;
-    padding-right: 3.5rem;
 }
 
 @media screen and (max-width: 992px) {
     .body {
-      padding-left: 8rem ;
+      padding-left: 17rem ;
       padding-right: 3rem;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .body {
+      padding-left: 5rem !important;
+      padding-right: 0rem !important;
+    }
+  }
   
+  // @media screen and (min-width:425px) {
+  //   .body {
+  //       padding-left: 2.5rem ;
+       
+  //     }
+  // }
+
+
+  .doctor-image {
+    width: 5vh;
+  }
+
+//   @media screen and (min-width:768px) {
+//   .newCard {
+//     min-width: 18.3rem;
+//     min-height: 11rem;
+//     padding: 1rem;
+//     background-color: rgb(2, 42, 102);
+//     color: #ffffff;
+//     border: none;
+//     border-bottom-left-radius: 5px;
+//     border-bottom-right-radius: 5px;
+//   }
+
+//   .newHeading {
+//     color: #ffffff;
+//     background-color: rgb(12, 72, 169);
+//     margin: 0px;
+//     border-top-left-radius: 5px;
+//     border-top-right-radius: 5px;
+//     font-size: 1.5rem;
+//     border: none;
+//     min-width: 18.3rem;
+// }
+//   }
+
+
+//icon card css 
+
+.icon-cards {
+  width: 3vw;
+  height:37px;
+  padding-bottom: 0.2rem;
+  padding-top: 0.3rem;
+  padding-left: 0.7rem;
+  padding-right: 0.5rem;
+}
+
+
+::ng-deep .pi-search:before {
+  content: "\e908";
+  font-weight: 800;
+  color: black;
+}
 

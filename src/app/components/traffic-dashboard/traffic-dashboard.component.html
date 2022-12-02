@@ -1,20 +1,20 @@
 <div class="layout-footer p-2">
     <div class="grid">
-        <div class="col-1">
+        <div class="col-1" style="width:6%;">
             <a href="/" class="logo-container">
-                <img src="assets/doctor.png" width="80%"  />
+                <img src="assets/compunder.png" width="55px" style="height:3rem;margin-left:1vh;" />
             </a>
         </div>
-        <div class="col-7">
+        <div class="col-7" style="padding-top: 0.8rem;">
             <div class="sty" style="font-size:x-large"><b>Cayman Islands HSA</b></div>
-            <div><b>Traffic Dashboard-September 2022</b></div>
+            <div class="sub-heading"><b>Traffic Dashboard - September 2022</b></div>
         </div>
-        <div class="col-4 footer-icons">
+        <div class="col-4 footer-icons" style="padding-top: 0.8rem;">
 
-            <img src="assets/time/hospital.png" alt="">
+            <img src="assets/time/hospital.png" alt="" width="50px" style="height:3rem;margin-left:1vh;margin-top:5px">
             &nbsp;&nbsp;
 
-            <img src="assets/time/calendar.png" alt="">
+            <img src="assets/time/calendar.png" alt="" width="50px" style="height:3rem;margin-left:1vh;margin-top:5px">
 
         </div>
     </div>
@@ -25,19 +25,19 @@
         <div class="grid flex justify-content-between">
             <div class="col-12 md:col-6 lg:col-2">
                 <div class=" traffic-dashboard-child-card-1 ">
-                   
+
                     <p class="child-par-fontSize-span">1278<span class="child-card-samll-para-heading">
                             Total Patients</span></p>
-                        </div>
-              
+                </div>
+
             </div>
             <div class="col-12 md:col-6 lg:col-2">
                 <div class=" traffic-dashboard-child-card-2 ">
-                 
+
                     <p class="child-par-fontSize-span">37% <br><span class="child-card-samll-para-heading">
                             Admissions</span></p>
-                        </div>
-              
+                </div>
+
             </div>
             <div class="col-12 md:col-6 lg:col-2">
                 <div class=" traffic-dashboard-child-card-3 ">
@@ -65,12 +65,13 @@
             <div class="col-12 md:col-12 lg:col-8">
                 <div class="grid">
                     <div class="col-12 md:col-12 lg:col-6">
-                        <h1 class="traffic-card-heading-90days"> Patient vs Admission
+                        <h1 class="traffic-card-heading-90days"> Patient VS Admission
                         </h1>
                         <div class="card traffic-card-content-color-90days">
 
-                            <p-chart type="bar" [data]="basicData.patient_vs_admisionsChart" [options]="basicOptions"></p-chart>
-                          
+                            <p-chart type="bar" [data]="basicData.patient_vs_admisionsChart" [options]="basicOptions">
+                            </p-chart>
+
                         </div>
                     </div>
                     <div class="col-12 md:col-12 lg:col-6">
@@ -78,7 +79,7 @@
                         </h1>
                         <div class="card traffic-card-content-color-90days">
 
-                            <p-chart type="bar" [data]="basicData.daillyTrfiicPattern" [options]="basicOptions">
+                            <p-chart type="bar" [data]="basicData.daillyTrfiicPattern" [options]="basicOptionsTrafiic">
                             </p-chart>
                         </div>
                     </div>
@@ -89,30 +90,29 @@
                         </h1>
                         <div class="card traffic-card-content-color-90days">
                             <div class="grid">
-                                <div class="col-4 col-offset-4"><i class="pi pi-user"
-                                        style="font-size: 2rem; color: rgb(12, 197, 197);"></i></div>
-                                <div class="col-4"><i class="pi pi-dollar"
-                                        style="font-size: 2rem; color: rgb(12, 197, 197);"></i></div>
+                                <div class="col-6"></div>
+                                <div class="col-3 "><span><img src="assets/user.png"  style="width:2vw;height:27px;"/></span></div>
+                                <div class="col-3"><span><img src="assets/dollar-symbol.png" style="width:2vw;height:27px;"/></span></div>
                             </div>
-                            <div class="grid">
-                                <div class="col-4">St.Geroge Clinc</div>
-                                <div class="col-4">270</div>
-                                <div class="col-4">37.5k</div>
+                            <div class="grid line-height">
+                                <div class="col-6">St.Geroge Clinc</div>
+                                <div class="col-3">270</div>
+                                <div class="col-3">37.5k</div>
                             </div>
-                            <div class="grid">
-                                <div class="col-4">Rapid Care</div>
-                                <div class="col-4">217</div>
-                                <div class="col-4">44.5k</div>
+                            <div class="grid line-height">
+                                <div class="col-6">Rapid Care</div>
+                                <div class="col-3">217</div>
+                                <div class="col-3">44.5k</div>
                             </div>
-                            <div class="grid">
-                                <div class="col-4">Town Clinc</div>
-                                <div class="col-4">146</div>
-                                <div class="col-4">21k</div>
+                            <div class="grid line-height">
+                                <div class="col-6">Town Clinc</div>
+                                <div class="col-3">146</div>
+                                <div class="col-3">21k</div>
                             </div>
-                            <div class="grid">
-                                <div class="col-4">Dr.Adrew Chin</div>
-                                <div class="col-4">67</div>
-                                <div class="col-4">12.5k</div>
+                            <div class="grid line-height">
+                                <div class="col-6">Dr.Adrew Chin</div>
+                                <div class="col-3">67</div>
+                                <div class="col-3">12.5k</div>
                             </div>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
                 </div>
 
             </div>
-            <div class="col-12 md:col-12 lg:col-4">
+            <div class="col-12 md:col-12 lg:col-4" style="padding-bottom:10rem; padding-top: 0px;" >
 
                 <div class="col-12 md:col-12 lg:col-12">
                     <h1 class="traffic-card-heading-90days"> Divisions
@@ -134,9 +134,8 @@
                     <div class="card traffic-card-content-color-90days ">
 
                         <div class="grid">
-                            <div class="col-4 col-offset-4"  style="padding-left: 1rem;"><i class="pi pi-user"
-                                    style="font-size: 2rem; color: rgb(12, 197, 197);"></i></div>
-                            <div class="col-4" style="padding-left: 3.5rem;"><i class="pi pi-clock"
+                            <div class="col-4 col-offset-3" style="padding-right: 3rem;"><span><img src="assets/user.png"  style="width:2vw;height:27px;"/></span></div>
+                            <div class="col-4" style="padding-left: 5.6rem;"><i class="pi pi-clock"
                                     style="font-size: 2rem; color: rgb(12, 197, 197);"></i></div>
                         </div>
                         <div class="grid">
@@ -234,7 +233,7 @@
                                     </div>
                                 </div>
 
-                                
+
                             </div>
 
                             <div class="col-4">

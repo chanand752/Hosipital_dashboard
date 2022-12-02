@@ -1,5 +1,5 @@
 .traffic-dashboard-child-card-1 {
-    background-color: #0793c1ed;
+    background-color: rgb(10 125 163 / 81%);
     border-radius: 5px;
     padding-top: 1rem;
     padding-right: 3rem;
@@ -9,6 +9,8 @@
     margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: 550;
     //  justify-content:center ;
     
 }
@@ -17,13 +19,15 @@
     background-color: #7b68ee94;
     border-radius: 5px;
     padding-top: 1rem;
-    padding-right: 3rem;
+    padding-right: 2rem;
     padding-bottom: 1rem;
-    padding-left: 3rem;
+    padding-left: 4rem;
     color: #ffffff;
     margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: 550;
     // justify-content:flex-start;
 }
 
@@ -31,13 +35,15 @@
     background-color: #fa8072db;
     border-radius: 5px;
     padding-top: 1rem;
-    padding-right: 3rem;
+    padding-right: 2rem;
     padding-bottom: 1rem;
-    padding-left: 3rem;
+    padding-left: 3.5rem;
     color: #ffffff;
     margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: 550;
     // justify-content:flex-start ;
 }
 
@@ -45,26 +51,26 @@
     background-color: #efc577;
     border-radius: 5px;
     padding-top: 1rem;
-    padding-right: 3rem;
+    padding-right: 2rem;
     padding-bottom: 1rem;
-    padding-left: 3rem;
+    padding-left: 3.5rem;
     color: #ffffff;
     margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: 550;
     // justify-content:flex-start ;
 }
 .traffic-dashboard-child-card-5 {
     background-color: #52ac33b5;
     border-radius: 5px;
-    padding-top: 1rem;
-    padding-right: 3rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
     color: #ffffff;
     margin-bottom: 1rem;
-    display: flex;
-    flex-direction: row;
+    font-weight: 550;
+    font-family: "Gill Sans", sans-serif;
     // justify-content:flex-start ;
 }
 
@@ -72,12 +78,14 @@
 .child-par-fontSize {
     font-size: 1.5rem;
     justify-content:flex-start ;
+    font-family: "Gill Sans", sans-serif;
 }
 
 .child-par-fontSize-span {
     font-size: 2rem;
     justify-content:center ;
     text-align: center;
+    font-family: "Gill Sans", sans-serif;
 }
 
 .child-card-samll-para-heading {
@@ -85,37 +93,47 @@
     display: flex;
     flex-direction: row;
     justify-content:center ;
+    font-family: "Gill Sans", sans-serif;
 }
 
 .traffic-card-heading-90days {
     color: #ffffff;
-    background-color: rgb(124, 226, 225);
+    background-color: #37afd8ba;
     margin: 0px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     border: none;
+    font-weight: bold;
     text-align: center;
-    padding: 5px;
-    // color: #f38332;
+    padding: 10px;
+    font-family: "Gill Sans", sans-serif;
+    // color: #f2a082;
 }
 
 .traffic-card-content-color-90days {
     background-color: rgb(255, 255, 255);
-    color: #000000;
-    font-weight: bold;
+    color: #474747;
+    font-weight:bold;
+    font-size: 1rem;
     border: none;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding-bottom: 1rem;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.line-height {
+    line-height: 1.5;
 }
 
 .color-box {
-    background-color: #08b2eb;
+    background-color: #1b92ba;
     color: #ffffff;
     border: none;
     // padding: 5px;
     height: 2rem;
+    font-family: "Gill Sans", sans-serif;
 }
 
 .box-1 {
@@ -177,11 +195,12 @@ width: 14%;
 
 .map-card {
     border-radius: 3px;
-    background: #ffffff;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    padding-left: 16px;
-    padding-right: 16px;
+   
+    padding: 0px;
+    // padding-top: 10px;
+    // padding-bottom: 5px;
+    // padding-left: 16px;
+    // padding-right: 16px;
     margin-bottom: 0px;
     border: 1px solid #EEEEEE;
     -moz-border-radius: 3px;

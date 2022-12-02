@@ -10,6 +10,7 @@ import { HttpClient } from '@angular/common/http';
 export class TrafficDashboardComponent implements OnInit {
   basicData: any;
   basicOptions: any;
+  basicOptionsTrafiic: any;
   divisionsChartOptions:any;
   options: any;
   overlays: any[];
@@ -20,11 +21,54 @@ export class TrafficDashboardComponent implements OnInit {
       plugins: {
         legend: {
 
+          position: 'bottom',
+
+          labels: {
+            color: '#495057',
+            boxWidth: 12
+          }
+          
+        }
+      },
+      
+      scales: {
+        x: {
+          ticks: {
+            color: '#495057'
+          },
+          grid: {
+            color: '#ebedef',
+            display:false
+          }
+        },
+        y: {
+          ticks: {
+            color: '#495057',
+            min:0,
+            max:15
+
+          },
+          grid: {
+            color: '#ebedef'
+          }
+        }
+      }
+    }
+
+
+    // trffic chart 
+    
+    this.basicOptionsTrafiic = {
+      plugins: {
+        legend: {
+
           position: 'none',
 
           labels: {
-            color: '#495057'
+            color: '#495057',
+            boxWidth: 12
           }
+          
         }
       },
       

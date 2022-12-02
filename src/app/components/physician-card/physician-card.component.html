@@ -1,191 +1,243 @@
 <div class="layout-footer p-2">
     <div class="grid">
-        <div class="col-1 md:col-1 lg:col-1">
+        <div class="col-1 md:col-1 lg:col-1" style="width:6%;">
             <a href="/" class="logo-container">
-                <img src="assets/doctor.png" width="80%"  />
+                <img src="assets/doctor (2).png" width="55px" style="height:3rem;margin-left:1vh;" />
             </a>
         </div>
-        <div class="col-7 md:col-7 lg:col-7">
+        <div class="col-7 md:col-7 lg:col-7" style="padding-top: 0.8rem;">
             <div class="sty" style="font-size:x-large"><b>Cayman Islands HSA</b></div>
-            <div><b>Physician Card-September 2022</b></div>
+            <div class="sub-heading"><b>Physician Card - September 2022</b></div>
         </div>
-        <div class="col-4 md:col-4 lg:col-4 footer-icons">
+        <div class="col-4 md:col-4 lg:col-4 footer-icons" style="padding-top: 0.8rem;">
 
-            <img src="assets/time/hospital.png" alt="">
+            <img src="assets/time/hospital.png" alt="" width="50px" style="height:3rem;margin-left:1vh;margin-top:5px">
             &nbsp;&nbsp;
 
-            <img src="assets/time/calendar.png" alt="">
+            <img src="assets/time/calendar.png" alt="" width="50px" style="height:3rem;margin-left:1vh;margin-top:5px">
 
         </div>
     </div>
 </div>
 
 <div class="grid card-color">
-    <div  class="col-12 md:col-12  lg:col-4 body">
+    <div class="col-12 md:col-12  lg:col-3 body">
         <div class="grid">
-        <div class="col-12"> 
-        <img class="image "
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4hhchozR9QbvQFVMfBR9r1haJXsO54SKvyw&usqp=CAU"
-            alt="imag" />
-        </div>
-            <div class="grid"> 
-            <div class="col-12"> 
-            <h1 class="doctor-image-heading ">Dr.Barbar Corgan</h1>
-            <p class="doctor-image-sub-heading">Family Practice</p>
-            <p class="doctor-image-sub-heading">West Bay Health Center</p>
-            <p class="doctor-image-sub-heading-1">Joined: 2019</p>
-            <span class="p-input-icon-left ">
-                <i class="pi pi-search"></i>
-                <input type="text" pInputText placeholder="Find a Physician or Department" [(ngModel)]="value3"
-                class="input-tag" />
-            </span>
-        </div>
-        </div>
+            <div class="col-12" style="padding-top: 2px;">
+                <img class="image " src="assets/blackDoctor.jpg" alt="imag" />
+            </div>
+            <div class="grid">
+                <div class="col-12">
+                    <h1 class="doctor-image-heading ">Dr. Barbara Corgan</h1>
+                    <p class="doctor-image-sub-heading">Family Practice</p>
+                    <p class="doctor-image-sub-heading">West Bay Health Center</p>
+                    <p class="doctor-image-sub-heading-1">Joined: 2019</p>
+                    <div style="padding-left: 1.2rem;">
+                        <span class="p-input-icon-left ">
+                            <i class="pi pi-search"></i>
+                            <input type="text" pInputText placeholder="Find a Physician or department"
+                                [(ngModel)]="value3" class="input-tag" />
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="grid col-12 md:col-12 lg:col-8" style="padding: 2rem;">
+    <div class="grid col-12 md:col-12 lg:col-9" style="padding-top: 2rem;padding-bottom: 2rem; ">
         <div class="col-12 md:col-4  lg:col-4 ">
-            <h1 class="heading"><i class="pi pi-users icon" style="font-size: 1.5rem"></i>
-                <span>Traffic</span>
+            <h1 class="heading ">
+                <div class="grid">
+                    <div class="col-2" style="padding-bottom: 0px;">
+                        <img src="assets/user.white.png" class="icon-cards" />
+                    </div>
+                    <div class="col-3" style="padding-top: 1.2rem; padding-left: 0.3rem;   padding-bottom: 0.5rem;">
+                        <span>Traffic</span>
+                    </div>
+                </div>
             </h1>
-            <div class="card card-content-color ">
+            <div class="card-content-color card">
                 <div class="grid">
                     <div class="col-9 md:col-9  lg:col-9 ">Total Patients</div>
-                    <div class="col-3 md:col-3  lg:col-3 ">123</div>
+                    <div class="col-3 md:col-3  lg:col-3">123</div>
                 </div>
                 <div class="grid">
                     <div class="col-9 md:col-9  lg:col-9 ">Door To Doctor</div>
-                    <div  class="col-3 md:col-3  lg:col-3 ">23 min</div>
+                    <div class="col-3 md:col-3  lg:col-3 ">23 min</div>
                 </div>
                 <div class="grid">
                     <div class="col-9 md:col-9  lg:col-9 ">Patients Admitted</div>
-                    <div  class="col-3 md:col-3  lg:col-3 ">14(11%)</div>
+                    <div class="col-3 md:col-3  lg:col-3 ">14(11%)</div>
                 </div>
                 <div class="grid">
                     <div class="col-9 md:col-9  lg:col-9 ">LOS (Patients Admitted)</div>
-                    <div  class="col-3 md:col-3  lg:col-3 ">123</div>
+                    <div class="col-3 md:col-3  lg:col-3 ">1.1days</div>
                 </div>
                 <div class="grid">
                     <div class="col-9 md:col-9  lg:col-9 ">Average Treatment Cost</div>
-                    <div  class="col-3 md:col-3  lg:col-3 ">$3.5 k</div>
+                    <div class="col-3 md:col-3  lg:col-3 ">$3.5 k</div>
                 </div>
             </div>
         </div>
         <div class="col-12 md:col-4  lg:col-4 ">
-            <h1 class="heading"><i class="pi pi-clock icon" style="font-size: 1.5rem"></i> <span>Time</span>
+            <h1 class="heading ">
+                <div class="grid">
+                    <div class="col-2" style="padding-bottom: 0px;">
+                        <img src="assets/clock.card.png" class="icon-cards" />
+                    </div>
+                    <div class="col-3" style="padding-top: 1.2rem; padding-left: 0.3rem;   padding-bottom: 0.5rem;">
+                        <span>Time</span>
+                    </div>
+                </div>
             </h1>
-            <div class="card card-content-color">
+            <!-- <h1 class="heading "><i class="pi pi-clock icon" style="font-size: 1.5rem;color: white"></i>
+                <span>Time</span>
+            </h1> -->
+            <div class="card-content-color card">
                 <div class="grid">
-                    <div class="col-8">Time to Service</div>
-                    <div class="col-4">6 min</div>
+                    <div class="col-9">Time to Service</div>
+                    <div class="col-3">6 min</div>
                 </div>
                 <div class="grid">
-                    <div class="col-8">Door To Doctor</div>
-                    <div class="col-4">23 min</div>
+                    <div class="col-9">Door To Doctor</div>
+                    <div class="col-3">23 min</div>
                 </div>
                 <div class="grid">
-                    <div class="col-8">OR Blocks</div>
-                    <div class="col-4">99.8%</div>
+                    <div class="col-9">OR Blocks</div>
+                    <div class="col-3">998%</div>
                 </div>
                 <div class="grid">
-                    <div class="col-8">Time with Patient</div>
-                    <div class="col-4">17 min</div>
+                    <div class="col-9">Time with Patient</div>
+                    <div class="col-3">17 min</div>
                 </div>
                 <div class="grid">
-                    <div class="col-8">Turnover</div>
-                    <div class="col-4">12 min</div>
+                    <div class="col-9">Turnover</div>
+                    <div class="col-3">12 min</div>
                 </div>
 
             </div>
         </div>
         <div class="col-12 md:col-4  lg:col-4">
-            <h1 class="heading"><i class="pi pi-star-fill icon" style="font-size: 1.5rem"></i>
+            <h1 class="heading ">
+                <div class="grid">
+                    <div class="col-2" style="padding-bottom: 0px;">
+                        <img src="assets/pointed-star.png" class="icon-cards" />
+                    </div>
+                    <div class="col-3" style="padding-top: 1.2rem; padding-left: 0.3rem;   padding-bottom: 0.5rem;">
+                        <span>Quality</span>
+                    </div>
+                </div>
+            </h1>
+            <!-- <h1 class=" heading"><i class="pi pi-star-fill icon" style="font-size: 1.5rem;color: white"></i>
                 <span>Quality</span>
-            </h1>
-            <div class="card flex-column card-content-color">
+            </h1> -->
+            <div class="card-content-color card">
                 <div class="grid">
-                    <div class="col-8">Overall Staisfaction</div>
-                    <div class="col-4">96%</div>
+                    <div class="col-9">Overall Staisfaction</div>
+                    <div class="col-3">96%</div>
                 </div>
                 <div class="grid">
-                    <div class="col-8">Treatment Agreement</div>
-                    <div class="col-4">91%</div>
+                    <div class="col-9">Treatment Agreement</div>
+                    <div class="col-3">91%</div>
                 </div>
                 <div class="grid">
-                    <div class="col-8">Readmission Rate</div>
-                    <div class="col-4">3.3%</div>
+                    <div class="col-9">Readmission Rate</div>
+                    <div class="col-3">3.3%</div>
                 </div>
                 <div class="grid">
-                    <div class="col-8">Expected Follow-Upr</div>
-                    <div class="col-4">78%</div>
+                    <div class="col-9">Expected Follow-Upr</div>
+                    <div class="col-3">78%</div>
                 </div>
                 <div class="grid">
-                    <div class="col-8">Incidents</div>
-                    <div class="col-4">N/A</div>
+                    <div class="col-9">Incidents</div>
+                    <div class="col-3">N/A</div>
                 </div>
 
             </div>
         </div>
         <div class="col-12 md:col-4  lg:col-4">
-            <h1 class="heading"><i class="pi pi-compass icon" style="font-size: 1.5rem"></i>
-                <span>Utilization</span>
+            <h1 class="heading ">
+                <div class="grid">
+                    <div class="col-2" style="padding-bottom: 0px;">
+                        <img src="assets/settings-gears.png" class="icon-cards" />
+                    </div>
+                    <div class="col-3" style="padding-top: 1.2rem; padding-left: 0.3rem;   padding-bottom: 0.5rem;">
+                        <span>Utilization</span>
+                    </div>
+                </div>
             </h1>
-            <div class="card flex-column card-content-color">
+
+            <!-- <h1 class="heading"><i class="pi pi-compass icon" style="font-size: 1.5rem;color: white"></i>
+                <span>Utilization</span>
+            </h1> -->
+            <div class="card-content-color card">
 
                 <div class="grid">
-                    <div class="col-8">Overall Schedule</div>
-                    <div class="col-4">93%</div>
+                    <div class="col-9">Overall Schedule</div>
+                    <div class="col-3">93%</div>
                 </div>
                 <div class="grid">
-                    <div class="col-8">Bumps</div>
-                    <div class="col-4">8</div>
+                    <div class="col-9">Bumps</div>
+                    <div class="col-3">8</div>
                 </div>
                 <div class="grid">
-                    <div class="col-8">No Showa </div>
-                    <div class="col-4">21</div>
+                    <div class="col-9">No Showa </div>
+                    <div class="col-3">21</div>
                 </div>
                 <div class="grid">
-                    <div class="col-8">Canceliations</div>
-                    <div class="col-4">33</div>
+                    <div class="col-9">Canceliations</div>
+                    <div class="col-3">33</div>
                 </div>
                 <div class="grid">
-                    <div class="col-8">Time with Patient</div>
-                    <div class="col-4">17 min</div>
+                    <div class="col-9">Time with Patient</div>
+                    <div class="col-3">17 min</div>
                 </div>
 
             </div>
         </div>
         <div class="col-12 md:col-4 lg:col-4">
-            <h1 class="heading"><i class="pi pi-sitemap icon" style="font-size: 1.5rem"></i>
-                <span>Financial</span>
+            <h1 class="heading ">
+                <div class="grid">
+                    <div class="col-2" style="padding-bottom: 0px;">
+                        <img src="assets/evolution.png" class="icon-cards" />
+                    </div>
+                    <div class="col-3" style="padding-top: 1.2rem; padding-left: 0.3rem;   padding-bottom: 0.5rem;">
+                        <span>Financial</span>
+                    </div>
+                </div>
             </h1>
-            <div class="card flex-column card-content-color">
+
+            <!-- <h1 class="heading"><i class="pi pi-sitemap icon" style="font-size: 1.5rem;color: white"></i>
+                <span>Financial</span>
+            </h1> -->
+            <div class="card-content-color card">
                 <div class="grid">
-                    <div class="col-8">Total Revenue</div>
-                    <div class="col-4">$470k</div>
+                    <div class="col-9">Total Revenue</div>
+                    <div class="col-3">$470 k</div>
                 </div>
                 <div class="grid">
-                    <div class="col-8">Revenue Leakage</div>
-                    <div class="col-4">$25</div>
+                    <div class="col-9">Revenue Leakage</div>
+                    <div class="col-3">$25 k</div>
                 </div>
                 <div class="grid">
-                    <div class="col-8">Total Expeneses </div>
-                    <div class="col-4">$236</div>
+                    <div class="col-9">Total Expeneses </div>
+                    <div class="col-3">$236 k</div>
                 </div>
                 <div class="grid">
-                    <div class="col-8">Profit Margin</div>
-                    <div class="col-4">24%</div>
+                    <div class="col-9">Profit Margin</div>
+                    <div class="col-3">24%</div>
                 </div>
                 <div class="grid">
-                    <div class="col-8">Net Cash Flow</div>
-                    <div class="col-4">$136 k</div>
+                    <div class="col-9">Net Cash Flow</div>
+                    <div class="col-3">$136 k</div>
                 </div>
 
 
 
             </div>
         </div>
+
+
 
 
 

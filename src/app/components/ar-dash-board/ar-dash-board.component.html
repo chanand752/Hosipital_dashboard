@@ -1,20 +1,20 @@
 <div class="layout-footer p-2">
     <div class="grid">
-        <div class="col-1">
+        <div class="col-1" style="width:6%;">
             <a href="/" class="logo-container">
-                <img src="assets/doctor.png" width="80%" />
+                <img src="assets/compunder.png" width="55px" style="height:3rem;margin-left:1vh;" />
             </a>
         </div>
-        <div class="col-7" >
+        <div class="col-7" style="padding-top: 0.8rem;">
             <div class="sty" style="font-size:x-large"><b>Cayman Islands HSA</b></div>
-            <div><b>AR Dashboard-September 2022</b></div>
+            <div><b>AR Dashboard - September 2022</b></div>
         </div>
-        <div class="col-4 footer-icons">
+        <div class="col-4 footer-icons" style="padding-top: 0.8rem;">
 
-            <img src="assets/time/hospital.png" alt="">
+            <img src="assets/time/hospital.png" alt="" width="50px" style="height:3rem;margin-left:1vh;">
             &nbsp;&nbsp;
 
-            <img src="assets/time/calendar.png" alt="">
+            <img src="assets/time/calendar.png" alt="" width="50px" style="height:3rem;margin-left:1vh;">
 
         </div>
     </div>
@@ -27,21 +27,23 @@
             </h1>
             <div class="card ar-card-content-color">
 
-                <h5>Vertical</h5>
+                <!-- <h5>Vertical</h5> -->
                 <p-chart type="bar" [data]="products.barChartVertical" [options]="basicOptions"></p-chart>
             </div>
         </div>
         <div class="row-12 md:row-6  lg:row-4 net-collection-rate-card">
-            <h5 class="net-collection-card-heading">Net Collection Rate</h5>
-            <p class="net-collection-card-inner"></p>
+            <h5 class="net-collection-card-heading">Net Collection Rate  <span class="percentage">81% <span class="percentage-1">(+1.7)</span></span><span>  <div class = "vertical"></div></span></h5>
+            <!-- <p class="net-collection-card-inner"></p> -->
+            <p-progressBar [value]="value"></p-progressBar>
+       
         </div>
         <div>
             <h1 class="ar-card-heading"> Billed vs Collected (Millions)
             </h1>
             <div class="card ar-card-content-color">
 
-                <h5>Horizontal</h5>
-                <p-chart type="bar" [data]="products.barChatDataHorizental" [options]="horizontalOptions"></p-chart>
+                <!-- <h5>Horizontal</h5> -->
+                <p-chart type="bar" [data]="products.barChatDataHorizental" [options]="horizontalOptions" height="180"></p-chart>
 
             </div>
         </div>
@@ -52,30 +54,30 @@
             <div class="grid">
                 <div class="col-4">
                     <div class="grid">
-                        <div class="col-12">
-                            <img src="assets/time/calendar.png" alt="" width="40%"> <br>
+                        <div class="col-12" style="padding-top: 1rem;">
+                            <img src="assets/time/calendar.png" alt="" width="40%">
                         </div>
-                        <div class="col-12 net-collection-card-heading">
+                        <div class="col-12 net-collection-card-heading-1">
                             Days
                         </div>
                     </div>
                 </div>
                 <div class="col-4 ">
                     <div class="grid">
-                        <div class="col-12 child-par-fontSize">
+                        <div class="col-12 child-par-fontSize-days">
                             In AR
                         </div>
-                        <div class="col-12 child-par-fontSize-span">
+                        <div class="col-12 child-par-fontSize-span-days">
                             68
                         </div>
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="grid">
-                        <div class="col-12 child-par-fontSize">
+                        <div class="col-12 child-par-fontSize-days">
                             To Bill
                         </div>
-                        <div class="col-12 child-par-fontSize-span">
+                        <div class="col-12 child-par-fontSize-span-days">
                             14
                         </div>
                     </div>
@@ -87,10 +89,10 @@
             <div class="grid">
                 <div class="col-4">
                     <div class="grid">
-                        <div class="col-12">
+                        <div class="col-12" style="padding-top: 1rem;">
                             <img src="assets/time/gear.png" alt="" width="50%"> <br>
                         </div>
-                        <div class="col-12 net-collection-card-heading">
+                        <div class="col-12 net-collection-card-heading-1">
                             Leading
                         </div>
                     </div>
@@ -100,9 +102,9 @@
                         <div class="col-12 child-par-fontSize-span">
                             5%
                         </div>
-                        <div class="col-12 ">
-                            <p> Point of service
-                                collections </p>
+                        <div class="col-12 " style="padding: 0px;">
+                            <p> Point of Service
+                                Collections </p>
                         </div>
                     </div>
                 </div>
@@ -111,8 +113,8 @@
                         <div class="col-12 child-par-fontSize-span">
                             36%
                         </div>
-                        <div class="col-12 ">
-                            <p> Pre Registration
+                        <div class="col-12 " style="padding: 0px;">
+                            <p> Pre-Registration
                                 Rates </p>
                         </div>
                     </div>
@@ -123,10 +125,10 @@
             <div class="grid">
                 <div class="col-4">
                     <div class="grid">
-                        <div class="col-12">
+                        <div class="col-12" style="padding-top: 1rem;">
                             <img src="assets/time/gear.png" alt="" width="50%"> <br>
                         </div>
-                        <div class="col-12 net-collection-card-heading">
+                        <div class="col-12 net-collection-card-heading-1">
                             Lagging
                         </div>
                     </div>
@@ -136,7 +138,7 @@
                         <div class="col-12 child-par-fontSize-span">
                             8%
                         </div>
-                        <div class="col-12 ">
+                        <div class="col-12 " style="padding: 0px;">
                             <p> HIM
                                 Charts Deliquency Rate</p>
                         </div>
@@ -147,9 +149,9 @@
                         <div class="col-12 child-par-fontSize-span">
                             354
                         </div>
-                        <div class="col-12 ">
+                        <div class="col-12 " style="padding: 0px;">
                             <p> Coding Backlogs
-                                <span style="color: red;"> (+12%) </span>
+                                <span style="color: rgb(226, 93, 81);"> (+12%) </span>
                             </p>
                         </div>
                     </div>
@@ -160,10 +162,10 @@
             <div class="grid">
                 <div class="col-4 ">
                     <div class="grid ">
-                        <div class="col-12">
-                            <img src="assets/time/targetgreenback.jpg" alt="" width="40%"> <br>
+                        <div class="col-12" style="padding-top: 1rem;">
+                            <img src="assets/time/button.png" alt="" width="50%"> <br>
                         </div>
-                        <div class="col-12 net-collection-card-heading">
+                        <div class="col-12 net-collection-card-heading-1">
                             Tragets
                         </div>
                     </div>
@@ -210,19 +212,20 @@
             <h1 class="claim-card-heading"> Claim Denials
             </h1>
             <div class="card calim-card-content-color">
-                <p-chart type="bar" [data]="products.claimChartData" [options]="claimDanialChartOptions"></p-chart>
+                <p-chart type="bar" [data]="products.claimChartData" [options]="claimDanialChartOptions"  width="170" height="110"></p-chart>
                 <h3 class="claimDanial-subheadingBox">Top Reasons</h3>
+                <div class="card-padding">
+                    <div class="grid claimDanial_pargraph">
+                        <div class="col-7">Deductible(388)</div>
+                        <div class="col-5">Coding(123)</div>
+                    </div>
 
-                <div class="grid claimDanial_pargraph">
-                    <div class="col-7">Deductible(388)</div>
-                    <div class="col-5">Coding(123)</div>
-                </div>
-
-                <div class="grid claimDanial_pargraph">
-                    <div class="col-7">Not Covered(215)</div>
-                    <div class="col-5">Incompatibility(19)</div>
+                    <div class="grid claimDanial_pargraph">
+                        <div class="col-7">Not Covered(215)</div>
+                        <div class="col-5">Incompatibility(19)</div>
 
 
+                    </div>
                 </div>
             </div>
         </div>

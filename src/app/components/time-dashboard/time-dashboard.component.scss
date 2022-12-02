@@ -1,13 +1,14 @@
-.sty {
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(38, 133, 156);
+// .sty {
+//     font-family: 'Times New Roman', Times, serif;
+//     color: rgb(38, 133, 156);
 
-}
+// }
 
 :host ::ng-deep .panel1 .p-panel-header {
     background-color: rgb(103, 193, 216);
     font-size: large;
     color: white;
+    font-family: "Gill Sans", sans-serif;
     // text-align: center;
 }
 
@@ -15,6 +16,7 @@
     background-color: rgb(31, 147, 182);
     font-size: large;
     color: white;
+    font-family: "Gill Sans", sans-serif;
     // text-align: center;
 }
 
@@ -26,11 +28,13 @@
 ::ng-deep.fivemin .p-checkbox-box {
     // padding: 2px;
     background-color: green;
+    font-family: "Gill Sans", sans-serif;
 }
 
 
 ::ng-deep.tenmin .p-checkbox-box{
     background-color: rgb(226, 159, 59);
+    font-family: "Gill Sans", sans-serif;
 }
 
 ::ng-deep.fifteenmin .p-checkbox-box{
@@ -39,6 +43,14 @@
 
 ::ng-deep.twentymin .p-checkbox-box{
     background-color: red;
+}
+
+::ng-deep.p-card .p-card-body {
+    padding: 0.3rem;
+}
+
+::ng-deep.col-4 {
+    padding: 0.3rem;
 }
 
 
@@ -59,7 +71,8 @@
   }
   @media screen ,(max-width: 768px){
    .cayman{
-    margin-left:3rem
+    margin-left:3rem;
+    font-family: "Gill Sans", sans-serif;
    }
    
   }
@@ -73,15 +86,18 @@
   }
   @media screen ,(max-width: 425){
    .cayman{
-    margin-left:4rem
+    margin-left:4rem;
+    font-family: "Gill Sans", sans-serif;
+
    }
    
   }
 
 .ope {
-    font-family: 'Garamond (serif)';
+    // font-family: 'Garamond (serif)';
     font-size: 28px;
     padding-top: 10px;
     padding-bottom: 15px;
     font-weight: bold;
+    font-family: "Gill Sans", sans-serif;
 }
