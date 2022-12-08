@@ -32,10 +32,18 @@
             </div>
         </div>
         <div class="row-12 md:row-6  lg:row-4 net-collection-rate-card">
-            <h5 class="net-collection-card-heading">Net Collection Rate  <span class="percentage">81% <span class="percentage-1">(+1.7)</span></span><span>  <div class = "vertical"></div></span></h5>
-            <!-- <p class="net-collection-card-inner"></p> -->
-            <p-progressBar [value]="value"></p-progressBar>
-       
+            <h5 class="net-collection-card-heading">Net Collection Rate <span class="percentage">81% <span
+                        class="percentage-1">(+1.7)</span></span></h5>
+
+                        <h5 class="net-collection-card-inner"><span class="vertical"><span class="vertical-1"></span> </span> <span class="net-collection-card-percentage"></span></h5>
+
+            <!-- <div class="net-collection-card-inner">
+                <p class="vertical"></p>
+            </div> -->
+
+            <!-- <span>  <div class = "vertical"></div></span> -->
+            <!-- <p-progressBar [value]="value"></p-progressBar> -->
+
         </div>
         <div>
             <h1 class="ar-card-heading"> Billed vs Collected (Millions)
@@ -43,7 +51,8 @@
             <div class="card ar-card-content-color">
 
                 <!-- <h5>Horizontal</h5> -->
-                <p-chart type="bar" [data]="products.barChatDataHorizental" [options]="horizontalOptions" height="180"></p-chart>
+                <p-chart type="bar" [data]="products.barChatDataHorizental" [options]="horizontalOptions" height="180">
+                </p-chart>
 
             </div>
         </div>
@@ -212,7 +221,8 @@
             <h1 class="claim-card-heading"> Claim Denials
             </h1>
             <div class="card calim-card-content-color">
-                <p-chart type="bar" [data]="products.claimChartData" [options]="claimDanialChartOptions"  width="170" height="110"></p-chart>
+                <p-chart type="bar" [data]="products.claimChartData" [options]="claimDanialChartOptions" width="170"
+                    height="120"></p-chart>
                 <h3 class="claimDanial-subheadingBox">Top Reasons</h3>
                 <div class="card-padding">
                     <div class="grid claimDanial_pargraph">

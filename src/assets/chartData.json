@@ -9,7 +9,7 @@
         "datasets": [
             {
                 "label": "",
-                "backgroundColor": "#1c80cf",
+                "backgroundColor": "#4473c5",
                 "fill":true,
                 "data": [
                     120,
@@ -28,7 +28,7 @@
         "datasets": [
             {
                 "label": "",
-                "backgroundColor": "#1c80cf",
+                "backgroundColor": "#4473c5",
                 "data": [
                     20,
                     14
@@ -39,7 +39,7 @@
     "pieChartData": {
         "labels": [
             "Government",
-            "Pravite Insurance",
+            "Private Insurance",
             "Self-Pay",
             "Uninsured"
         ],
@@ -52,16 +52,16 @@
                     31
                 ],
                 "backgroundColor": [
-                    "#42A5F5",
-                    "#FFA726",
-                    "rgb(187, 183, 183)",
-                    "#f2d709"
+                    "#4473c5",
+                    "#ed7d31",
+                    "#a5a5a5",
+                    "#ffc000"
                 ],
                 "hoverBackgroundColor": [
-                    "#64B5F6",
-                    "#FFA726",
-                    "rgb(187, 183, 183)",
-                    "#f2d709"
+                    "#4473c5",
+                    "#ed7d31",
+                    "#a5a5a5",
+                    "#ffc000"
                 ]
             }
         ]
@@ -76,7 +76,7 @@
         "datasets": [
             {
                 "label": "",
-                "backgroundColor": "#f38332",
+                "backgroundColor": "#ed7d31",
                 "color": "red",
                 "data": [
                     9.4,
@@ -93,7 +93,7 @@
     "lineChartDataForOverAllStaticfaction": {
         "labels": [
             "July",
-            "Augest",
+            "August",
             "September"
         ],
         "datasets": [
@@ -106,7 +106,7 @@
                     
                 ],
                 "fill": false,
-                "borderColor": "#42A5F5",
+                "borderColor": "#4472c5",
                 "tension": 0
             }
         ]
@@ -114,7 +114,7 @@
     "ReadmissionRatesLineChart": {
         "labels": [
             "July",
-            "Augest",
+            "August",
             "September"
         ],
         "datasets": [
@@ -127,7 +127,7 @@
                     
                 ],
                 "fill": false,
-                "borderColor": "#42A5F5",
+                "borderColor": "#4472c5",
                 "tension": 0
             }
         ]
@@ -135,7 +135,7 @@
     "TimeLinesLineChart": {
         "labels": [
             "July",
-            "Augest",
+            "August",
             "September"
         ],
         "datasets": [
@@ -148,7 +148,7 @@
                     
                 ],
                 "fill": false,
-                "borderColor": "#42A5F5",
+                "borderColor": "#4472c5",
                 "tension": 0
             }
         ]
@@ -156,7 +156,7 @@
     "IncidentsLineChart": {
         "labels": [
             "July",
-            "Augest",
+            "August",
             "September"
         ],
         "datasets": [
@@ -169,7 +169,7 @@
                     
                 ],
                 "fill": false,
-                "borderColor": "#42A5F5",
+                "borderColor": "#4472c5",
                 "tension": 0
             }
         ]
@@ -184,7 +184,7 @@
         "datasets": [
             {
                 "label": "",
-                "backgroundColor": " rgb(14, 135, 196) ",
+                "backgroundColor": " #3190b0 ",
                 "data": [
                     12,
                     7,
@@ -198,41 +198,41 @@
         ]
     },
     "overAllPatientStasifaction" : {
-        "labels": ["Excelent", "Good", "Negative", "Poor"],
+        "labels": ["Excellent", "Good", "Negative", "Poor"],
       "datasets": [
         {
           "data": [42, 33, 20, 5],
           "backgroundColor": [
-            "rgb(9, 111, 194)",
-            "#36A2EB",
-            "rgb(187, 183, 183)",
-            "#FFCE56"
+            "#4372c4",
+            "#ed7d31",
+            "#a5a5a5",
+            "#ffbf00"
           ],
           "hoverBackgroundColor": [
-            "rgb(9, 111, 194)",
-            "#36A2EB",
-            "rgb(187, 183, 183)",
-            "#FFCE56"
+            "#4372c4",
+            "#ed7d31",
+            "#a5a5a5",
+            "#ffbf00"
           ]
         }
       ]
     },
     "physicianPatientStasifaction" : {
-        "labels": ["Excelent", "Good", "Negative", "Poor"],
+        "labels": ["Excellent", "Good", "Negative", "Poor"],
       "datasets": [
         {
           "data": [68, 20, 10, 2],
           "backgroundColor": [
-            "rgb(9, 111, 194)",
-            "#36A2EB",
-            "rgb(187, 183, 183)",
-            "#FFCE56"
+            "#4372c4",
+            "#ed7d31",
+            "#a5a5a5",
+            "#ffbf00"
           ],
           "hoverBackgroundColor": [
-            "rgb(9, 111, 194)",
-            "#36A2EB",
-            "rgb(187, 183, 183)",
-            "#FFCE56"
+            "#4372c4",
+            "#ed7d31",
+            "#a5a5a5",
+            "#ffbf00"
           ]
         }
       ]
@@ -247,7 +247,7 @@
         "datasets": [
             {
                 "label": "Patients",
-                "backgroundColor": "#36369c",
+                "backgroundColor": "#5872c1",
                 "data": [100,90,45,78,83,95,58,
                         82,46,82,100,93,42,75,84,95,58,82,55,82,
                         100,90,43,75,84,94,57,81,50,81    
@@ -255,7 +255,7 @@
             },
             {
                 "label": "Admissions",
-                "backgroundColor": "#f2a082",
+                "backgroundColor": "#e17231",
                 "fill":false,
                 "data": [
                     20,20,10,15,22,30,25,23,35,22,32,34,18,21,23,
@@ -279,7 +279,7 @@
         "datasets": [
             {
                 "label": "",
-                "backgroundColor": "#36369c",
+                "backgroundColor": "#526ebe",
                 "fill":false,
                 "data": [
                    6,8,9,6.5,4,10,13,17,25,28,31,31.5,24.5,24,35.5,38,43,45,42,37,27,12,7,7
@@ -334,7 +334,7 @@
         "labels": [
             "Monday",
             "Tuesday",
-            "Wendnsday",
+            "Wednesday",
             "Thursday",
             "Friday",
             "Saturday",
@@ -361,7 +361,7 @@
         "labels": [
             "Monday",
             "Tuesday",
-            "Wendnsday",
+            "Wednesday",
             "Thursday",
             "Friday",
             "Saturday",

@@ -1,7 +1,9 @@
 :host ::ng-deep .p-dropdown {
     width: 230px;
     border-radius: 0.5em;
-    margin-left: 1rem;
+    margin-left: 6px;
+    margin-top:-8px
+
   }
 
 :host ::ng-deep 
@@ -23,49 +25,65 @@ padding: 0rem;
 
 :host ::ng-deep .panel1 .p-panel-header {
     background-color: rgb(97, 180, 206);
-    font-size: x-large;
+    font-size: 28px;
     color: white;
+    border-top-left-radius: 1.2vh;
+    border-top-right-radius: 1.2vh;
 }
 
 :host ::ng-deep .panel1 .p-panel-content {
     background-color: rgb(226, 239, 243);
 }
 
-
-.plus-icon {
-    height: 17px;
-    margin-top: 9px;
-    margin-left: 2px;
-    margin-right: 8px;
-    margin-bottom: 0px;
+.image{
+    
+    width: 32px;
+    float: right;
 }
 
-.header-part-heading {
-    font-family: "Lucida Console";
-    // font-family: "Gill Sans", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 650;
-    margin: 0px;
-}
+.container {
+    // background: gray;
+    width: 100%;
+    height: auto; /* height given for illustration */
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+  }
+  
+//   .item {
+//     // background: skyblue;
+//     margin: 4px;
+//     flex: 0 1 calc(18% - 8px); /* <-- adjusting for margin */
+//   }
 
-.sub-heading {
-    font-family: "Lucida Console";
-    font-size: 0.5rem;
-    margin-left: 5.5vh;
-    color: #ffffff;
-    font-style: italic;
-}
 
-.card-icon-heading {
-    font-family:"Gill Sans", sans-serif ;
-    font-weight: bold;
-    font-size: 1rem;
-    text-align: center;
-    padding-top: 0.5rem;
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 0 12px;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    // text-align: center;
+    background-color: #f1f1f1;
   }
 
-  .header-user-icon{
-    margin-right: -11px;
-    width: 2rem;
-    height: 22px;
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+
+@media screen and (max-width: 1024px) ,(min-width:768) {
+    .column {
+      width: 50%;
+      display: block;
+      margin-bottom: 20px;
+      
+    }
   }

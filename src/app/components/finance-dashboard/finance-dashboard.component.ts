@@ -160,8 +160,8 @@ export class FinanceDashboardComponent implements OnInit {
       "revenueName": "$11.7m",
       "revenueValue": "Total Revenue",
       "revenueIcon": " pi pi-arrow-up",
-      "revenueIconcolour": '#1aff1a',
-      "revenueColour": '#47d1d1',
+      "revenueIconcolour": '#8aff58',
+      "revenueColour": '#318fb1',
       "revenuePercentage": "2%"
     },
 
@@ -169,8 +169,8 @@ export class FinanceDashboardComponent implements OnInit {
       "revenueName": "$11.7m",
       "revenueValue": "Total Expenses",
       "revenueIcon": " pi pi-arrow-up",
-      "revenueIconcolour": '#ff471a',
-      "revenueColour": '#ffb84d',
+      "revenueIconcolour": '#ff0014',
+      "revenueColour": '#f2b565',
       "revenuePercentage": "5%"
     },
 
@@ -179,7 +179,7 @@ export class FinanceDashboardComponent implements OnInit {
       "revenueName": "4.2%",
       "revenueValue": "Profit Margin",
       "revenueIcon": " pi pi-stop",
-      "revenueColour": '#88B04B',
+      "revenueColour": '#78ae5a',
       "revenuePercentage": "Flat"
 
     },
@@ -187,17 +187,17 @@ export class FinanceDashboardComponent implements OnInit {
       "revenueName": "$3.5k",
       "revenueValue": "Avg Treatment",
       "revenueIcon": " pi pi-arrow-down",
-      "revenueIconcolour": '#ff471a',
-      "revenueColour": '#ff8093',
+      "revenueIconcolour": '#ff0014',
+      "revenueColour": '#ed7881',
       "revenuePercentage": "8%"
 
     },
     {
-      "revenueName": "$11.7m",
-      "revenueValue": "Total Revenue",
+      "revenueName": "$800 k",
+      "revenueValue": "Net Cash Flow",
       "revenueIcon": " pi pi-arrow-up",
-      "revenueIconcolour": '#1aff1a',
-      "revenueColour": '#6B5B95',
+      "revenueIconcolour": '#8bfe58',
+      "revenueColour": '#9da5f6',
       "revenuePercentage": "2%"
     }
 
@@ -235,18 +235,21 @@ export class FinanceDashboardComponent implements OnInit {
         {
           data: [20,15,5,35,25],
           backgroundColor: [
-            "#1e76fa",
-            "#FFA726",
-            "#bfbfbf",
-            "#ffd11a",
-            "#42A5F5",
+            "#5b9cd6",
+            "#ee7c2f",
+            "#a5a5a5",
+            "#ffc000",
+            "#4473c5",
             
           ],
-          // hoverBackgroundColor: [
-          //   "#64B5F6",
-          //   "#81C784",
-          //   "#FFB74D"
-          // ]
+          hoverBackgroundColor: [
+            "#5b9cd6",
+            "#ee7c2f",
+            "#a5a5a5",
+            "#ffc000",
+            "#4473c5",
+            
+          ]
         }
 
       ]
@@ -262,16 +265,18 @@ export class FinanceDashboardComponent implements OnInit {
     {
       data: [15, 10, 25, 20, 30],
       backgroundColor: [
-        "#1e76fa",
-        "#FFA726",
-        "#bfbfbf",
-        "#ffd11a",
-        "#42A5F5",
+        "#5b9cd6",
+        "#ee7c2f",
+        "#a5a5a5",
+        "#ffc000",
+        "#4473c5",
       ],
       hoverBackgroundColor: [
-        // "#64B5F6",
-        // "#81C784",
-        // "#FFB74D"
+        "#5b9cd6",
+        "#ee7c2f",
+        "#a5a5a5",
+        "#ffc000",
+        "#4473c5",
       ]
     }
 

@@ -1,8 +1,8 @@
 
 
 .ar-card-heading {
-    color: #fffffffa;
-    background-color: #37afd8ba;
+    color: #ffffff;
+    background-color: #5ebcd6;
     margin: 0px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -30,7 +30,10 @@
     // height: 5rem;
     background-color: #ffffff;
     border-radius: 5px;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-bottom: 1rem;
 }
 
@@ -54,13 +57,13 @@
 
 .net-collection-card-inner {
     height: 5px;
-    max-width: 25rem;
+    max-width: 20rem;
     padding: 1.5rem;
-    background-color: rgb(7 126 7 / 59%);
+    background-color: #7fb361;
     border-top-left-radius: 2rem;
     border-bottom-left-radius:2rem ;
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius:2rem ;
+    // border-top-right-radius: 2rem;
+    // border-bottom-right-radius:2rem ;
     // border-end-end-radius: 5rem;
 }
 
@@ -82,11 +85,11 @@
 }
 
 .ar-dashboard-child-card-1 {
-    background-color: #3388a5e3;
+    background-color: #318fb1;
     border-radius: 10px;
     padding: 1.5rem;
-    color: #ffffff;
-    margin-bottom: 1rem;
+    color: #eaf3f5;
+    margin-bottom: 1.2rem;
     display: flex;
     flex-direction: row;
     justify-content:space-between ;
@@ -95,24 +98,24 @@
 }
 
 .ar-dashboard-child-card-2 {
-    background-color: #3983b5;
+    background-color: #3173b0;
     border-radius: 10px;
     padding: 1.5rem;
-    color: #ffffff;
-    margin-bottom: 0.9rem;
+    color: #eaf3f5;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
     justify-content:space-between ;
     font-family: "Gill Sans", sans-serif;
 }
 .ar-dashboard-child-card-currency {
-    background-color: #3983b5;
+    background-color: #3173b0;
     border-radius: 10px;
     padding-top: 1rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-bottom: 0.3rem;
-    color: #ffffff;
+    color: #eaf3f5;
     // margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
@@ -147,8 +150,8 @@
 }
 
 .claim-card-heading {
-    color: #ffffff;
-    background-color: rgb(6 29 62);
+    color: #fefefe;
+    background-color: #072645;
     margin: 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -163,8 +166,8 @@
 }
 
 .calim-card-content-color {
-    background-color: #023964f2;
-    color: #ffffff;
+    background-color:#0b3a66;
+    color: #fefefe;
     border: none;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -216,14 +219,14 @@
     height: 2.5rem;
     padding: 0.5rem;
     text-align: center;
-    background-color: #3788d85e;
-    color: #e0e0e0;
+    background-color: #124678;
+    color: #ecf1f4;
     font-size: 15px;
     font-family: "Gill Sans", sans-serif;
 }
 
 .claimDanial_pargraph {
-    color: #e0e0e0;
+    color: #ecf1f4;
     font-size: 0.9rem;
     font-weight: 550;
     font-family: "Gill Sans", sans-serif;
@@ -243,7 +246,7 @@
 
 .up-button {
     border-radius: 5rem;
-    background-color: rgb(9, 183, 231);
+    background-color: #67cbef;
     padding: 0.5rem;
     
     margin-left: 10px;
@@ -252,21 +255,30 @@
 
 .down-button {
     border-radius: 5rem;
-    background-color: rgb(226, 93, 81);
+    background-color: #f7838a;
     padding: 0.5rem;
     margin-left: 10px;
     
 }
 
 .vertical {
-    border-left: 3px solid rgb(14, 14, 14);
-    height: 6.5vh;
-    position:absolute;
+    border-left: 0px solid rgb(14, 14, 14);
+    height: 0vh;
+    // position:absolute;
+    padding-left: 18.3rem;
     left: 37.3%;;
   }
 
+  .vertical-1 {
+    border-left: 3px solid rgb(14, 14, 14);
+    height: 3.5vh;
+    // position:absolute;
+    // padding-left: 10rem;
+    padding-top: 3rem;
+    left: 37.3%;;
+  }
   .percentage {
-    padding-left: 10rem;
+    padding-left: 7rem;
     font-size: 17px;
     font-weight: bold;
   }
@@ -275,4 +287,19 @@
     font-size: 12px;
     font-weight: bold;
     color: rgb(9 221 64);
+  }
+
+  .net-collection-card-percentage{
+    border: 0 none;
+    height: 3px;
+    width: 25rem;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    padding-bottom: 0px;
+    padding-right: 5rem;
+    background-color: #f78489;
+    // border-top-left-radius: 2rem;
+    // border-bottom-left-radius:2rem ;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius:2rem ;
   }
