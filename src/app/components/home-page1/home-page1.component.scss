@@ -22,12 +22,13 @@
 
 
 :host ::ng-deep .panel1 .p-panel-header {
-    background-color: rgb(46, 145, 184);
+    background-color:rgba(49,143,177,255);
     font-size: 28px;
     color: white;
     border-top-left-radius: 1.2vh;
     border-top-right-radius: 1.2vh;
-    border-bottom: 5px solid rgb(90, 187, 211);
+    border-bottom: 5px solid rgba(95,188,214,255);
+    font-family:Arial
     
 }
 

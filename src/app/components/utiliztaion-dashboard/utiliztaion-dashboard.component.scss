@@ -1,3 +1,4 @@
+
 :host ::ng-deep .panel1 .p-panel-header {
   background-color: rgb(103, 193, 216);
   font-size: large;
@@ -7,6 +8,8 @@
 
 :host ::ng-deep .panelcontent .p-panel-content{
   background-color: aqua;
+  padding-top: 0px;
+  padding-bottom: 0px;
   
 }
 
@@ -23,16 +26,16 @@
   height: 8rem;
   padding: 2rem;
   font-size:x-large;
+  margin-top: 2vh;
 }
 
-// .sty{
-//   font-family:'Times New Roman', Times, serif;
-//   color: rgb(38, 133, 156);
+.sty{
+  font-family:'Times New Roman', Times, serif;
+  color: rgba(47,144,176,255)
   
-// }
-:host ::ng-deep .custom-panel .panel1 .p-panel-header{
-  padding-left: 100px !important;
 }
+
+
 
 @media screen ,(max-width: 425px) {
 .icon {
@@ -68,4 +71,29 @@ margin-left:3rem
 margin-left:4rem
 }
 
+}
+
+
+
+
+.container {
+// background: gray;
+width: 100%;
+height: auto; /* height given for illustration */
+display: flex;
+flex-flow: row wrap;
+position: relative;
+}
+.item {
+// background: blue;
+margin: 20px;
+flex: 0 1 calc(25% - 40px); /* <-- adjusting for margin */
+}
+.patcontainer {
+// background: gray;
+width: 100%;
+height: auto; /* height given for illustration */
+display: flex;
+flex-flow: row wrap;
+position: relative;
 }

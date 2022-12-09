@@ -1,4 +1,4 @@
-<div class="layout-footer p-1" style="background-color:rgb(31, 144, 172)">
+<div class="layout-footer p-1" style="background-color:rgba(49,143,177,255)">
     <div class="grid">
         <!-- <div class="col-1" style="color:white;justify-content:left;margin-top:0.5vh"><img src="assets/home1/plus.png" alt="" style="font-weight:2rem ;height:28px"></div> -->
         <div class="col-8" style="color:white;margin-top:1vh;">
@@ -7,208 +7,41 @@
                 <div class="col-1">
                     <img src="assets/home2/plus.png" alt="" style="font-weight:2rem ;height:28px;margin-top:-0.5vh">
                 </div>
-                <div class="col-11" style="margin-left:4vh;position:absolute;margin-top:-1vh">
-                    <div style="font-size: 2rem; font-weight:600; font-family:Town 70 Accent Bold 1;">CAYMAN</div>
+                <div class="col-11" style="margin-left:4vh;position:absolute;margin-top:-0.5vh">
+                    <div style="font-size: 2rem; font-weight:bold; font-family:Arial">CAYMAN</div>
                     <div
-                        style="font-size:9px;margin-left:44px;font-family:Gill Sans, sans-serif;font-style: italic;margin-top:-0.5vh">
+                        style="font-size:9px;margin-left:51px;font-family:Arial;font-weight:bold;font-style: italic;margin-top:-0.5vh">
                         We care for you</div>
                 </div>
             </div>
         </div>
-        <div class="col-4 footer-icons" style="margin-top:1vh">
-            <img src="assets/time/user.time.png" alt="" width="30rem"  />
+        <div class="col-4 footer-icons" style="margin-top:0.5vh">
             <a>
-                <i class="pi pi-cog" style="font-size: 1em;color:white"></i>
+                <!-- <i class="pi pi-user" style="font-size: 1em;color:white"></i> -->
+                <img src="assets/home2/user.png" alt="" style="height:25px" width="25px">
+            </a>
+            <a>
+                <!-- <i class="pi pi-cog" style="font-size: 1em;color:white"></i> -->
+                <img src="assets/home2/settings.png" alt="" style="height:25px" width="25px">
             </a>
         </div>
     </div>
 </div>
 
-<div class="card" style="background-image: linear-gradient(rgb(197, 240, 248), rgb(121, 221, 247))">
+<div class="card" style="background-image: linear-gradient(rgba(199,246,254,255), rgba(128,224,248,255))">
     <div>
         <div class="grid">
             <!-- <div class="col-1"></div> -->
             <div class="col-12">
                 <p-panel
-                    [style]="{'max-width':'100rem','margin-top':'10%','background-color':'rgb(236, 244, 252)','font-family':'Arial','margin-left':'6%','margin-right':'6%'}"
+                    [style]="{'max-width':'100rem','margin-top':'10%','font-family':'Arial','margin-left':'6%','margin-right':'6%'}"
                     styleClass="shadow-2" class="panel1" header="Business Intelligence App Store">
                     <br>
                     <p-dropdown class="drop" placeholder=" Category:  Hospitals" optionLabel="name"
-                        [style]="{'font-weight':'500'}"></p-dropdown>
+                        [style]="{'font-weight':'500','font-family':'Arial'}"></p-dropdown>
                     <!-- [style]="{'width':'220px'}"    -->
                     <br>
-                    <!-- <div class="container">
-                        <div style="margin-left:auto;margin-right:auto;margin-top:30px;" class="item">
-                            <p-card [style]="{'display':'flex','max-width':'12.5rem'}">
-                                <div class="p-grid  p-fluid">
-                                    <div style="background-color:rgb(151, 237, 252)">
-                                        <br>
-                                        <img src="assets/home2/firstaid-box.png" alt="" width="75%"
-                                            style="margin-left:2.5vh">
-                                    </div>
-                                    <br>
-                                    <div style="text-align:center;"><b> Traffic Dashboard </b><br><br>
-                                        <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false">
-                                        </p-rating>
-                                    </div>
-                                    <br>
-                                </div>
-                            </p-card>
-                        </div>
-                       
-                        <div style="margin-left:auto;margin-right:auto;margin-top:30px;" class="item">
-                            <p-card [style]="{'display':'flex','max-width':'12.5rem'}">
-                                <div class="p-grid  p-fluid">
-                                    <div style="background-color:rgb(231, 201, 248)">
-                                        <br>
-                                        <img src="assets/home2/cardiology.png" alt="" width="75%"
-                                            style="margin-left:2.5vh">
-                                    </div>
-                                    <br>
-                                    <div style="text-align:center"><b> Cardiology Traffic </b> <br><br>
-                                        <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false">
-                                        </p-rating>
-                                    </div>
-                                    <br>
-                                </div>
-                            </p-card>
-                        </div>
-                        <div style="margin-left:auto;margin-right:auto;margin-top:30px;" class="item">
-                            <p-card [style]="{'display':'flex','max-width':'12.5rem'}">
-                                <div class="p-grid  p-fluid">
-                                    <div style="background-color:rgb(194, 238, 144)">
-                                        <br>
-                                        <img src="assets/home2/clock.png" alt="" width="75%" style="margin-left:2.5vh">
-                                    </div>
-                                    <br>
-                                    <div style="text-align:center"><b> Time Dashboard </b> <br><br>
-                                        <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false">
-                                        </p-rating>
-                                    </div>
-                                    <br>
-                                </div>
-                            </p-card>
-                        </div>
-                        <div style="margin-left:auto;margin-right:auto;margin-top:30px;" class="item">
-                            <p-card [style]="{'display':'flex','max-width':'12.5rem'}">
-                                <div class="p-grid  p-fluid">
-                                    <div style="background-color:rgb(133, 192, 247)">
-                                        <br>
-                                        <img src="assets/home2/prescription.png" alt="" width="75%"
-                                            style="margin-left:2.5vh">
-                                    </div>
-                                    <br>
-                                    <div style="text-align:center"><b> OR Times </b><br><br>
-                                        <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false">
-                                        </p-rating>
-                                    </div>
-                                    <br>
-                                </div>
-                            </p-card>
-                        </div>
-                        <div style="margin-left:auto;margin-right:auto;margin-top:30px;" class="item">
-                            <p-card [style]="{'display':'flex','max-width':'12.5rem'}">
-                                <div class="p-grid  p-fluid">
-                                    <div style="background-color:rgb(196, 221, 253)">
-                                        <br>
-                                        <img src="assets/home2/medal.png" alt="" width="75%" style="margin-left:2.5vh">
-                                    </div>
-                                    <br>
-                                    <div style="text-align:center"><b> Quality Dashboard </b> <br><br>
-                                        <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false">
-                                        </p-rating>
-                                    </div>
-                                    <br>
-                                </div>
-                            </p-card>
-                        </div>
-                        <div style="margin-left:auto;margin-right:auto;margin-top:30px;" class="item">
-                            <p-card [style]="{'display':'flex','max-width':'12.5rem'}">
-                                <div class="p-grid  p-fluid">
-                                    <div style="background-color:rgb(159, 197, 219)">
-                                        <br>
-                                        <img src="assets/home2/assurance.png" alt="" width="75%"
-                                            style="margin-left:2.5vh">
-                                    </div>
-                                    <br>
-                                    <div style="text-align:center"><b> Physician Assesment </b><br><br>
-                                        <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false">
-                                        </p-rating>
-                                    </div>
-                                    <br>
-                                </div>
-                            </p-card>
-                        </div>
-                        <div style="margin-left:auto;margin-right:auto;margin-top:30px;" class="item">
-                            <p-card [style]="{'display':'flex','max-width':'12.5rem'}">
-                                <div class="p-grid  p-fluid">
-                                    <div style="background-color:rgb(160, 155, 209)">
-                                        <br>
-                                        <img src="assets/home2/trophy.png" alt="" width="75%" style="margin-left:2.5vh">
-                                    </div>
-                                    <br>
-                                    <div style="text-align:center"><b> Patient Satisfaction </b><br><br>
-                                        <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false">
-                                        </p-rating>
-                                    </div>
-                                    <br>
-                                </div>
-                            </p-card>
-                        </div>
-                        <div style="margin-left:auto;margin-right:auto;margin-top:30px;" class="item">
-                            <p-card [style]="{'display':'flex','max-width':'12.5rem'}">
-                                <div class="p-grid  p-fluid">
-                                    <div style="background-color:rgb(252, 180, 210)">
-                                        <br>
-                                        <img src="assets/home2/aid-kit.png" alt="" width="75%"
-                                            style="margin-left:2.5vh">
-                                    </div>
-                                    <br>
-                                    <div style="text-align:center"><b> Utilization Dashboard </b><br><br>
-                                        <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false">
-                                        </p-rating>
-                                    </div>
-                                    <br>
-                                </div>
-                            </p-card>
-                        </div>
-                        <div style="margin-left:auto;margin-right:auto;margin-top:30px;" class="item">
-                            <p-card [style]="{'display':'flex','max-width':'12.5rem'}">
-                                <div class="p-grid  p-fluid">
-                                    <div style="background-color:rgb(184, 240, 101)">
-                                        <br>
-                                        <img src="assets/home2/wallet.png" alt="" width="75%" style="margin-left:2.5vh">
-                                    </div>
-                                    <br>
-                                    <div style="text-align:center"><b> Financial Dashboard </b> <br><br>
-                                        <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false">
-                                        </p-rating>
-                                    </div>
-                                    <br>
-                                </div>
-                            </p-card>
-                        </div>
-                        <div style="margin-left:auto;margin-right:auto;margin-top:30px;" class="item">
-                            <p-card [style]="{'display':'flex','max-width':'12.5rem'}">
-                                <div class="p-grid  p-fluid">
-                                    <div style="background-color:rgb(80, 92, 72)">
-                                        <br>
-                                        <img src="assets/home2/cost.png" alt="" width="75%" style="margin-left:2.5vh">
-                                    </div>
-                                    <br>
-                                    <div style="text-align:center"><b> Cost manager </b> <br><br>
-                                        <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false">
-                                        </p-rating>
-                                    </div>
-                                    <br>
-                                </div>
-                            </p-card>
-                        </div>
-                    </div> -->
-
-
-
-
+                
 
 
 
@@ -216,17 +49,17 @@
                         <div class="row">
                             <div class="column" style="margin-top:30px">
                                 <p-card
-                                    [style]="{'display':'flex','max-width':'16.5rem','margin-left':'1vh','margin-right':'1vh','border-radius':'1vh'}"
+                                    [style]="{'display':'flex','max-width':'16.5rem','margin-left':'1vh','margin-right':'1vh','border-radius':'1vh','font-family':'Arial'}"
                                     class="datacards">
                                     <div class="p-grid  p-fluid" style="margin-bottom: -1vh;">
-                                        <div style="background-image: linear-gradient(rgb(197, 240, 248), rgb(121, 221, 247));
+                                        <div style="background-image: linear-gradient(rgba(199,246,254,255), rgba(130,225,247,255));
                                         border-top-left-radius: 1vh;border-top-right-radius: 1vh;text-align: center;">
                                             <br>
                                             <img src="assets/home2/firstaid-box.png" alt="" width="65%">
 
                                         </div>
                                         <br>
-                                        <div style="text-align:center;font-size: large;"><b> Traffic Dashboard
+                                        <div style="text-align:center;font-size: 2vh;"><b> Traffic Dashboard
                                             </b><br><br>
                                             <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false">
                                             </p-rating>
@@ -239,15 +72,15 @@
 
                             <div class="column" style="margin-top:30px">
                                 <p-card
-                                    [style]="{'display':'flex','max-width':'16.5rem','margin-left':'1vh','margin-right':'1vh','border-radius':'1vh'}">
+                                    [style]="{'display':'flex','max-width':'16.5rem','margin-left':'1vh','margin-right':'1vh','border-radius':'1vh','font-family':'Arial'}">
                                     <div class="p-grid  p-fluid" style="margin-bottom: -1vh;">
                                         <div
-                                            style="background-color:rgb(231, 201, 248);border-top-left-radius: 1vh;border-top-right-radius: 1vh;text-align: center;">
+                                            style="background-color:rgba(231,198,253,255);border-top-left-radius: 1vh;border-top-right-radius: 1vh;text-align: center;">
                                             <br>
                                             <img src="assets/home2/cardiology.png" alt="" width="65%">
                                         </div>
                                         <br>
-                                        <div style="text-align:center;font-size: large;"><b> Cardiology Traffic </b>
+                                        <div style="text-align:center;font-size: 2vh;"><b> Cardiology Traffic </b>
                                             <br><br>
                                             <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false">
                                             </p-rating>
@@ -260,15 +93,15 @@
 
                             <div class="column" style="margin-top:30px">
                                 <p-card
-                                    [style]="{'display':'flex','max-width':'16.5rem','margin-left':'1vh','margin-right':'1vh','border-radius':'1vh'}">
+                                    [style]="{'display':'flex','max-width':'16.5rem','margin-left':'1vh','margin-right':'1vh','border-radius':'1vh','font-family':'Arial'}">
                                     <div class="p-grid  p-fluid" style="margin-bottom: -1vh;">
                                         <div
-                                            style="background-color:rgb(194, 238, 144);border-top-left-radius: 1vh;border-top-right-radius: 1vh;text-align: center;">
+                                            style="background-image: linear-gradient(rgba(188,228,158,255), rgba(174,217,138,255));border-top-left-radius: 1vh;border-top-right-radius: 1vh;text-align: center;">
                                             <br>
                                             <img src="assets/home2/clock.png" alt="" width="65%">
                                         </div>
                                         <br>
-                                        <div style="text-align:center;font-size: large;"><b> Time Dashboard </b>
+                                        <div style="text-align:center;font-size: 2vh;"><b> Time Dashboard </b>
                                             <br><br>
                                             <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false">
                                             </p-rating>
@@ -281,15 +114,15 @@
 
                             <div class="column" style="margin-top:30px">
                                 <p-card
-                                    [style]="{'display':'flex','max-width':'16.5rem','margin-left':'1vh','margin-right':'1vh','border-radius':'1vh'}">
+                                    [style]="{'display':'flex','max-width':'16.5rem','margin-left':'1vh','margin-right':'1vh','border-radius':'1vh','font-family':'Arial'}">
                                     <div class="p-grid  p-fluid" style="margin-bottom: -1vh;">
                                         <div
-                                            style="background-image: linear-gradient(rgb(179, 215, 248), rgb(112, 185, 253));border-top-left-radius: 1vh;border-top-right-radius: 1vh;text-align: center;">
+                                            style="background-image: linear-gradient(rgba(174,223,255,255), rgba(103,183,252,255));border-top-left-radius: 1vh;border-top-right-radius: 1vh;text-align: center;">
                                             <br>
                                             <img src="assets/home2/prescription.png" alt="" width="65%">
                                         </div>
                                         <br>
-                                        <div style="text-align:center;font-size: large;"><b> OR Times </b><br><br>
+                                        <div style="text-align:center;font-size: 2vh;"><b> OR Times </b><br><br>
                                             <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false">
                                             </p-rating>
                                         </div>
@@ -301,15 +134,15 @@
 
                             <div class="column" style="margin-top:30px">
                                 <p-card
-                                    [style]="{'display':'flex','max-width':'16.5rem','margin-left':'1vh','margin-right':'1vh','border-radius':'1vh'}">
+                                    [style]="{'display':'flex','max-width':'16.5rem','margin-left':'1vh','margin-right':'1vh','border-radius':'1vh','font-family':'Arial'}">
                                     <div class="p-grid  p-fluid" style="margin-bottom: -1vh;">
                                         <div
-                                            style="background-color:rgb(197, 213, 248);border-top-left-radius: 1vh;border-top-right-radius: 1vh;text-align: center;">
+                                            style="background-color:rgba(195,217,255,255);border-top-left-radius: 1vh;border-top-right-radius: 1vh;text-align: center;">
                                             <br>
                                             <img src="assets/home2/medal.png" alt="" width="65%">
                                         </div>
                                         <br>
-                                        <div style="text-align:center;font-size: large;"><b> Quality Dashboard </b>
+                                        <div style="text-align:center;font-size: 2vh;"><b> Quality Dashboard </b>
                                             <br><br>
                                             <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false">
                                             </p-rating>
@@ -323,15 +156,15 @@
 
                             <div class="column" style="margin-top:30px">
                                 <p-card
-                                    [style]="{'display':'flex','max-width':'16.5rem','margin-left':'1vh','margin-right':'1vh','border-radius':'1vh'}">
+                                    [style]="{'display':'flex','max-width':'16.5rem','margin-left':'1vh','margin-right':'1vh','border-radius':'1vh','font-family':'Arial'}">
                                     <div class="p-grid  p-fluid" style="margin-bottom: -1vh;">
                                         <div
-                                            style="background-image: linear-gradient(rgb(182, 211, 228), rgb(122, 178, 211));border-top-left-radius: 1vh;border-top-right-radius: 1vh;text-align: center;">
+                                            style="background-image: linear-gradient(rgba(166,198,219,255), rgba(135,180,212,255));border-top-left-radius: 1vh;border-top-right-radius: 1vh;text-align: center;">
                                             <br>
                                             <img src="assets/home2/assurance.png" alt="" width="65%">
                                         </div>
                                         <br>
-                                        <div style="text-align:center;font-size: large;"><b> Physician Assesment
+                                        <div style="text-align:center;font-size: 2vh;"><b> Physician Assesment
                                             </b><br><br>
                                             <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false">
                                             </p-rating>
@@ -344,15 +177,15 @@
 
                             <div class="column" style="margin-top:30px">
                                 <p-card
-                                    [style]="{'display':'flex','max-width':'16.5rem','margin-left':'1vh','margin-right':'1vh','border-radius':'1vh'}">
+                                    [style]="{'display':'flex','max-width':'16.5rem','margin-left':'1vh','margin-right':'1vh','border-radius':'1vh','font-family':'Arial'}">
                                     <div class="p-grid  p-fluid" style="margin-bottom: -1vh;">
                                         <div
-                                            style="background-image: linear-gradient(rgb(160, 155, 209), rgb(198, 194, 223));border-top-left-radius: 1vh;border-top-right-radius: 1vh;text-align: center;">
+                                            style="background-image: linear-gradient(rgba(137,137,187,255), rgba(163,163,201,255));border-top-left-radius: 1vh;border-top-right-radius: 1vh;text-align: center;">
                                             <br>
                                             <img src="assets/home2/trophy.png" alt="" width="65%">
                                         </div>
                                         <br>
-                                        <div style="text-align:center;font-size: large;"><b> Patient Satisfaction
+                                        <div style="text-align:center;font-size: 2vh;"><b> Patient Satisfaction
                                             </b><br><br>
                                             <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false">
                                             </p-rating>
@@ -365,15 +198,15 @@
 
                             <div class="column" style="margin-top:30px">
                                 <p-card
-                                    [style]="{'display':'flex','max-width':'16.5rem','margin-left':'1vh','margin-right':'1vh','border-radius':'1vh'}">
+                                    [style]="{'display':'flex','max-width':'16.5rem','margin-left':'1vh','margin-right':'1vh','border-radius':'1vh','font-family':'Arial'}">
                                     <div class="p-grid  p-fluid" style="margin-bottom: -1vh;">
                                         <div
-                                            style="background-color:rgb(252, 180, 210);border-top-left-radius: 1vh;border-top-right-radius: 1vh;text-align: center;">
+                                            style="background-image: linear-gradient(rgba(247,182,214,255), rgba(231,160,194,255));border-top-left-radius: 1vh;border-top-right-radius: 1vh;text-align: center;">
                                             <br>
                                             <img src="assets/home2/aid-kit.png" alt="" width="65%">
                                         </div>
                                         <br>
-                                        <div style="text-align:center;font-size: large;"><b> Utilization Dashboard
+                                        <div style="text-align:center;font-size: 2vh;"><b> Utilization Dashboard
                                             </b><br><br>
                                             <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false">
                                             </p-rating>
@@ -386,15 +219,15 @@
 
                             <div class="column" style="margin-top:30px">
                                 <p-card
-                                    [style]="{'display':'flex','max-width':'16.5rem','margin-left':'1vh','margin-right':'1vh','border-radius':'1vh'}">
+                                    [style]="{'display':'flex','max-width':'16.5rem','margin-left':'1vh','margin-right':'1vh','border-radius':'1vh','font-family':'Arial'}">
                                     <div class="p-grid  p-fluid" style="margin-bottom: -1vh;">
                                         <div
-                                            style="background-image: linear-gradient(rgb(198, 240, 135), rgb(184, 240, 101));background-color:rgb(184, 240, 101);border-top-left-radius: 1vh;border-top-right-radius: 1vh;text-align: center;">
+                                            style="background-image: linear-gradient(rgba(203,233,136,255), rgba(203,233,136,255));border-top-left-radius: 1vh;border-top-right-radius: 1vh;text-align: center;">
                                             <br>
                                             <img src="assets/home2/wallet.png" alt="" width="65%">
                                         </div>
                                         <br>
-                                        <div style="text-align:center;font-size: large;"><b> Financial Dashboard </b>
+                                        <div style="text-align:center;font-size: 2vh;"><b> Financial Dashboard </b>
                                             <br><br>
                                             <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false">
                                             </p-rating>
@@ -407,15 +240,15 @@
 
                             <div class="column" style="margin-top:30px">
                                 <p-card
-                                    [style]="{'display':'flex','max-width':'16.5rem','margin-left':'1vh','margin-right':'1vh','border-radius':'1vh'}">
+                                    [style]="{'display':'flex','max-width':'16.5rem','margin-left':'1vh','margin-right':'1vh','border-radius':'1vh','font-family':'Arial'}">
                                     <div class="p-grid  p-fluid" style="margin-bottom: -1vh;">
                                         <div
-                                            style="background-color:rgb(80, 92, 72);border-top-left-radius: 1vh;border-top-right-radius: 1vh;text-align: center;">
+                                            style="background-image: linear-gradient(rgba(98,119,112,255), rgba(67,72,42,255));border-top-left-radius: 1vh;border-top-right-radius: 1vh;text-align: center;">
                                             <br>
                                             <img src="assets/home2/cost.png" alt="" width="65%">
                                         </div>
                                         <br>
-                                        <div style="text-align:center;font-size: large;"><b> Cost manager </b> <br><br>
+                                        <div style="text-align:center;font-size: 2vh;"><b> Cost manager </b> <br><br>
                                             <p-rating [ngModel]="val3" readonly="true" stars="5" [cancel]="false">
                                             </p-rating>
                                         </div>
@@ -435,4 +268,3 @@
     </div>
     <br>
 </div>
-

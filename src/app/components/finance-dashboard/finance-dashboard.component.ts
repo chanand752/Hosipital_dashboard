@@ -171,7 +171,7 @@ export class FinanceDashboardComponent implements OnInit {
       "revenueIcon": " pi pi-arrow-up",
       "revenueIconcolour": '#ff0014',
       "revenueColour": '#f2b565',
-      "revenuePercentage": "5%"
+      "revenuePercentage": "4%"
     },
 
 
@@ -203,10 +203,16 @@ export class FinanceDashboardComponent implements OnInit {
 
   ]
 
-  revenueDepartmentList1 = ["Cardiology", "Orthipedics", "Neurology", "Emergency", "Pediatrics", "Dermatology"]
+  revenueDepartmentList1 = ["Cardiology", "Orthopedics", "Neurology", "Emergency", "Pediatrics", "Dermatology"]
   rupees = [" $925k", " $929k", " $876k", " $856k", " $850k", " $821K"]
   revenueDepartmentList2 = ["Urology", "Hematology", "Surgery", "Gynecology", "Ophtamology", "Radiology"]
   rupees1 = ["$813k", "$805k", "$798k", "$787K", "$764K", "$760k"]
+
+
+  expenseDepartmentList= ["Dermatology","Ophtamology","Emergency","Surgery","Urology","Radiology"]
+  rupees2 = [" $925k", " $929k", " $876k", " $856k", " $850k", " $821K"]
+  expenseDepartmentList2=["Pediatrics","Cardiology","Neurology","Orthipedics","Hematology","Gynecology",]
+  rupees3 = ["$813k", "$805k", "$798k", "$787K", "$764K", "$760k"]
 
   chartOptions: any;
   constructor() {
