@@ -6,8 +6,8 @@
             </a>
         </div>
         <div class="col-7" style="padding-top: 0.8rem;">
-            <div class="sty" style="font-size:x-large"><b>Cayman Islands HSA</b></div>
-            <div><b>Finance Dashboard - September 2022</b></div>
+            <div class="sty" style="font-size:x-large;margin-left:-8px;font-family:Arial"><b>Cayman Islands HSA</b></div>
+            <div style="margin-left:-7px;font-family:Arial"><b>Finance Dashboard - September 2022</b></div>
         </div>
         <!-- <div class="col-1">
             <a href="/" class="logo-container">
@@ -196,63 +196,63 @@
     <div class="col-12 md:col-12 lg:col-12">
         <div class="grid flex justify-content-between">
             <div *ngFor="let data of cardData" class="col-12 md:col-6 lg:col-2 " style="color:#ecf1f4;">
-                <div class="card " [style.background-color]="data?.revenueColour">
+                <div class="card " [style.background-color]="data?.revenueColour" style="border-radius:1vh">
                     <div class="grid">
-                        <div class="col-7">
-                            <p style="text-align:start;font-size: 25px; font-weight: bold;">{{data?.revenueName}}</p>
+                        <div class="col-8">
+                            <p style="text-align:start;font-size:2.5rem;font-family:Arial; font-weight: bold;">{{data?.revenueName}}</p>
                         </div>
-                        <div class="col-5">
-                            <i class={{data?.revenueIcon}} style="font-size: 3rem; "
+                        <div class="col-4">
+                            <i class={{data?.revenueIcon}} style="font-size: 3rem;margin-left:0.5vh "
                                 [style.color]="data?.revenueIconcolour"></i>
 
                         </div>
-                        <div class="col-7">
-                            <p style="text-align:start;">{{data?.revenueValue}}</p>
+                        <div class="col-8" style="margin-top:-1vh">
+                            <p style="text-align:start;font-family:Arial;font-weight: bold;font-size:1rem">{{data?.revenueValue}}</p>
                         </div>
-                        <div class="col-5">
-                            <p style="padding-left: 8px;font-size:bold">{{data?.revenuePercentage}}</p>
+                        <div class="col-4" style="margin-top:-1vh">
+                            <p style="padding-left: 8px;font-size:bold;font-family:Arial;font-weight:bold;margin-left:5px">{{data?.revenuePercentage}}</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="grid">
-            <h3 class="col-12 main-card-heading">Revenue</h3>
+            <h1 class="col-12 main-card-heading" style="font-family:Arial;font-size:2.3rem">Revenue</h1>
             <div class="col-12 md:col-12 lg:col-12">
                 <div class="grid">
                     <div class="col-12 md:col-12 lg:col-4">
-                        <h1 class="quailty-card-heading-90days"> Revenue by Age
+                        <h1 class="quailty-card-heading-90days" style="font-family:Arial;font-weight: bold;"> Revenue by Age
                         </h1>
                         <div class="card quailty-card-content-color-90days">
 
-                            <p-chart type="pie" [data]="data" [options]="chartOptions" width="250" height="175">
+                            <p-chart type="pie" [data]="data" [options]="chartOptions" width="250" height="175" style="font-family:Arial">
                             </p-chart>
 
                         </div>
                     </div>
                     <div class="col-12 md:col-6 lg:col-4">
-                        <h1 class="quality-card-heading"> Top Revenue Departments
+                        <h1 class="quality-card-heading" style="font-family:Arial;font-weight: bold;"> Top Revenue Departments
                         </h1>
                         <div class="card quality-card-content-color">
                             <div class="grid">
                                 <div class="col-3 md:col-4 lg:col-4" >
                                     <div *ngFor="let dept of revenueDepartmentList1">
-                                        <span>{{dept}}</span>
+                                        <span style="font-family:Arial;font-weight: bold;">{{dept}}</span>
                                     </div>
                                 </div>
                                 <div class="col-3 md:col-2 lg:col-2" >
                                     <div *ngFor="let rup of rupees">
-                                        <span>{{rup}}</span>
+                                        <span style="font-family:Arial;font-weight: bold;">{{rup}}</span>
                                     </div>
                                 </div>
                                 <div class="col-3 md:col-4 lg:col-4" >
                                     <div *ngFor="let dep of revenueDepartmentList2">
-                                        <span>{{dep}}</span>
+                                        <span style="font-family:Arial;font-weight: bold;">{{dep}}</span>
                                     </div>
                                 </div>
                                 <div class="col-3 md:col-2 lg:col-2" >
                                     <div *ngFor="let rupe of rupees1">
-                                        <span>{{rupe}}</span>
+                                        <span style="font-family:Arial;font-weight: bold;">{{rupe}}</span>
                                     </div>
                                 </div>
                             </div>
@@ -264,21 +264,21 @@
                                 <p-card [style]="{'background':'#26a5c5', color: 'white','height':'10rem', 'border-radius':'10px' }">
                                     <div class="grid fontCard" >
                                         <div class="col-4 md:col-7 lg:col-7" style="padding-bottom: 0px; padding-left: 22px; padding-right: 0px;">
-                                            <h2 style="margin-bottom: 0px;">$87,530k</h2>
-                                            <p style="margin-bottom: 0px; font-size: 1rem; font-weight: 550;">Revenue by Doctor</p>
-                                            <p style="text-align:start; margin-bottom: 0px; margin-top: 5px;">High: <span style="padding-left: 0.5rem;">$123k(Cardiology) </span></p>
-                                            <p style="text-align:start; margin-bottom: 0px; margin-top: 5px;">Low : <span style="padding-left: 0.5rem;">  $68k(Urology)</span> </p>
+                                            <h2 style="margin-bottom: 0px;font-family:Arial;font-size:2.5rem;font-weight:bold">$87,530k</h2>
+                                            <p style="margin-bottom: 0px; font-size: 1rem; font-weight: 550;font-family:Arial;font-size:1.3rem">Revenue by Doctor</p>
+                                            <p style="text-align:start; margin-bottom: 0px; margin-top: 5px;font-family:Arial;font-weight: bold;">High: <span style="padding-left: 0.5rem;">$123k(Cardiology) </span></p>
+                                            <p style="text-align:start; margin-bottom: 0px; margin-top: 5px;font-family:Arial;font-weight: bold;">Low : <span style="padding-left: 0.5rem;">  $68k(Urology)</span> </p>
 
                                         </div>
                                         <div class="col-4 md:col-5 lg:col-5" style="margin: 0px;padding-left: 7rem; padding-top: 1rem; width: 1.6667%;">
                                             <i class="pi pi-arrow-up" style="font-size: 3.5em;color:#74f674; font-weight: bold;"></i>
-                                            <span style="padding-left: 1rem;">10%</span>
+                                            <span style="padding-left: 1rem;font-family:Arial;font-weight: bold;">10%</span>
                                         </div>
                                     </div>
                                 </p-card>
                                 <div class="col-12 revange-leakege-card" style="padding-top:1.5rem; margin-top: 1.3rem; border-radius: 10px;">
-                                    <p style="font-size: 15px;" class="para">Revenue Lekage</p>
-                                    <p style="font-size: 28px;font-weight: 550; color: rgb(62, 61, 61);">$123,349</p>
+                                    <p style="font-size: 1.2rem;font-family:Arial;font-weight:bold" class="para">Revenue Leakage</p>
+                                    <p style="font-size: 2.2rem;font-weight: bold;font-family:Arial; color: rgb(62, 61, 61);">$123,349</p>
                                 </div>
                             </div>
                             
@@ -289,42 +289,42 @@
                 </div>
 
             </div>
-            <h3 class="col-12 main-card-heading">Expenses</h3>
+            <h3 class="col-12 main-card-heading" style="font-family:Arial;font-size:2.3rem">Expenses</h3>
             <div class="col-12 md:col-12 lg:col-12">
                 <div class="grid">
                     <div class="col-12 md:col-12 lg:col-4">
-                        <h1 class="quailty-card-heading-90days"> Expense by Age
+                        <h1 class="quailty-card-heading-90days" style="font-family:Arial;font-weight: bold;"> Expense by Age
                         </h1>
                         <div class="card quailty-card-content-color-90days">
 
-                            <p-chart type="pie" [data]="data1" [options]="chartOptions" width="250" height="175">
+                            <p-chart type="pie" [data]="data1" [options]="chartOptions" width="250" height="175" [style]="{'font-family':'Arial'}">
                             </p-chart>
 
                         </div>
                     </div>
                     <div class="col-12 md:col-6 lg:col-4">
-                        <h1 class="quality-card-heading"> Top Expense Departments
+                        <h1 class="quality-card-heading" style="font-family:Arial;font-weight: bold;"> Top Expense Departments
                         </h1>
                         <div class="card quality-card-content-color">
                             <div class="grid">
                                 <div class="col-3 md:col-4 lg:col-4" >
                                     <div *ngFor="let dept of expenseDepartmentList">
-                                        <span>{{dept}}</span>
+                                        <span style="font-family:Arial;font-weight: bold;">{{dept}}</span>
                                     </div>
                                 </div>
                                 <div class="col-3 md:col-4 lg:col-2" >
                                     <div *ngFor="let rup of rupees2">
-                                        <span>{{rup}}</span>
+                                        <span style="font-family:Arial;font-weight: bold;">{{rup}}</span>
                                     </div>
                                 </div>
                                 <div class="col-3 md:col-4 lg:col-4" >
                                     <div *ngFor="let dep of expenseDepartmentList2">
-                                        <span>{{dep}}</span>
+                                        <span style="font-family:Arial;font-weight: bold;">{{dep}}</span>
                                     </div>
                                 </div>
                                 <div class="col-3 md:col-2 lg:col-2" >
                                     <div *ngFor="let rupe of rupees3">
-                                        <span>{{rupe}}</span>
+                                        <span style="font-family:Arial;font-weight: bold;">{{rupe}}</span>
                                     </div>
                                 </div>
                             </div>
@@ -336,10 +336,10 @@
                                 <p-card [style]="{'background':'#26a5c5', color: 'white','height':'10rem','border-radius':'10px'}">
                                     <div class="grid fontCard">
                                         <div class="col-4 md:col-7 lg:col-7" style="padding-bottom: 0px; padding-left: 22px; padding-right: 0px;">
-                                            <h2 style="margin-bottom: 0px">$42,730k</h2>
-                                            <p style="margin-bottom: 0px; font-size: 1rem; font-weight: 550; ">Expense by Doctor</p>
-                                            <p style="text-align:start; margin-bottom: 0px; margin-top: 5px;">High:  <span style="padding-left: 0.5rem;">$75k(Neurology)</span></p>
-                                            <p style="text-align:start; margin-bottom: 0px; margin-top: 5px;">Low :  <span style="padding-left: 0.5rem;">$38k(Pediatrics)</span></p>
+                                            <h2 style="margin-bottom: 0px;font-family:Arial;font-size:2.5rem;font-weight:bold">$42,730k</h2>
+                                            <p style="margin-bottom: 0px; font-size: 1rem; font-weight: 550;font-family:Arial;font-size:1.3rem ">Expense by Doctor</p>
+                                            <p style="text-align:start; margin-bottom: 0px; margin-top: 5px;font-family:Arial;font-weight: bold;">High:  <span style="padding-left: 0.5rem;">$75k(Neurology)</span></p>
+                                            <p style="text-align:start; margin-bottom: 0px; margin-top: 5px;font-family:Arial;font-weight: bold;">Low :  <span style="padding-left: 0.5rem;">$38k(Pediatrics)</span></p>
                                         </div>
                                         <div class="col-4 md:col-5 lg:col-5" style="margin: 0px;padding-left: 7rem; padding-top: 1rem; width: 1.6667%;">
                                             <i class="pi pi-arrow-down" style="font-size: 3.5em;color:#74f674; font-weight: bold;"></i>
@@ -348,8 +348,8 @@
                                     </div>
                                 </p-card>
                                 <div class="col-12 revange-leakege-card" style="padding-top:1.5rem; margin-top: 1.3rem; border-radius: 10px;">
-                                    <p style="font-size: 15px;" class="para">Overtime Costs</p>
-                                    <p style="font-size: 28px;font-weight: 550;color: rgb(62, 61, 61); ">$1,230,349</p>
+                                    <p style="font-size: 1.2rem;font-family:Arial;font-weight:bold" class="para">Overtime Costs</p>
+                                    <p style="font-size: 2.2rem;font-weight: bold;color: rgb(62, 61, 61);font-family:Arial ">$1,230,349</p>
                                 </div>
                             </div>
                             
