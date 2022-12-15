@@ -52,20 +52,23 @@
 <div style="background-color:rgba(234,242,244,255); border-top: 5px solid rgba(49,143,177,255);margin-top:-2vh">
     <div class="card" style="background-color:rgb(217, 235, 243);">
         <div class="grid" style="padding-left: 2vh;padding-right: 2vh;margin-top:1vh">
-            <div class="col-12 sm:col-12 md:col-12 lg:col-3">
+            <div class="col-12 sm:col-12 md:col-12 lg:col-3" style="padding-right:3vh">
                 <div>
                     <p-card [style]="{'background-color':'rgba(49,143,177,255)','color':'white','border-radius':'1vh','font-family':'Arial'}">
                         <div class="grid">
-                            <div class="col-3" style="margin-top:-1rem;font-size:4rem;margin-left:1vh">
+                            <div class="col-3" style="margin-top:-1rem;font-size:3.5rem;margin-left:1vh;font-weight:bold">
                                 4.1
                             </div>
 
-                            <div class="col-3" style="margin-left:-0.5rem;margin-top:2.8vh;font-size:large">&nbsp;&nbsp; days</div>
-                            <div class="col-3"><i class="pi pi-arrow-down"
-                                    style="font-size: 3rem;color:rgba(247,132,137,255);font-weight:bolder;"></i></div>
-                            <div class="col-3" style="margin-left:-1rem; margin-top:2vh; font-size:3vh">2.3%</div>
+                            <div class="col-3" style="margin-left:-1rem;margin-top:1.8vh;font-size:2.3vh;">&nbsp;&nbsp; days</div>
+                            <div class="col-3" style="margin-left:2.5vh">
+                                <img src="assets/time/redarrow.png" alt="" style="height:3.5rem;margin-top:-2vh">
+                                <!-- <i class="pi pi-arrow-down"
+                                    style="font-size: 3rem;color:rgba(247,132,137,255);font-weight:bolder;"></i>-->
+                                </div>
+                            <div class="col-3" style="margin-left:-1rem; margin-top:14px; font-size:2.3vh">2.3%</div>
                         </div>
-                        <div style="font-size:20px; margin-left:1vh">
+                        <div style="font-size:2.5vh; margin-left:1vh;margin-top:-4px;font-weight:bold">
                             average length of stay
                         </div>
                     </p-card>
@@ -75,18 +78,20 @@
 
                     <p-card [style]="{'background-color':'rgba(49,115,176,255)','color':'white','border-radius':'1vh','font-family':'Arial'}">
                         <div class="grid">
-                            <div class="col-3" style="margin-top:-1rem;font-size:4rem;margin-left:1vh">
+                            <div class="col-3" style="margin-top:-1rem;font-size:3.5rem;margin-left:1vh;font-weight:bold">
                                 37
                             </div>
-                            <div class="col-3" style="margin-left:-0.8rem;margin-top:2.8vh;font-size:large">minutes</div>
-                            <div class="col-3"><i class="pi pi-arrow-up"
-                                    style="font-size: 3rem;color:rgba(139,255,88,255);font-weight:bolder;margin-left:0.5vh"></i>
+                            <div class="col-3" style="margin-left:-1rem;margin-top:1.8vh;font-size:2.3vh">minutes</div>
+                            <div class="col-3" style="margin-left:2.5vh">
+                                <img src="assets/time/greenuparrow.png" alt="" style="height:3.5rem;margin-top:-2vh">
+                                <!-- <i class="pi pi-arrow-up"
+                                    style="font-size: 3rem;color:rgba(139,255,88,255);font-weight:bolder;margin-left:0.5vh"></i> -->
                             </div>
-                            <div class="col-3" style="margin-left:-1rem; margin-top:2vh; font-size:3vh">7.7%</div>
+                            <div class="col-3" style="margin-left:-1rem; margin-top:14px; font-size:2.3vh">7.7%</div>
                         </div>
 
 
-                        <div style="font-size:20px; margin-left:1vh">
+                        <div style="font-size:2.5vh; margin-left:1vh;margin-top:-4px;font-weight:bold">
                             average time to service
                         </div>
 
@@ -101,17 +106,20 @@
                             <div class="grid" style="text-align:center;margin-left:1px">
 
                                 <div class="col-2" style="margin-top:2px">
-                                    <img src="assets/time/doctor.png" alt="" width="40rem"
-                                        style="height:40px;margin-left:4px">
+                                    <img src="assets/time/doctor.png" alt="" width="36rem"
+                                        style="height:34px;margin-left:4px">
                                 </div>
                                 <div class="col-2" style="font-size:4vh; font-weight:bolder; margin-top:4px">1</div>
-                                <div class="col-3"><i class="pi pi-arrow-right"
+                                <div class="col-3">
+                                    <img src="assets/time/greenrightarrow.png" alt="" style="height:35px;margin-top:2.5px">
+                                    <!-- <i class="pi pi-arrow-right"
                                         style="font-size: 2rem;color:rgba(139,255,88,255);font-weight:bolder;margin-left:0vh;margin-top:1vh">
-                                    </i></div>
+                                    </i> -->
+                                </div>
                                 <div class="col-2" style="font-size:4vh; font-weight:bolder; margin-top:3px">2.6</div>
                                 <div class="col-3">
-                                    <img src="assets/time/whiteuser.png" alt="" width="40rem"
-                                        style="height:40px;margin-top:1px; margin-left:-1px">
+                                    <img src="assets/time/whiteuser.png" alt="" width="36rem"
+                                        style="height:35px;margin-top:1.5px; margin-left:10px">
                                 </div>
                             </div>
                             <div style="text-align:center;font-size:large;font-weight: bold;">Hospital</div>
@@ -121,17 +129,20 @@
                             <div class="grid" style="text-align:center;margin-left:1px">
 
                                 <div class="col-2" style="margin-top:2px">
-                                    <img src="assets/time/doctor.png" alt="" width="40rem"
-                                        style="height:40px;margin-left:4px">
+                                    <img src="assets/time/doctor.png" alt="" width="36rem"
+                                        style="height:34px;margin-left:4px">
                                 </div>
                                 <div class="col-2" style="font-size:4vh; font-weight:bolder; margin-top:4px">1</div>
-                                <div class="col-3"><i class="pi pi-arrow-right"
+                                <div class="col-3">
+                                    <img src="assets/time/greenrightarrow.png" alt="" style="height:35px;margin-top:2.5px">
+                                    <!-- <i class="pi pi-arrow-right"
                                         style="font-size: 2rem;color:rgba(139,255,88,255);font-weight:bolder;margin-left:0vh;margin-top:1vh">
-                                    </i></div>
+                                    </i> -->
+                                </div>
                                 <div class="col-2" style="font-size:4vh; font-weight:bolder; margin-top:3px">0.9</div>
                                 <div class="col-3">
-                                    <img src="assets/time/whiteuser.png" alt="" width="40rem"
-                                        style="height:40px;margin-top:1px; margin-left:-1px">
+                                    <img src="assets/time/whiteuser.png" alt="" width="36rem"
+                                        style="height:35px;margin-top:1.5px; margin-left:10px">
                                 </div>
                             </div>
                             <div style="text-align:center;font-size:large;font-weight: bold;">OR</div>
@@ -141,17 +152,20 @@
                             <div class="grid" style="text-align:center;margin-left:1px">
 
                                 <div class="col-2" style="margin-top:2px">
-                                    <img src="assets/time/doctor.png" alt="" width="40rem"
-                                        style="height:40px;margin-left:4px">
+                                    <img src="assets/time/doctor.png" alt="" width="36rem"
+                                        style="height:34px;margin-left:4px">
                                 </div>
                                 <div class="col-2" style="font-size:4vh; font-weight:bolder; margin-top:4px">1</div>
-                                <div class="col-3"><i class="pi pi-arrow-right"
+                                <div class="col-3">
+                                    <img src="assets/time/greenrightarrow.png" alt="" style="height:35px;margin-top:2.5px">
+                                    <!-- <i class="pi pi-arrow-right"
                                         style="font-size: 2rem;color:rgba(139,255,88,255);font-weight:bolder;margin-left:0vh;margin-top:1vh">
-                                    </i></div>
+                                    </i> -->
+                                </div>
                                 <div class="col-2" style="font-size:4vh; font-weight:bolder; margin-top:3px">1.1</div>
                                 <div class="col-3">
-                                    <img src="assets/time/whiteuser.png" alt="" width="40rem"
-                                        style="height:40px;margin-top:1px; margin-left:-1px">
+                                    <img src="assets/time/whiteuser.png" alt="" width="36rem"
+                                        style="height:35px;margin-top:1.5px; margin-left:10px">
                                 </div>
                             </div>
                             <div style="text-align:center;font-size:large;font-weight:bold">Emergency</div>
@@ -188,7 +202,7 @@
                         </div>
                     </div>
                     <br>
-                    <div class="grid" style="font-size:small;margin-top: -4vh;text-align: center;font-weight: bolder;font-family:Arial">
+                    <div class="grid" style="font-size:small;margin-top: -4vh;text-align: center;font-weight: 900;font-family:Arial">
                         <div class="col-3"></div>
                         <div class="col-2">5 min</div>
                         <div class="col-2">10 min</div>
@@ -206,7 +220,7 @@
                     <div class="grid" style="font-size:small; margin-top: -1vh;">
 
 
-                        <div class="col-3" style="text-align:left;font-weight: bold;font-family: Arial;">Cardiology</div>
+                        <div class="col-3" style="text-align:left;font-weight: 900;font-family: Arial;">Cardiology</div>
 
 
                         <!-- 5 MINUTES -->
@@ -296,7 +310,7 @@
 
 
                     <div class="grid" style="font-size:small">
-                        <div class="col-3" style="text-align:left;font-weight: bold;font-family: Arial;">Orthopedics</div>
+                        <div class="col-3" style="text-align:left;font-weight: 900;font-family: Arial;">Orthopedics</div>
 
 
                         <!-- 5 MINUTES -->
@@ -389,7 +403,7 @@
 
 
                     <div class="grid" style="font-size:small">
-                        <div class="col-3" style="text-align:left;font-weight: bold;font-family: Arial;">Gynecology</div>
+                        <div class="col-3" style="text-align:left;font-weight: 900;font-family: Arial;">Gynecology</div>
 
 
                         <!-- 5 MINUTES -->
@@ -493,7 +507,7 @@
 
 
                     <div class="grid" style="font-size:small">
-                        <div class="col-3" style="text-align:left;font-weight: bold;font-family: Arial;">Neurology</div>
+                        <div class="col-3" style="text-align:left;font-weight: 900;font-family: Arial;">Neurology</div>
 
 
                         <!-- 5 MINUTES -->
@@ -574,7 +588,7 @@
 
 
                     <div class="grid" style="font-size:small">
-                        <div class="col-3" style="text-align:left;font-weight: bold;font-family: Arial;">Surgery</div>
+                        <div class="col-3" style="text-align:left;font-weight: 900;font-family: Arial;">Surgery</div>
 
                         <!-- 5 MINUTES -->
                         <div class="col-2" style="text-align:left">
@@ -660,7 +674,7 @@
 
 
                     <div class="grid" style="font-size:small">
-                        <div class="col-3" style="text-align:left;font-weight: bold;font-family: Arial;">Emergency</div>
+                        <div class="col-3" style="text-align:left;font-weight: 900;font-family: Arial;">Emergency</div>
 
 
                         <!-- 5 MINUTES -->
@@ -759,7 +773,7 @@
 
 
                     <div class="grid" style="font-size:small">
-                        <div class="col-3" style="text-align:left;font-weight: bold;font-family: Arial;">Dermatology</div>
+                        <div class="col-3" style="text-align:left;font-weight: 900;font-family: Arial;">Dermatology</div>
 
 
                         <!-- 5 MINUTES -->
@@ -848,7 +862,7 @@
 
 
                     <div class="grid" style="font-size:small">
-                        <div class="col-3" style="text-align:left;font-weight: bold;font-family: Arial;">Ophtamology</div>
+                        <div class="col-3" style="text-align:left;font-weight: 900;font-family: Arial;">Ophtamology</div>
 
 
                         <!-- 5 MINUTES -->
@@ -946,7 +960,7 @@
 
 
                     <div class="grid" style="font-size:small">
-                        <div class="col-3" style="text-align:left;font-weight: bold;font-family: Arial;">Pediatrics</div>
+                        <div class="col-3" style="text-align:left;font-weight: 900;font-family: Arial;">Pediatrics</div>
 
 
                         <!-- 5 MINUTES -->
@@ -1042,7 +1056,7 @@
 
 
                     <div class="grid" style="font-size:small">
-                        <div class="col-3" style="text-align:left;font-weight: bold;font-family: Arial;">Hematology</div>
+                        <div class="col-3" style="text-align:left;font-weight: 900;font-family: Arial;">Hematology</div>
 
 
                         <!-- 5 MINUTES -->
@@ -1134,7 +1148,7 @@
 
 
                     <div class="grid" style="font-size:small;margin-bottom: -3vh;">
-                        <div class="col-3" style="text-align:left;font-weight: bold;font-family: Arial;">Urology</div>
+                        <div class="col-3" style="text-align:left;font-weight: 900;font-family: Arial;">Urology</div>
 
 
                         <!-- 5 MINUTES -->
@@ -1228,17 +1242,17 @@
 
 
 
-            <div class="col-12 sm:col-12 md:col-12 lg:col-4">
+            <div class="col-12 sm:col-12 md:col-12 lg:col-4" style="padding-left:3vh">
                 <!-- <p-panel
                     [style]="{'max-width':'100rem','margin-top':'0%','background-color':'rgb(155, 200, 219)','text-align':'center','border-radius':'2rem'}"
                     styleClass="shadow-2" class="panel2" header="Door to Doctor"> -->
                 <div>
                     <div style="background-color:rgba(49,143,177,255);height: 9vh;border-top-left-radius: 1vh;border-top-right-radius: 1vh;margin-top: 1px;
-                    text-align: center;color:white;padding-top: 1.5vh;font-size:xx-large;font-weight: bold;font-family: Arial;">
+                    text-align: center;color:white;padding-top: 1.5vh;font-size:xx-large;font-weight: bold;font-family: Arial;margin-bottom:-1.5vh">
                         Operating Room
 
                     </div>
-                    <div style="background-color:white">
+                    <div style="background-color:white;margin-bottom:-2vh">
                         <br>
                         <div class="grid" style="font-family: Arial;">
                             <div class="col-1"></div>
@@ -1246,15 +1260,15 @@
                                 <img src="assets/time/watch.png" alt="" width="80%" style="margin-top: 1vh;">
                             </div>
                             <div class="col-6">
-                                <div style="font-size:4.5vh;margin-left:2px"><b>5 minutes</b></div>
-                                <div style="font-size:large;margin-left:2px"><b>First Case Start Time</b></div>
+                                <div style="font-size:4vh;margin-left:2px;font-weight:bold">5 minutes</div>
+                                <div style="font-size:2vh;margin-left:2px;font-weight:bold">First Case Start Time</div>
                             </div>
                             <!-- <div class="col-1"></div> -->
                             <div class="col-3" style="text-align:center;margin-left:-1vh;margin-top:6px">
                                 <div>
                                     <img src="assets/time/targetred.jpg" alt="" width="43%" style="height:43%">
                                 </div>
-                                <div style="font-size:large;font-weight: bold;">
+                                <div style="font-size:2vh;font-weight: bold;">
                                     2 minutes
                                 </div>
                             </div>
@@ -1262,7 +1276,7 @@
                         <br>
                     </div>
 
-                    <div style="background-color:rgba(49,143,177,255);color: white;">
+                    <div style="background-color:rgba(49,143,177,255);color: white;margin-bottom:-2vh">
                         <br>
                         <div class="grid" style="font-family: Arial;">
                             <div class="col-1"></div>
@@ -1270,15 +1284,15 @@
                                 <img src="assets/time/recycle.png" alt="" width="80%" style="margin-top: 1vh;">
                             </div>
                             <div class="col-6">
-                                <div style="font-size:4.5vh;margin-left:2px"><b>17 minutes</b></div>
-                                <div style="font-size:large;margin-left:2px"><b>Turnover Time</b></div>
+                                <div style="font-size:4vh;margin-left:2px;font-weight:bold">17 minutes</div>
+                                <div style="font-size:2vh;margin-left:2px;font-weight:bold">Turnover Time</div>
                             </div>
                             <!-- <div class="col-1"></div> -->
                             <div class="col-3" style="text-align:center;margin-left:-1vh;margin-top:6px">
                                 <div>
                                     <img src="assets/time/targetgreenback.jpg" alt="" width="43%" style="height:43%">
                                 </div>
-                                <div style="font-size:large;font-weight:bold;margin-left:-0.5vh">
+                                <div style="font-size:2vh;font-weight:bold;margin-left:-1vh">
                                     20 minutes
                                 </div>
                             </div>
@@ -1286,7 +1300,7 @@
                         <br>
                     </div>
 
-                    <div style="background-color:white;border-bottom-left-radius: 1vh;border-bottom-right-radius: 1vh;">
+                    <div style="background-color:white;border-bottom-left-radius: 1vh;border-bottom-right-radius: 1vh;margin-bottom:-4vh">
                         <br>
                         <div class="grid" style="font-family: Arial;">
                             <div class="col-1"></div>
@@ -1294,15 +1308,15 @@
                                 <img src="assets/time/updown.png" alt="" width="80%" style="margin-top: 1vh;">
                             </div>
                             <div class="col-6">
-                                <div style="font-size:4.5vh;margin-left:2px"><b>68 %</b></div>
-                                <div style="font-size:large;margin-left:2px"><b>Utilization</b></div>
+                                <div style="font-size:4vh;margin-left:2px;font-weight:bold">68 %</div>
+                                <div style="font-size:2vh;margin-left:2px;font-weight:bold">Utilization</div>
                             </div>
                             <!-- <div class="col-1"></div> -->
                             <div class="col-3" style="text-align:center;margin-left:-1vh;margin-top:6px">
                                 <div>
                                     <img src="assets/time/targetgreen.jpg" alt="" width="43%" style="height:43%">
                                 </div>
-                                <div style="font-size:large;font-weight:bold">
+                                <div style="font-size:2vh;font-weight:bold">
                                     59 %
                                 </div>
                             </div>
@@ -1317,18 +1331,18 @@
 
                 <div>
                     <div style="background-color:rgba(49,143,177,255);height: 9vh;border-top-left-radius: 1vh;border-top-right-radius: 1vh;margin-top: 1px;
-                    text-align: center;color:white; padding-top: 1.5vh;font-size:xx-large;font-weight: bold;font-family: Arial;">
+                    text-align: center;color:white; padding-top: 1.5vh;font-size:xx-large;font-weight: bold;font-family: Arial;margin-bottom:-1.5vh">
                         Emergency Department
 
                     </div>
-                    <div style="background-color:white">
+                    <div style="background-color:white;margin-bottom:-1vh">
                         <br>
                         <div class="grid" style="font-family: Arial;">
                             <div class="col-6" style="text-align:right">
-                                <div style="font-size:4.5vh">
+                                <div style="font-size:4vh">
                                     <b>9 minutes</b>
                                 </div>
-                                <div style="font-size:large">
+                                <div style="font-size:2vh">
                                     <b>registration</b>
                                 </div>
                             </div>
@@ -1336,7 +1350,7 @@
                                 <img src="assets/time/user.png" alt="" width="60%"
                                     style="margin-top: 1vh;margin-left:6px">
                             </div>
-                            <div class="col-2" style="font-size:4.5vh;margin-top: 4px;">
+                            <div class="col-2" style="font-size:4vh;margin-top: 4px;">
                                 <span style="margin-left:-2px;font-weight:bold">12</span>
                             </div>
                             <!-- <div class="col-1"></div> -->
@@ -1348,14 +1362,14 @@
                         <br>
                     </div>
 
-                    <div style="background-color:rgba(215,225,227,255);">
+                    <div style="background-color:rgba(215,225,227,255);margin-bottom:-1vh">
                         <br>
                         <div class="grid" style="font-family: Arial;">
                             <div class="col-6" style="text-align:right">
-                                <div style="font-size:4.5vh">
+                                <div style="font-size:4vh">
                                     <b>8 minutes</b>
                                 </div>
-                                <div style="font-size:large">
+                                <div style="font-size:2vh">
                                     <b>triage</b>
                                 </div>
                             </div>
@@ -1363,7 +1377,7 @@
                                 <img src="assets/time/user.png" alt="" width="60%"
                                     style="margin-top: 1vh;margin-left:6px">
                             </div>
-                            <div class="col-2" style="font-size:4.5vh;margin-top: 4px;text-align:left">
+                            <div class="col-2" style="font-size:4vh;margin-top: 4px;text-align:left">
                                 <span style="margin-left:2px;font-weight:bold">7</span>
                             </div>
                             <!-- <div class="col-1"></div> -->
@@ -1378,10 +1392,10 @@
                         <br>
                         <div class="grid" style="font-family: Arial;">
                             <div class="col-6" style="text-align:right">
-                                <div style="font-size:4.5vh">
+                                <div style="font-size:4vh">
                                     <b>41 minutes</b>
                                 </div>
-                                <div style="font-size:large">
+                                <div style="font-size:2vh">
                                     <b>initial exam</b>
                                 </div>
                             </div>
@@ -1389,7 +1403,7 @@
                                 <img src="assets/time/user.png" alt="" width="60%"
                                     style="margin-top: 1vh;margin-left:6px">
                             </div>
-                            <div class="col-2" style="font-size:4.5vh;margin-top: 4px;">
+                            <div class="col-2" style="font-size:4vh;margin-top: 4px;">
                                 <span style="margin-left:-12px;font-weight:bold">106</span>
                             </div>
                             <!-- <div class="col-1"></div> -->

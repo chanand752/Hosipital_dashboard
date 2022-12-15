@@ -18,27 +18,48 @@
     // text-align: center;
 }
 
+// ::ng-deep.check .p-checkbox-box {
+//     background-color: rgba(125,149,177,255);
+// }
 ::ng-deep.check .p-checkbox-box {
-    // padding: 2px;
-    background-color: rgba(125,149,177,255);
+    background-color: rgb(77, 81, 114);
 }
 
+
+// ::ng-deep.fivemin .p-checkbox-box {
+//     // padding: 2px;
+//     background-color:rgba(127,178,97,255);
+// }
 ::ng-deep.fivemin .p-checkbox-box {
     // padding: 2px;
-    background-color:rgba(127,178,97,255);
+    background-color:rgb(4, 136, 4);
 }
 
 
+
+// ::ng-deep.tenmin .p-checkbox-box{
+//     background-color: rgba(242,181,101,255);
+// }
 ::ng-deep.tenmin .p-checkbox-box{
-    background-color: rgba(242,181,101,255);
+    background-color: rgb(228, 150, 6);
 }
 
+
+
+// ::ng-deep.fifteenmin .p-checkbox-box{
+//     background-color: rgba(240,121,40,255);
+// }
 ::ng-deep.fifteenmin .p-checkbox-box{
-    background-color: rgba(240,121,40,255);
+    background-color: rgb(255, 102, 0);
 }
 
+
+
+// ::ng-deep.twentymin .p-checkbox-box{
+//     background-color: rgba(241,41,41,255);
+// }
 ::ng-deep.twentymin .p-checkbox-box{
-    background-color: rgba(241,41,41,255);
+    background-color: red;
 }
 
 
