@@ -241,19 +241,19 @@ export class FinanceDashboardComponent implements OnInit {
         {
           data: [20,15,5,35,25],
           backgroundColor: [
-            "#5b9cd6",
+            "#4473c5",
             "#ee7c2f",
             "#a5a5a5",
             "#ffc000",
-            "#4473c5",
+            "#5b9cd6",
             
           ],
           hoverBackgroundColor: [
-            "#5b9cd6",
+            "#4473c",
             "#ee7c2f",
             "#a5a5a5",
             "#ffc000",
-            "#4473c5",
+            "#5b9cd6",
             
           ]
         }
@@ -271,18 +271,18 @@ export class FinanceDashboardComponent implements OnInit {
     {
       data: [15, 10, 25, 20, 30],
       backgroundColor: [
-        "#5b9cd6",
+        "#4473c5",
         "#ee7c2f",
         "#a5a5a5",
         "#ffc000",
-        "#4473c5",
+        "#5b9cd6",
       ],
       hoverBackgroundColor: [
-        "#5b9cd6",
+        "#4473c5",
         "#ee7c2f",
         "#a5a5a5",
         "#ffc000",
-        "#4473c5",
+        "#5b9cd6",
       ]
     }
 

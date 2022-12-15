@@ -22,10 +22,11 @@ export class TrafficDashboardComponent implements OnInit {
         legend: {
 
           position: 'bottom',
-
+          fontWeight:'bold',
           labels: {
             color: '#495057',
-            boxWidth: 12
+            boxWidth: 12,
+            
           }
           
         }

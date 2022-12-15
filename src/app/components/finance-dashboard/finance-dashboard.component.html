@@ -196,21 +196,21 @@
     <div class="col-12 md:col-12 lg:col-12">
         <div class="grid flex justify-content-between">
             <div *ngFor="let data of cardData" class="col-12 md:col-6 lg:col-2 " style="color:#ecf1f4;">
-                <div class="card " [style.background-color]="data?.revenueColour" style="border-radius:1vh">
+                <div class="card " [style.background-color]="data?.revenueColour" style="border-radius:1vh; padding-bottom: 10px;">
                     <div class="grid">
                         <div class="col-8">
                             <p style="text-align:start;font-size:2.5rem;font-family:Arial; font-weight: bold;">{{data?.revenueName}}</p>
                         </div>
                         <div class="col-4">
-                            <i class={{data?.revenueIcon}} style="font-size: 3rem;margin-left:0.5vh "
+                            <i class={{data?.revenueIcon}} style="font-size: 3.3rem;margin-left:0.5vh; font-weight: bold;"
                                 [style.color]="data?.revenueIconcolour"></i>
 
                         </div>
-                        <div class="col-8" style="margin-top:-1vh">
-                            <p style="text-align:start;font-family:Arial;font-weight: bold;font-size:1rem">{{data?.revenueValue}}</p>
+                        <div class="col-8" style="margin-top:-1vh;padding-top: 0px">
+                            <p style="text-align:start;font-family:Arial;font-weight: bold;font-size:1rem; ;">{{data?.revenueValue}}</p>
                         </div>
-                        <div class="col-4" style="margin-top:-1vh">
-                            <p style="padding-left: 8px;font-size:bold;font-family:Arial;font-weight:bold;margin-left:5px">{{data?.revenuePercentage}}</p>
+                        <div class="col-4" style="margin-top:-1vh;padding-top: 2px;">
+                            <p style="padding-left: 8px;font-size:bold;font-family:Arial;font-weight:bold;margin-left:5px; ">{{data?.revenuePercentage}}</p>
                         </div>
                     </div>
                 </div>

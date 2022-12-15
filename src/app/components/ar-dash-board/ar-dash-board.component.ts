@@ -49,7 +49,7 @@ export class ArDashBoardComponent implements OnInit {
                     }
                 }
             },
-      
+           
             scales: {
                 x: {
                     ticks: {
@@ -61,7 +61,7 @@ export class ArDashBoardComponent implements OnInit {
                     }
                 },
                 y: {
-                    // type: 'linear',
+                    type: 'linear',
                     display: true,
                     position: 'left',
                     ticks: {
@@ -110,12 +110,22 @@ export class ArDashBoardComponent implements OnInit {
             plugins: {
                 legend: {
                     position: 'bottom',
+
                     labels: {
-                    boxWidth: 12
+                    render: 'percentage',
+                    boxWidth: 12,
+                    precision: 2,
+                    arc: true,
+                    hover:false
                     }
                 }
             },
          }
+        //  labels: {
+        //     render: 'percentage',
+        //     fontColor: ['green', 'white', 'red'],
+        //     precision: 2
+        //   }
 
          //ClaimDanialChart 
          this.claimDanialChartOptions = {

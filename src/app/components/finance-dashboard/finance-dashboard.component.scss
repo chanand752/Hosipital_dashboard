@@ -138,6 +138,11 @@ h3.thick {
   padding-bottom: 0px!important;
 }
 
+::ng-deep .pi-stop:before {
+  content: "\e9d1";
+  padding-left: 0.7rem;
+  font-size: 2.2rem;
+}
 
 // 12/02/2022 css styles
 
