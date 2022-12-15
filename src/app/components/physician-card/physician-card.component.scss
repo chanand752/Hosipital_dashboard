@@ -9,7 +9,7 @@
     border-top-right-radius: 10px;
     font-size: 1.4rem;
     border: none;
-    font-weight: 540;
+    font-weight: bold;
     font-family: Arial;
     padding-right: 1rem;
 }
@@ -24,9 +24,9 @@
     border-bottom-right-radius: 5px;
     padding-bottom: 1rem;
     padding-right: 1px;
-    padding-left: 5px;
+    padding-left: 18px;
     font-family: Arial;
-    font-weight: 510;
+    font-weight: bold;
     font-size: 1.2rem;
 }
 
@@ -50,16 +50,18 @@
 
 .image {
     border-radius: 20rem;
-    width: 20rem;
-    height: 20rem;
+    width: 17rem;
+    height: 17rem;
+    // padding-left: 42px;
     // padding: 5px;
 }
 
 .input-tag {
-    width: 130%;
+    width: 120%;
     border: 1px solid;
     border-radius: 20px;
     padding-top: 10px;
+    padding-left: 45px;
     font-family: Arial;
     font-style: italic;
      font-weight: 500;
@@ -100,12 +102,18 @@
     padding-left: 25px;
 }
 
+.paraWidth {
+  width: 215px;
+}
 
+.padding-aliginment {
+  padding-right: 0px;
+}
 
 
 // css Meadia quires 
 .body {
-    padding-top: 2rem;
+    padding-top: 3.3rem;
     padding-left: 1.5rem;
     padding-bottom: 3.5rem;
 }
@@ -177,5 +185,28 @@
   content: "\e908";
   font-weight: 800;
   color: black;
+  padding-left: 0.8rem;
+}
+
+@media screen and (min-width:768px) and (max-width:1540px) {
+  .newCard {
+    height: 35px;
+    width: 315px;
+    line-height: 0px;
+  }
+  .cardWidth-height {
+    padding-bottom: 9px;
+  }
+
+  .content-width {
+    width: 212px;
+    padding-left: 2px;
+  }
+
+.card-width-height {
+  max-width: 318.828px;
+  max-height: 224.594px;
+}
+
 }
 

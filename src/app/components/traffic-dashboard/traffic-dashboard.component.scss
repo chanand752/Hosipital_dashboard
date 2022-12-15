@@ -74,6 +74,34 @@
     // justify-content:flex-start ;
 }
 
+@media screen and (min-width:992px) and (max-width:1560px) {
+   .traffic-dashboard-child-card-1 {
+    max-width: 199.65px;
+    max-height: 100px;
+  
+   } 
+   .traffic-dashboard-child-card-2 {
+    max-width: 199.65px;
+    max-height: 100px;
+  
+   }
+   .traffic-dashboard-child-card-3 {
+    max-width: 199.65px;
+    max-height: 100px;
+  
+   }
+   .traffic-dashboard-child-card-4 {
+    max-width: 199.65px;
+    max-height: 100px;
+  
+   }
+   .traffic-dashboard-child-card-5 {
+    max-width: 199.65px;
+    max-height: 108px;
+  
+   }
+}
+
 
 .child-par-fontSize {
     font-size: 1.5rem;
@@ -206,4 +234,11 @@ width: 14%;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
+}
+
+@media screen and (min-width:1440px) and (max-width:2560px) {
+    .clock-icon {
+        padding-left: 12.8rem;
+    }
+    
 }

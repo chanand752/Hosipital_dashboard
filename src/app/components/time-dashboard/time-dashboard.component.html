@@ -5,7 +5,7 @@
                 <div class="col-12">
                     <div class="grid">
                         <!-- <div class="col-1"> -->
-                        <img src="assets/time/clock.png" width="45px"
+                        <img src="assets/time/clock.png" width="45px" class="hide-container"
                             style="height:3rem;margin-left:2vh;margin-top:14px">
 
                         <!-- </div> -->
@@ -25,7 +25,7 @@
             <div class="grid icon">
 
                 <div class="col-6"></div>
-              
+
                 <div class="col-6" style="margin-left:-30px">
                     <div class="grid">
                         <div class="col-6" style="margin-left:-15px">
@@ -54,13 +54,15 @@
         <div class="grid" style="padding-left: 2vh;padding-right: 2vh;margin-top:1vh">
             <div class="col-12 sm:col-12 md:col-12 lg:col-3">
                 <div>
-                    <p-card [style]="{'background-color':'rgba(49,143,177,255)','color':'white','border-radius':'1vh','font-family':'Arial'}">
+                    <p-card
+                        [style]="{'background-color':'rgba(49,143,177,255)','color':'white','border-radius':'1vh','font-family':'Arial'}">
                         <div class="grid">
                             <div class="col-3" style="margin-top:-1rem;font-size:4rem;margin-left:1vh">
                                 4.1
                             </div>
 
-                            <div class="col-3" style="margin-left:-0.5rem;margin-top:2.8vh;font-size:large">&nbsp;&nbsp; days</div>
+                            <div class="col-3" style="margin-left:-0.5rem;margin-top:2.8vh;font-size:large">&nbsp;&nbsp;
+                                days</div>
                             <div class="col-3"><i class="pi pi-arrow-down"
                                     style="font-size: 3rem;color:rgba(247,132,137,255);font-weight:bolder;"></i></div>
                             <div class="col-3" style="margin-left:-1rem; margin-top:2vh; font-size:3vh">2.3%</div>
@@ -73,12 +75,14 @@
                 <br>
                 <div>
 
-                    <p-card [style]="{'background-color':'rgba(49,115,176,255)','color':'white','border-radius':'1vh','font-family':'Arial'}">
+                    <p-card
+                        [style]="{'background-color':'rgba(49,115,176,255)','color':'white','border-radius':'1vh','font-family':'Arial'}">
                         <div class="grid">
                             <div class="col-3" style="margin-top:-1rem;font-size:4rem;margin-left:1vh">
                                 37
                             </div>
-                            <div class="col-3" style="margin-left:-0.8rem;margin-top:2.8vh;font-size:large">minutes</div>
+                            <div class="col-3" style="margin-left:-0.8rem;margin-top:2.8vh;font-size:large">minutes
+                            </div>
                             <div class="col-3"><i class="pi pi-arrow-up"
                                     style="font-size: 3rem;color:rgba(139,255,88,255);font-weight:bolder;margin-left:0.5vh"></i>
                             </div>
@@ -172,7 +176,8 @@
                     styleClass="shadow-2">
                     <div style="text-align:center;font-family:Arial">Door to Doctor</div>
                 </div>
-                <p-card [style]="{'margin-top':'-2px','border-radius':'0rem','border-bottom-left-radius':'1vh','border-bottom-right-radius':'1vh'}">
+                <p-card
+                    [style]="{'margin-top':'-2px','border-radius':'0rem','border-bottom-left-radius':'1vh','border-bottom-right-radius':'1vh'}">
 
                     <div class="grid">
                         <div class="col-12 sm:col-12 md:col-12 lg:col-3" style="font-size:75%">
@@ -181,14 +186,16 @@
                                     <p-checkbox name="groupname" class="check" value="val1" [(ngModel)]="selectedValues"
                                         disabled></p-checkbox>
                                 </div>
-                                <div class="col-11" style="margin-top:-30px; margin-left:3vh;font-family:Arial"><b> 10 % of patients </b>
+                                <div class="col-11" style="margin-top:-30px; margin-left:3vh;font-family:Arial"><b> 10 %
+                                        of patients </b>
                                 </div>
                             </div>
 
                         </div>
                     </div>
                     <br>
-                    <div class="grid" style="font-size:small;margin-top: -4vh;text-align: center;font-weight: bolder;font-family:Arial">
+                    <div class="grid"
+                        style="font-size:small;margin-top: -4vh;text-align: center;font-weight: bolder;font-family:Arial">
                         <div class="col-3"></div>
                         <div class="col-2">5 min</div>
                         <div class="col-2">10 min</div>
@@ -206,7 +213,8 @@
                     <div class="grid" style="font-size:small; margin-top: -1vh;">
 
 
-                        <div class="col-3" style="text-align:left;font-weight: bold;font-family: Arial;">Cardiology</div>
+                        <div class="col-3" style="text-align:left;font-weight: bold;font-family: Arial;">Cardiology
+                        </div>
 
 
                         <!-- 5 MINUTES -->
@@ -296,7 +304,8 @@
 
 
                     <div class="grid" style="font-size:small">
-                        <div class="col-3" style="text-align:left;font-weight: bold;font-family: Arial;">Orthopedics</div>
+                        <div class="col-3" style="text-align:left;font-weight: bold;font-family: Arial;">Orthopedics
+                        </div>
 
 
                         <!-- 5 MINUTES -->
@@ -389,7 +398,8 @@
 
 
                     <div class="grid" style="font-size:small">
-                        <div class="col-3" style="text-align:left;font-weight: bold;font-family: Arial;">Gynecology</div>
+                        <div class="col-3" style="text-align:left;font-weight: bold;font-family: Arial;">Gynecology
+                        </div>
 
 
                         <!-- 5 MINUTES -->
@@ -759,7 +769,8 @@
 
 
                     <div class="grid" style="font-size:small">
-                        <div class="col-3" style="text-align:left;font-weight: bold;font-family: Arial;">Dermatology</div>
+                        <div class="col-3" style="text-align:left;font-weight: bold;font-family: Arial;">Dermatology
+                        </div>
 
 
                         <!-- 5 MINUTES -->
@@ -848,7 +859,8 @@
 
 
                     <div class="grid" style="font-size:small">
-                        <div class="col-3" style="text-align:left;font-weight: bold;font-family: Arial;">Ophtamology</div>
+                        <div class="col-3" style="text-align:left;font-weight: bold;font-family: Arial;">Ophtamology
+                        </div>
 
 
                         <!-- 5 MINUTES -->
@@ -946,7 +958,8 @@
 
 
                     <div class="grid" style="font-size:small">
-                        <div class="col-3" style="text-align:left;font-weight: bold;font-family: Arial;">Pediatrics</div>
+                        <div class="col-3" style="text-align:left;font-weight: bold;font-family: Arial;">Pediatrics
+                        </div>
 
 
                         <!-- 5 MINUTES -->
@@ -1042,7 +1055,8 @@
 
 
                     <div class="grid" style="font-size:small">
-                        <div class="col-3" style="text-align:left;font-weight: bold;font-family: Arial;">Hematology</div>
+                        <div class="col-3" style="text-align:left;font-weight: bold;font-family: Arial;">Hematology
+                        </div>
 
 
                         <!-- 5 MINUTES -->
@@ -1233,7 +1247,8 @@
                     [style]="{'max-width':'100rem','margin-top':'0%','background-color':'rgb(155, 200, 219)','text-align':'center','border-radius':'2rem'}"
                     styleClass="shadow-2" class="panel2" header="Door to Doctor"> -->
                 <div>
-                    <div style="background-color:rgba(49,143,177,255);height: 9vh;border-top-left-radius: 1vh;border-top-right-radius: 1vh;margin-top: 1px;
+                    <div
+                        style="background-color:rgba(49,143,177,255);height: 9vh;border-top-left-radius: 1vh;border-top-right-radius: 1vh;margin-top: 1px;
                     text-align: center;color:white;padding-top: 1.5vh;font-size:xx-large;font-weight: bold;font-family: Arial;">
                         Operating Room
 
@@ -1316,7 +1331,8 @@
                 <br><br><br>
 
                 <div>
-                    <div style="background-color:rgba(49,143,177,255);height: 9vh;border-top-left-radius: 1vh;border-top-right-radius: 1vh;margin-top: 1px;
+                    <div
+                        style="background-color:rgba(49,143,177,255);height: 9vh;border-top-left-radius: 1vh;border-top-right-radius: 1vh;margin-top: 1px;
                     text-align: center;color:white; padding-top: 1.5vh;font-size:xx-large;font-weight: bold;font-family: Arial;">
                         Emergency Department
 

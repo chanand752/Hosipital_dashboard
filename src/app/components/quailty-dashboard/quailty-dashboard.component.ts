@@ -24,9 +24,11 @@ export class QuailtyDashboardComponent implements OnInit {
       plugins: {
         legend: {
           position: 'bottom',
+          fontWeight:'bold',
           labels: {
-            color: '#495057',
-            boxWidth: 12
+            color: '#141414',
+            boxWidth: 12,
+            fontWeight:500
             
           },
         //   tooltip: {
@@ -46,8 +48,12 @@ export class QuailtyDashboardComponent implements OnInit {
       plugins: {
         legend: {
           position: 'none',
+          fontWeight:'bold',
           labels: {
-            color: '#495057'
+            color: '#141414',
+            fontSize:'1rem',
+            fontWeight:'bold',
+            fontColor: 'white'
           }
         }
       },

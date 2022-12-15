@@ -50,3 +50,10 @@
     color: #3b3a3a;
 }
 
+
+@media screen and (max-width:767px) {
+  .hide-container {
+    display: none;
+  }
+}
+
