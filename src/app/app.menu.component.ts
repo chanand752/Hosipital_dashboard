@@ -18,13 +18,14 @@ export class AppMenuComponent implements OnInit {
             {
                 items: [
                     // {label: 'Home', icon: 'pi pi-fw pi-home', routerLink: ['/uikit/formlayout']},
-                    {label: 'Home Page-1', icon: 'pi pi-fw pi-home', routerLink: ['/']},
+                    {label: 'Home', icon: 'pi pi-fw pi-home', routerLink: ['/']},
+                    {label: 'AR Dash Card', icon: 'pi pi-fw pi-user', routerLink: ['/ARDashBoard-card']},
+                    {label: 'Localization', icon: 'pi pi-fw pi-globe', routerLink: ['/googleMaps']},
                     // {label: 'Home Page-2', icon: 'pi pi-fw pi-home', routerLink: ['/Home-page-2']},
                     // {label: 'Physician Card', icon: 'pi pi-fw pi-user', routerLink: ['/Physician-card']},
                     // {label:'Finance Dashboard',icon: 'pi pi-fw pi-user', routerLink: ['/FinanceDashboard']},
                     // {label: 'Time Dash Board', icon: 'pi pi-fw pi-clock', routerLink: ['/TimeDashboard']},
                     // {label: 'Utilization Dash Card', icon: 'pi pi-fw pi-user', routerLink: ['/UtilizationDashboard']},
-                    // {label: 'AR Dash Card', icon: 'pi pi-fw pi-user', routerLink: ['/ARDashBoard-card']},
                     // {label: 'Quality Dash Board', icon: 'pi pi-fw pi-user', routerLink: ['/Quality-DashBoard']},
                     // {label: 'Traffic Dash Board', icon: 'pi pi-fw pi-user', routerLink: ['/Traffic-DashBoard']},
                     // {label: 'Google Maps', icon: 'pi pi-fw pi-user', routerLink: ['/googleMaps']},

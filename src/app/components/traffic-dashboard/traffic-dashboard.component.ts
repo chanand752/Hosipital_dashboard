@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -15,7 +16,7 @@ export class TrafficDashboardComponent implements OnInit {
   options: any;
   overlays: any[];
 
-  constructor(private http: HttpClient) { 
+  constructor(private http: HttpClient, private route : Router) { 
 
     this.basicOptions = {
       plugins: {
@@ -147,6 +148,11 @@ export class TrafficDashboardComponent implements OnInit {
             center: {lat: 36.890257, lng: 30.707417},
             zoom: 12
         };
+  }
+
+  map(){
+    console.log("hiii");
+    this.route.navigateByUrl('/googleMaps');
   }
 
 }

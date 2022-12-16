@@ -11,7 +11,7 @@
     flex-direction: row;
     font-family: Arial;
     font-weight: 550;
-    //  justify-content:center ;
+     justify-content:center ;
     
 }
 
@@ -44,7 +44,7 @@
     flex-direction: row;
     font-family: Arial;
     font-weight: 550;
-    // justify-content:flex-start ;
+    justify-content:flex-start ;
 }
 
 .traffic-dashboard-child-card-4 {
@@ -60,7 +60,7 @@
     flex-direction: row;
     font-family: Arial;
     font-weight: 550;
-    // justify-content:flex-start ;
+    justify-content:flex-start ;
 }
 .traffic-dashboard-child-card-5 {
     background-color: #7fb361;
@@ -218,6 +218,7 @@ width: 14%;
 .time-alignment {
     font-size: 1.0rem;
     text-align: center;
+    font-weight:bold
 }
 
 
@@ -234,6 +235,15 @@ width: 14%;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
+}
+
+
+.line-height{
+    margin-top:3px;
+}
+
+.arrange{
+    text-align: center;
 }
 
 @media screen and (min-width:1440px) and (max-width:2560px) {

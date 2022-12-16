@@ -9,18 +9,19 @@
             <div class="sty" style="font-size:x-large"><b>Cayman Islands HSA</b></div>
             <div class="sub-heading"><b>Traffic Dashboard - September 2022</b></div>
         </div>
+
         <div class="col-4 footer-icons" style="padding-top: 0.8rem;">
 
-            <img src="assets/time/hospital.png" alt="" width="50px" style="height:3rem;margin-left:1vh;margin-top:5px">
+            <img src="assets/time/hospital.png" alt="" width="50px" style="height:3.5rem;margin-left:1vh;margin-top:5px">
             &nbsp;&nbsp;
 
-            <img src="assets/time/calendar.png" alt="" width="50px" style="height:3rem;margin-left:1vh;margin-top:5px">
+            <img src="assets/time/calendar.png" alt="" width="50px" style="height:3.5rem;margin-left:1vh;margin-top:4px">
 
         </div>
     </div>
 </div>
 
-<div class="grid card-color" style="padding: 1rem;">
+<div class="grid card-color" style="padding: 1rem;margin-top: -10px;">
     <div class="col-12 md:col-12 lg:col-12">
         <div class="grid flex justify-content-between">
             <div class="col-12 md:col-6 lg:col-2">
@@ -34,7 +35,7 @@
             <div class="col-12 md:col-6 lg:col-2">
                 <div class=" traffic-dashboard-child-card-2 ">
 
-                    <p class="child-par-fontSize-span">37% <br><span class="child-card-samll-para-heading">
+                    <p class="child-par-fontSize-span" style="margin-left:-4px">37% <br><span class="child-card-samll-para-heading" style="margin-left:-6px">
                             Admissions Rate</span></p>
                 </div>
 
@@ -42,14 +43,14 @@
             <div class="col-12 md:col-6 lg:col-2">
                 <div class=" traffic-dashboard-child-card-3 ">
 
-                    <p class="child-par-fontSize-span">42 min <br><span class="child-card-samll-para-heading">
-                            Waiting Time(min)</span></p>
+                    <p class="child-par-fontSize-span" style="margin-left:-7px">42 min <br><span class="child-card-samll-para-heading">
+                            Waiting Time (min)</span></p>
                 </div>
             </div>
             <div class="col-12 md:col-6 lg:col-2">
                 <div class=" traffic-dashboard-child-card-4 ">
 
-                    <p class="child-par-fontSize-span">1.2 Days <br><span class="child-card-samll-para-heading">
+                    <p class="child-par-fontSize-span" style="margin-left:-3px">1.2 Days <br><span class="child-card-samll-para-heading">
                             Average LOS</span></p>
                 </div>
             </div>
@@ -92,29 +93,29 @@
                             <div class="grid">
                                 <div class="col-6"></div>
                                 <div class="col-3 "><span><img src="assets/user.png"
-                                            style="width:2vw;height:27px;" /></span></div>
+                                            style="width:2vw;height:27px;margin-left:1.5vh" /></span></div>
                                 <div class="col-3"><span><img src="assets/dollar-symbol.png"
-                                            style="width:2vw;height:27px;" /></span></div>
+                                            style="width:2vw;height:27px;margin-left:1vh" /></span></div>
                             </div>
                             <div class="grid line-height">
                                 <div class="col-6">St.Geroge Clinic</div>
-                                <div class="col-3">270</div>
-                                <div class="col-3">37.5k</div>
+                                <div class="col-4 arrange" style="margin-left:-3vh">270</div>
+                                <div class="col-2 arrange">37.5k</div>
                             </div>
                             <div class="grid line-height">
                                 <div class="col-6">Rapid Care</div>
-                                <div class="col-3">217</div>
-                                <div class="col-3">44.5k</div>
+                                <div class="col-4 arrange" style="margin-left:-3vh">217</div>
+                                <div class="col-2 arrange">44.5k</div>
                             </div>
                             <div class="grid line-height">
                                 <div class="col-6">Town Clinic</div>
-                                <div class="col-3">146</div>
-                                <div class="col-3">21k</div>
+                                <div class="col-4 arrange" style="margin-left:-3vh">146</div>
+                                <div class="col-2 arrange">21k</div>
                             </div>
                             <div class="grid line-height">
                                 <div class="col-6">Dr.Andrew Chin</div>
-                                <div class="col-3">67</div>
-                                <div class="col-3">12.5k</div>
+                                <div class="col-4 arrange" style="margin-left:-3vh">67</div>
+                                <div class="col-2 arrange">12.5k</div>
                             </div>
                         </div>
                     </div>
@@ -122,10 +123,12 @@
                         <h1 class="traffic-card-heading-90days"> Localization
                         </h1>
 
-                        <div class="map-card" routerLink="/googleMaps">
-                            <iframe style="width: -webkit-fill-available;height: 250px;"
+                        <div class="map-card" style="background-color:white" (click)="map()">
+                            
+                            <iframe style="width: -webkit-fill-available;height: 250px;margin-left:2vh;margin-right:2vh;margin-top:0.5vh;margin-bottom:0.5vh"
                                 src="https://cms-oeda.maps.arcgis.com/apps/MapSeries/index.html?appid=062934f815eb412182b3d324054ea6f0"
-                                title=""></iframe>
+                                title="" >
+                            </iframe>
 
                     
                         </div>
@@ -142,9 +145,9 @@
 
                         <div class="grid">
                             <div class="col-4 col-offset-3" style="padding-right: 3.5rem;padding-left: 15px;"><span><img
-                                        src="assets/user.png" style="width:2vw;height:27px;" /></span></div>
-                            <div class="col-4 clock-icon " style="padding-left: 5.6rem;"><i class="pi pi-clock "
-                                    style="font-size: 2rem; color: rgb(12, 197, 197);"></i></div>
+                                        src="assets/user.png" style="height:27px;width: 1.8vw;margin-left: -4px;" /></span></div>
+                            <div class="col-4 clock-icon " style="padding-left: 5.6rem;margin-left:4px"><i class="pi pi-clock "
+                                    style="font-size: 2rem; color: rgba(94,188,213,255);"></i></div>
                         </div>
                         <div class="grid">
                             <div class="col-8">
@@ -157,78 +160,78 @@
                                     </div>
                                 </div>
                                 <div class="grid margin-alignment ">
-                                    <div class="col-5 ">
+                                    <div class="col-5 " style="margin-top:2px">
                                         Orthopedics
                                     </div>
-                                    <div class="col-7 color-box box-2">
+                                    <div class="col-7 color-box box-2" style="margin-top:2px">
                                         33
                                     </div>
                                 </div>
                                 <div class="grid margin-alignment">
-                                    <div class="col-5 ">
+                                    <div class="col-5 " style="margin-top:2px">
                                         Gynecology
                                     </div>
-                                    <div class="col-7 color-box box-3">
+                                    <div class="col-7 color-box box-3" style="margin-top:2px">
                                         14
                                     </div>
                                 </div>
                                 <div class="grid margin-alignment">
-                                    <div class="col-5 ">
+                                    <div class="col-5 " style="margin-top:2px">
                                         Neurology
                                     </div>
-                                    <div class="col-7 color-box box-4">
+                                    <div class="col-7 color-box box-4" style="margin-top:2px">
                                         49
                                     </div>
                                 </div>
 
                                 <div class="grid margin-alignment">
-                                    <div class="col-5 ">
+                                    <div class="col-5 " style="margin-top:2px">
                                         Surgery
                                     </div>
-                                    <div class="col-7 color-box box-5">
+                                    <div class="col-7 color-box box-5" style="margin-top:2px">
                                         29
                                     </div>
                                 </div>
 
                                 <div class="grid margin-alignment">
-                                    <div class="col-5 ">
+                                    <div class="col-5 " style="margin-top:2px">
                                         Emergency
                                     </div>
-                                    <div class="col-7 color-box box-6">
+                                    <div class="col-7 color-box box-6" style="margin-top:2px">
                                         21
                                     </div>
                                 </div>
 
                                 <div class="grid margin-alignment">
-                                    <div class="col-5 ">
+                                    <div class="col-5 " style="margin-top:2px">
                                         Dermatology
                                     </div>
-                                    <div class="col-7 color-box box-7">
+                                    <div class="col-7 color-box box-7" style="margin-top:2px">
                                         37
                                     </div>
                                 </div>
 
                                 <div class="grid margin-alignment">
-                                    <div class="col-5 ">
+                                    <div class="col-5 " style="margin-top:2px">
                                         Ophtamology
                                     </div>
-                                    <div class="col-7 color-box box-8">
+                                    <div class="col-7 color-box box-8" style="margin-top:2px">
                                         27
                                     </div>
                                 </div>
                                 <div class="grid margin-alignment">
-                                    <div class="col-5 ">
+                                    <div class="col-5 " style="margin-top:2px">
                                         Pediatrics
                                     </div>
-                                    <div class="col-7 color-box box-9">
+                                    <div class="col-7 color-box box-9" style="margin-top:2px">
                                         48
                                     </div>
                                 </div>
                                 <div class="grid margin-alignment">
-                                    <div class="col-5 ">
+                                    <div class="col-5 " style="margin-top:2px">
                                         Hematology
                                     </div>
-                                    <div class="col-7 color-box box-10">
+                                    <div class="col-7 color-box box-10" style="margin-top:2px">
                                         36
                                     </div>
                                 </div>
@@ -244,7 +247,7 @@
 
                             </div>
 
-                            <div class="col-4">
+                            <div class="col-4" style="margin-top:8px">
                                 <h5 class="time-alignment">21</h5>
                                 <h5 class="time-alignment">67</h5>
                                 <h5 class="time-alignment">44</h5>

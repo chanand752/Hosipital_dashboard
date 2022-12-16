@@ -12,10 +12,10 @@
                 "backgroundColor": "#4473c5",
                 "fill":true,
                 "data": [
-                    120,
-                    90,
-                    60,
-                    30
+                    11.2,
+                    6.5,
+                    5.2,
+                    3.2
                 ]
             }
         ]
@@ -68,7 +68,7 @@
     },
     "claimChartData": {
         "labels": [
-            "Aetna",
+            "Aetna", 
             "Cigna",
             "BAF",
             "Britcay"
