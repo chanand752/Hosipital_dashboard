@@ -161,7 +161,7 @@ a {
   position: fixed;
   height: 60px;
   top: 0;
-  left: 250px;
+  left: 220px;
   right: 0;
   z-index: 997;
   padding: 8px 25px;
@@ -858,7 +858,7 @@ a {
 
 @media screen and (min-width: 897px) {
   .layout-wrapper.layout-static .layout-menu-container {
-    width: 250px;
+    width: 220px;
     left: 0;
     -moz-transition: left 0.3s;
     -o-transition: left 0.3s;
@@ -872,7 +872,7 @@ a {
     transition: left 0.3s;
   }
   .layout-wrapper.layout-static .layout-main {
-    margin-left: 250px;
+    margin-left: 220px;
     -moz-transition: margin-left 0.3s;
     -o-transition: margin-left 0.3s;
     -webkit-transition: margin-left 0.3s;
