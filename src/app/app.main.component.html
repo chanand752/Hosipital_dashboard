@@ -12,10 +12,23 @@
     <app-topbar></app-topbar>
 
     <div class="layout-menu-container" (click)="onMenuClick($event)">
-        <div class="layout-menu-logo">
-            <a href="#">
+        <div class="layout-menu-logo" routerLink="">
+
+            <div class="grid" style="color:white;padding-top: 2vh; padding-bottom: 1.4vh;padding-left: 1.5vh;">
+                <div class="col-1" style="margin-left:6px">
+                    <img src="assets/home1/plus.png" alt="" style="height:22px;margin-top:0vh">
+                </div>
+                <div class="col-11" style="margin-left:4.5vh;position:absolute;margin-top:-0.5vh">
+                    <div style="font-size: 2rem; font-weight:bold; font-family:Arial;">CAYMAN</div>
+                    <div
+                        style="font-size:9px;margin-left:51px;font-family:Arial;font-style: italic;margin-top:-0.5vh;font-weight:bold">
+                        We care for you</div>
+                </div>
+            </div>
+
+            <!-- <a href="#">
                 <img id="layout-menu-logo" src="assets/miracleLogo.png" library="babylon-layout" style="margin-left:-11.5vh"/>
-            </a>
+            </a> -->
         </div>
         <div class="layout-menu-wrapper">
             <div class="menu-scroll-content">
@@ -30,7 +43,7 @@
         <div class="layout-content">
             <router-outlet></router-outlet>
         </div>
-        <app-footer ></app-footer>
+        <!-- <app-footer ></app-footer> -->
     </div>
     <div class="layout-mask"></div>
 
